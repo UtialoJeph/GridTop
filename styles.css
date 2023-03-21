@@ -240,7 +240,7 @@ width: 50%;
 }
 .btnss{
     height: 600px;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 #request,#respond,#doneit{
     display: none; 
