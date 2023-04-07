@@ -180,7 +180,7 @@ background-color:black;
   width:50%;
   border-radius: 5px;
   background-color: transparent;
-  margin:1px;
+  
   align-items: center; 
 }
 
@@ -191,7 +191,7 @@ height: 700px;
 width:80%;
 border-radius: 5px;
 background-color: black;
-margin:1px;
+
 }
 
 .info{
@@ -313,14 +313,23 @@ background-color: rgb(3, 3, 3);
 p a{
     color:rgb(240, 149, 116);
 }
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides {
+ 
+  width: 80%;
+  display: none;
+}
+.img {
+  width:80%;
+  vertical-align: middle;
+ }
+
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
   position: relative;
-  margin: auto;
+  margin:0;
+  background-color: aqua;
 }
 
 /* Next & previous buttons */
@@ -493,29 +502,28 @@ tr:nth-child(even) {
 }
 @media all and (max-width:1250px){
   .banner{
+    padding: 0;
     height:650px;
     width: 100%;
     top:600px;
-    padding: 2px;
+    padding-top: 45px;
     font-size:15px;
     color: rgb(243, 243, 243);   
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
+.T{
+  display: none;
+}
 .banner h1{
+  padding:0;
+  font-weight: normal;
   position: relative;
   top:120px;
-  padding: 2px;
-  font-size:25px;
+  font-size:20px;
   color: rgb(241, 238, 238);   
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.header h1{
-  position:relative;
-  top:150px;
-  left:120px;
-  font-size:45px;
-  float: left;
-  }
 .upperheader{
   display: flex;
   top:0;
@@ -572,16 +580,20 @@ tr:nth-child(even) {
     width:100%;
     
     }
+    .info p{
+      margin-top:1;
+    }
     .info a{
-    margin-bottom: 50px;  
+    margin-bottom:;  
     }
     
     .info{
+      
     margin:10px;
     float: left;
     font-size: 20px;
     width: 90%;
-    height: 640px;
+    height: 600px;
     margin-left:0;
     margin-top: 3px;
     margin-right:0;
@@ -631,23 +643,24 @@ tr:nth-child(even) {
 
 }
 .title h1{ 
-  padding-left: 140px;
+  padding-left:150px;
  align-content: center;
  text-align: center;
 font-size: 30px;
  padding-top: 20px;
 }
 .socialpage{
-float: left;
-width:40% ;
+  text-align: center;
+  padding-left: 25px;
+ width:70% ;
 background-color: rgb(3, 3, 3);
 }
 .socialpage i{
   color: rgb(240, 149, 116);
   font-size: 45px;
   padding-top: 10px;
-  width:5%;
-  display: inline-block;
+  width:2%;
+  display:inline-block;
 }
 .footer-bottom{
   width: 100%;
@@ -678,7 +691,7 @@ background-color: rgb(3, 3, 3);
   position: absolute;
   top:0;
   width:100%;
-  height: 130%;
+  height: 110%;
   background-color: rgb(4, 91, 221);
   mix-blend-mode: overlay;
   
@@ -691,4 +704,20 @@ background-color: rgb(3, 3, 3);
   .chat-popup{
    width: 70%;
   }
+  .mySlides image{
+    width: 10%;
+  }
+  .upperheader{
+    height: 49px;
+  }
+  
+.upperheader p{
+font-size: 15px;;
+}
+.upperheader a{
+    text-decoration:overline;
+    color:white;
+    font-size: 12px;
+   }
+   
 }
