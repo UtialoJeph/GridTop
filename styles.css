@@ -398,6 +398,12 @@ border-radius: 5px;
   background-image: url("https://ik.imagekit.io/midnightcoders/Images/plash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673353179116");
   min-height: 600px;
 }
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 650px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
 .footer-bottom{
     height: 100px;
     margin-top: 10px;
