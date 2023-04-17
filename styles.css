@@ -300,6 +300,104 @@ background-color: rgb(3, 3, 3);
 .title h1:hover{
     text-decoration: line-through;
 }
+
+
+/*
+The codes below are for the display pictures
+*/
+
+
+#footer-upper{
+  margin-top: 20px;
+  padding-top: 20px;
+ 
+
+}
+#te{
+  background-color: #626464;
+  background-position: right;
+  
+  padding-left: 4px;
+  padding-bottom: 20px;
+}
+#te2{
+  background-color: #454647;
+  background-position: right;
+  
+  padding-left: 80px;
+
+}
+.techn{
+
+  padding-bottom: 30px;
+  color: rgb(233, 233, 240);
+  font: 30px "Lato", sans-serif;
+  letter-spacing: 5px;
+   border-bottom: 100px;
+}
+.container-pic{
+margin-top: 5%;
+display:flex;
+margin-left: 20px;
+margin-bottom: 10%;
+}
+.container-pic:after{
+  content:"";
+  display: table;
+  clear: both;
+  
+}
+
+.left1{
+  width:33%;
+  float: left;
+  margin:2%;
+  padding-bottom:10px;
+  
+  
+}
+.left1 h1{
+  padding-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.left1 a{
+  text-decoration: none;
+  color: rgb(105, 157, 224);
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.left1 img{
+border-radius: 5px;
+
+}
+
+.left1 a:hover{
+  text-decoration: underline;
+}
+.left1 p{
+  padding-top: 5px;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://ik.imagekit.io/midnightcoders/Images/images.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673353289341");
+  min-height: 100%;
+}
+.bgimg-2 {
+  background-image: url("https://ik.imagekit.io/midnightcoders/Images/plash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673353179116");
+  min-height: 600px;
+}
 .footer-bottom{
     height: 100px;
     margin-top: 10px;
@@ -324,104 +422,6 @@ p a{
  }
 
 
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin:0;
-  background-color: aqua;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: rgb(255, 252, 252);
-  background-color: rgb(0, 1, 10);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #fcfcfc;
-  font-size: 20PX;
-  font-weight: bolder;
-  padding: 10px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-.text a{
-    text-decoration: none;
-    color: rgb(245, 243, 243);
-}
-.text a:hover{
-    transition: 2s ease;
-    color: rgb(31, 120, 253);
-    text-decoration: overline;
-
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 table {
   background-color: rgb(7, 7, 7);
   border-collapse: collapse;
