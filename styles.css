@@ -88,7 +88,7 @@ body{
 .banner{
     width: 100%;
     background-color:;
-    height:550px;
+    height:600px;
     text-align: center;
     }
 .banner h1{
@@ -450,12 +450,13 @@ p a{
 }
 
 @media all and (max-width:1000px){
+  
   .banner{
     background-color: transparent;
     padding: 0;
-    height:600px;
+    height:700px;
     width: 100%;
-    top:600px;
+    top:800px;
     padding-top: 45px;
     font-size:15px;
     color: rgb(243, 243, 243);   
@@ -476,6 +477,27 @@ p a{
 .banner p{
   display: none;
 }
+
+
+.bvd{
+  position: absolute;
+  z-index: -5;
+  height:150%;
+  width: 100%;
+  object-fit: cover;
+  top:0;
+  opacity: 0.4;
+  z-index: -10;
+  }
+  .overlay{
+  position: absolute;
+  top:0;
+  width:100%;
+  height:150%;
+  background-color: rgb(4, 91, 221);
+  mix-blend-mode: overlay;
+  
+  }
 .upperheader{
   display: flex;
   top:0;
@@ -516,6 +538,7 @@ p a{
   float:left; 
 
   }
+
   
   .banner-buttons a{
   top: 150px;
@@ -524,6 +547,7 @@ p a{
   margin:5px 10px;
   }
   .personal-info{
+    position: relative;
     height:auto;
     width: 100%;
     display:inline-block;
@@ -570,7 +594,7 @@ p a{
       margin-right: 0;
     }
     .section{
-      width: 85%;
+      width: 75%;
     }
     .display{
       width: 100%;
@@ -652,26 +676,6 @@ background-color: rgb(3, 3, 3);
   margin-left:0;
   color: rgb(78, 78, 77);
 }
-
-.bvd{
-  position: absolute;
-  z-index: -5;
-  height:100%;
-  width: 100%;
-  object-fit: cover;
-  top:0;
-  opacity: 0.4;
-  z-index: -10;
-  }
-  .overlay{
-  position: absolute;
-  top:0;
-  width:100%;
-  height: 100%;
-  background-color: rgb(4, 91, 221);
-  mix-blend-mode: overlay;
-  
-  }
  
   .chat-popup{
    width: 70%;
@@ -689,13 +693,9 @@ font-size: 15px;;
     color:white;
     font-size: 12px;
    }
-   .gridimages{
-    
-    display:;
-    height: 350PX;
-    background-color: rgb(177, 182, 187);
-    border-radius: 5px;
-   
+   .lef-t{
+    display:none;
+     
    } 
    .lef-t{
     float: left;
