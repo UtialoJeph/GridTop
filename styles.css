@@ -17,9 +17,9 @@ body{
     font-size: 18px;
    }
    .upperheader a:hover{
-    color:rgb(79, 140, 231);
+    color:rgb(2, 2, 43);
     transition: 1s ease;
-    font-weight: bolder;
+    
    }
    .fa-messages{
     font-size: 15px;
@@ -28,8 +28,8 @@ body{
 .upperheader{
     display: flex;
     top:0;
-    height:50px;
-    background-color: rgb(253, 146, 74);
+    height:40px;
+    background-color: rgb(241, 166, 116);
     z-index: 2;
     position: absolute;
     margin:0;
@@ -44,8 +44,6 @@ body{
 .account{
     width: 20%;
     background-color: black;
-    padding: 10px;
-    border-radius: 2px;
     font-size: 25px;
     font-family: 'Creepster', cursive;
     
@@ -61,24 +59,31 @@ body{
     display: flex;
     
 }
-.header h1{
+.logoside{
+  width: 20%;
+  float: left;
+  
+  }
+.logoside h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position:relative;
-    top:30px;
-    left:150px;
+    position:absolute;
+    top:30px;    
     font-size:45px;
-    float: left;
+    padding-left: 200px;       
+}
+.navbar{
+  padding-left: 300px;
+  width:80%;
+  float: right;
 }
 .navbar a{
-    position: absolute;
     z-index: 1;
     float: left;
     top: 75px;
     text-decoration: none;
     display: inline;
     position:relative;
-    left:300px;
-    padding-left: 15px;
+    padding-left: 10px;
     color: rgb(245, 253, 251);
 }
 .navbar a:hover{
@@ -87,7 +92,7 @@ body{
 
 .banner{
     width: 100%;
-    background-color:;
+    background-color:transparent;
     height:550px;
     text-align: center;
     }
@@ -112,7 +117,8 @@ float:right;
 }
 
 .banner-buttons a{
-
+text-align:center;
+position:relative;
 right:400px;
 border-radius: 1px;
 font-size: 20px;
@@ -123,11 +129,9 @@ margin:0 10px;
 padding:20px;
 color:rgb(249, 249, 252);
 border: 1px solid rgb(244, 246, 247);
-position:relative;
 background-color:transparent;
 z-index: 1;
 transition: color 0.5s;
-text-align:center;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -156,7 +160,7 @@ padding: 20px;
 .bvd{
 position: absolute;
 z-index: -5;
-height:125%;
+height:100%;
 width: 100%;
 object-fit: cover;
 top:0;
@@ -167,68 +171,73 @@ z-index: -10;
 position: absolute;
 top:0;
 width:100%;
-height: 125%;
+height:100%;
 background-color: rgb(78, 77, 77);
 mix-blend-mode: overlay;
 
 }
 .personal-info{
-  margin-top: 50px;
-  padding-bottom: 20px;
-height:auto;
+margin-top: 100px;
+padding-bottom: 20px;
+height:700px;
 width: 100%;
 display: flex;
-background-color:black;
+background-color:rgb(0, 0, 0);
 
 }
 .myimage{
+  background-color: aqua;
   float: left;
   height: auto;
-  width:50%;
+  width:60%;
   border-radius: 5px;
   background-color: transparent;
-  
   align-items: center; 
 }
 
 .myimage img{
-padding-left: 80px;
+  padding-left: 50px;
 float: left;
 height: 700px;
-width:80%;
 border-radius: 5px;
 background-color: black;
-
 }
 
 .info{
- padding: 20px;
+ padding-right: 120px;
  background-size: auto;
-  margin-left: 75px;
-margin-top: 150px;
-margin-right: 75px;
-float: left;
-color: antiquewhite;
-font-size: 20px;
-width: 50%;
-border-radius: 15px;
+ margin-top: 150px;
+ float: left;
+ color: antiquewhite;
+ font-size: 20px;
+ width: 40%;
+ border-radius: 15px;
 
 }
-.pinfo{
-width: 29%;
+.bstyle{
+  margin-top: 30px;
+}
+.bstyle a{
+text-decoration: none;
+margin:0 10px;
+padding:20px;
+color:rgb(10, 10, 10);
+border: 1px solid rgb(244, 246, 247);
+background-color:white;
+}
+.bstyle a:hover{
+  background-color: #ddd;
 }
 .container{
     height: auto;
-    width:80%;
-    background-color:black;
-    display: flex;
-    align-items: center;
-    margin-left: 120px;
-    margin-right: 120px;
+    width:100%;
+    background-color:rgb(0, 0, 0);
+    display: inline-flex;
     margin-bottom: 50px;
-}   
+}  
+
 .section{
-    padding:20px;
+    padding-left:20px;
     border:2px solid rgb(59, 59, 59);
     color: aliceblue;
     font-weight: bolder;
@@ -236,8 +245,8 @@ width: 29%;
     position: relative;
     height:300px;
     background-color: rgb(0, 0, 0);
-    width:30%;
-    margin: 10px;
+    width:30.5%;
+    margin-left: 5px;
     border-left:5px solid rgb(64, 64, 65);
     }
     .section:hover{
@@ -336,28 +345,24 @@ color: rgb(240, 149, 116);
     width: 100%;
 }
 .emailcont{
+    width: 30%;
     color:beige;
     float: left;
     padding-top: 40px;
-    margin-left: 75px;
+    padding-left: 75px;
 }
 .emailcont a{
-   
     font-size: 20px;
- 
-   
     color:rgb(240, 149, 116);
-    
-}
+    }
 .title{
     width: 30%;
     padding-bottom: 50px;
-    margin-left: 100px;
+    float: left;
 }
 .title h1{ 
    align-content: center;
    text-align: center;
-   float: left;
    font-size: 30px;
    padding-top: 90px;
 }
@@ -376,20 +381,21 @@ background-color: rgb(3, 3, 3);
     text-decoration: line-through;
 }
 .footer-bottom{
-    height: 100px;
+  
+    width: 100%;
+    height: 50px;
     margin-top: 10px;
+    text-align: center;
 }
 .footer-bottom p{
     display: inline;
-    text-align: center;
-    margin-left: 450px;
     color: rgb(78, 78, 77);
 }
 p a{
     color:rgb(240, 149, 116);
 }
 
- /* The popup chat - hidden by default */
+ /* The `popup chat - hidden by default */
  .chat-popup {
   display: none;
   position: fixed;
@@ -449,7 +455,7 @@ p a{
   opacity: 1;
 }
 
-@media all and (max-width:900px){
+@media all and (max-width:768Px){
   
   .banner{
     background-color: transparent;
@@ -572,30 +578,28 @@ p a{
     
     
     .info{
-      
+    padding-right:0; 
     margin:10px;
     float: left;
-    font-size: 20px;
+    font-size: 15px;
     width: 90%;
-    height: 600px;
+    height: auto;
     margin-left:0;
     margin-top: 3px;
     margin-right:0;
     background-size: cover;
     background-repeat: no-repeat;
     }
+    
     .devstate{
       margin-top: 80px;
     }
+    
     .container{
       width: 100%;
       display: inline;
-      margin-left:0;
-      margin-right: 0;
     }
-    .section{
-      width: 75%;
-    }
+   
     .display{
       width: 100%;
       display: none;
@@ -613,70 +617,6 @@ p a{
     /*
         
 */
-       
-.footer{
-  height: 500px;
-  text-align: center;
-  background-color: rgb(0, 0, 0);
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  display:inline-block;
-}
-.emailcont{
-  width:100%;
-  color:beige;
-  float: left;
-  padding:0;
-  padding-top: 40px;
-  margin-left:0;
-}
-.emailcont a{
-  width: 100%;
-  font-size: 20px;
-  color:rgb(240, 149, 116);
-}
-.title{
-  float: right;
- padding-bottom: 50px;
- margin-left:0;
- padding-left:0;
- width: 100%;
-
-}
-.title h1{ 
-  padding-left:150px;
- align-content: center;
- text-align: center;
-font-size: 30px;
- padding-top: 20px;
-}
-.socialpage{
-  text-align: center;
-  padding-left: 25px;
- width:70% ;
-background-color: rgb(3, 3, 3);
-}
-.socialpage i{
-  color: rgb(240, 149, 116);
-  font-size: 45px;
-  padding-top: 10px;
-  width:2%;
-  display:inline-block;
-}
-.footer-bottom{
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.footer-bottom p{
-  float: left;
-  width: 80%;
-  display:block;
-  text-align: center;
-  margin-left:0;
-  color: rgb(78, 78, 77);
-}
  
   .chat-popup{
    width: 70%;
@@ -720,5 +660,71 @@ font-size: 15px;;
     transition: .8s ease;
     border-bottom: 5px solid  rgb(240, 149, 116);;
   }
+  
+.footer{
+  position: absolute;
+  height: auto;
+  display: inline;
+  width: 100%;
+}
+.emailcont{
+  width: 100%;
+  color:beige;
+  float: left;
+  margin-top: 10px;
+  padding-left:0;
+  text-align: center;
+}
+.emailcont a{
+  font-size: 20px;
+  color:rgb(240, 149, 116);
+  }
+.title{
+  width: 100%;
+  padding-bottom: 50px;
+  float: left;
+}
+.title h1{ 
+ align-content: center;
+ text-align: center;
+ font-size: 30px;
+ padding-top: 90px;
+}
+.socialpage{
+text-align: center;
+padding-bottom: 20px;
+width:100% ;
+background-color: rgb(3, 3, 3);
+}
+.socialpage i{
+  display: inline;
+  color: rgb(240, 149, 116);
+  font-size: 30px;
+  margin: 10px;
+  
+}
+.title h1:hover{
+  text-decoration: line-through;
+}
+.section{
+  width: 90%;
+  margin-left:0;
+  margin-bottom: 5px;
+}
+.footer-bottom{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+   width: 100%;
+  height: 50px;
+  margin-top:400px;
+  text-align: center;
+  }
+.footer-bottom p{
+  display: inline;
+  color: rgb(78, 78, 77);
+}
+p a{
+  color:rgb(240, 149, 116);
+}
    
 }
