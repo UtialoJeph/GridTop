@@ -173,7 +173,7 @@ top:0;
 width:100%;
 height:100%;
 background-color: rgb(127, 157, 253);
-mix-blend-mode: softlight;
+mix-blend-mode: overlay;
 
 }
 .personal-info{
