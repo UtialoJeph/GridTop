@@ -4,6 +4,7 @@ body{
     margin: 0;
     color: white;
     padding: 0;
+    scroll-behavior: smooth;
     scroll-margin-top: smooth;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
