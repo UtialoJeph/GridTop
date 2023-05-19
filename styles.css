@@ -72,6 +72,7 @@ body{
     font-size:45px;
     padding-left: 200px;       
 }
+
 .navbar{
   padding-left: 300px;
   width:80%;
@@ -90,6 +91,7 @@ body{
 .navbar a:hover{
     text-decoration: overline;
 }
+
 
 .banner{
     width: 100%;
@@ -129,7 +131,7 @@ display: inline-block;
 margin:0 10px;
 padding:20px;
 color:rgb(249, 249, 252);
-border: 1px solid rgb(244, 246, 247);
+border: 1px solid rgb(250, 143, 81);
 background-color:transparent;
 z-index: 1;
 transition: color 0.5s;
@@ -142,7 +144,7 @@ height: 100%;
 position: absolute;
 top:0;
 left:0;
-background:white;
+background:rgb(250, 143, 81);
 z-index: -1;
 transition: 0.9s;
 border-radius: 5px;
@@ -154,7 +156,6 @@ border-radius: 1px;
 
 }
 .banner-buttons a:hover{
-color: rgb(0, 12, 12);
 font-weight: bolder;
 padding: 20px;
 }
@@ -194,15 +195,18 @@ background-color:rgb(0, 0, 0);
   border-radius: 5px;
   background-color: transparent;
   align-items: center; 
+  padding-left: 50px;
 }
 
 .myimage img{
-  padding-left: 50px;
+padding-left: 50px;
 float: left;
-height: 700px;
+height: 100%;
 border-radius: 5px;
 background-color: black;
+width: 80%;
 }
+
 
 .info{
  padding-right: 120px;
@@ -215,6 +219,37 @@ background-color: black;
  border-radius: 15px;
 
 }
+.myimages{
+  background-color: aqua;
+  float: right;
+  height: auto;
+  width:50%;
+  border-radius: 5px;
+  background-color: transparent;
+  align-items: center; 
+  padding-right: 50px;
+}
+
+.myimages img{
+padding-right: 50px;
+float: right;
+height: 100%;
+border-radius: 5px;
+background-color: black;
+width: 90%;
+}
+.infos{
+  padding-left: 120px;
+  padding-top: 100px;
+  background-size: auto;
+  margin-top: 150px;
+  float: left;
+  color: antiquewhite;
+  font-size: 20px;
+  width: 45%;
+  border-radius: 15px;
+ 
+ }
 .bstyle{
   margin-top: 30px;
 }
@@ -222,15 +257,17 @@ background-color: black;
 text-decoration: none;
 margin:0 10px;
 padding:20px;
-color:rgb(10, 10, 10);
-border: 1px solid rgb(244, 246, 247);
-background-color:white;
+color:rgb(255, 255, 255);
+border: 1px solid rgb(250, 143, 81);
+background-color:transparent;
+transition: 1s;
 }
 .bstyle a:hover{
-  background-color: #ddd;
+  background-color: rgb(250, 143, 81);
 }
+
 .container{
-  display: flex;
+    display: flex;
     height: auto;
     background-color:rgb(0, 0, 0);
     margin-bottom: 50px;
@@ -254,7 +291,22 @@ background-color:white;
     .section:hover{
         border-left:5px solid rgb(83, 80, 80);  
     }
+.blogp{
+  background-color: rgb(0, 0, 0);
+  height: 300px;
+  padding-left: 300px;
+  padding-right: 200px;
+  padding-top: 100px;
+}
+.blogp h2{
+  font-size: 14px;
+  color: rgb(238, 143, 80);
+}
+  .blogp p{
+  font-size: 45px;
+}
 .devstate{
+   margin-top: 100px;
     color: wheat;
     text-align: center;
 }
@@ -561,6 +613,7 @@ p a{
     .myimage{
       width: 100%;
       background-color: beige;
+      padding-left:0;
     }
     
     .myimage img{
@@ -577,16 +630,69 @@ p a{
     
     .info{
     padding-right:0; 
+    padding-left:0; 
     margin:10px;
     float: left;
     font-size: 15px;
-    width: 90%;
+    width: 100%;
     height: auto;
     margin-left:0;
     margin-top: 3px;
     margin-right:0;
     background-size: cover;
     background-repeat: no-repeat;
+    }
+    .myimages{
+      background-color: aqua;
+      float: left;
+      height: auto;
+      width:100%;
+      border-radius: 5px;
+      background-color: transparent;
+      padding-right:0;
+      padding-left: 0;
+    }
+    
+    .myimages img{
+    margin-top: 30px;
+    padding-right:0;
+    float: right;
+    height: 100%;
+    border-radius: 5px;
+    background-color: black;
+    width: 100%;
+    }
+    .infos{
+      padding-left:0;
+      padding-top: 100px;
+      background-size: auto;
+      margin-top: 150px;
+      float: left;
+      color: antiquewhite;
+      font-size: 20px;
+      width: 100%;
+      border-radius: 15px;
+     
+     }
+     .infos h1{
+      font-size: 20px;
+     }
+     .infos p{
+      font-size: 15px;
+     }
+    .blogp{
+      background-color: rgb(0, 0, 0);
+      height: 200px;
+      padding-left:15px;
+      padding-right: 0px;
+      padding-top: 100px;
+    }
+    .blogp h2{
+      font-size: 14px;
+      color: rgb(238, 143, 80);
+    }
+      .blogp p{
+      font-size: 30px;
     }
     
     .devstate{
