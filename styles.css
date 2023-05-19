@@ -680,6 +680,9 @@ p a{
      .infos p{
       font-size: 15px;
      }
+    .bstyle{
+  margin-top: 5px;
+}
     .blogp{
       background-color: rgb(0, 0, 0);
       height: 200px;
