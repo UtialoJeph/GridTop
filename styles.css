@@ -670,7 +670,7 @@ p a{
       padding-left:0;
       padding-top: 100px;
       background-size: auto;
-      margin-top: 150px;
+      margin-top: 10px;
       float: left;
       color: antiquewhite;
       font-size: 20px;
@@ -683,6 +683,7 @@ p a{
      }
      .infos p{
       font-size: 15px;
+      margin-bottom: 20px;
      }
     .bstyle{
   margin-top: 5px;
