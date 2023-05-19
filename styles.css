@@ -208,52 +208,48 @@ width: 80%;
 }
 
 
+.info{
+ padding-right: 120px;
+ background-size: auto;
+ margin-top: 150px;
+ float: left;
+ color: antiquewhite;
+ font-size: 20px;
+ width: 40%;
+ border-radius: 15px;
 
-    .info{
-    padding-right:0; 
-    padding-left:0; 
-    float: left;
-    font-size: 15px;
-    width: 100%;
-    height: auto;
-    margin-left:0;
-    margin-top:0;
-    margin-right:0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-    .myimages{
-      background-color: aqua;
-      float: left;
-      height: auto;
-      width:100%;
-      border-radius: 5px;
-      background-color: transparent;
-      padding-right:0;
-      padding-left: 0;
-    }
-    
-    .myimages img{
-    margin-top:50PX;
-    padding-right:0;
-    float: right;
-    height: 100%;
-    border-radius: 5px;
-    background-color: black;
-    width: 100%;
-    }
-    .infos{
-      padding-left:0;
-      padding-top: 10px;
-      background-size: auto;
-      margin-top:0;
-      float: left;
-      color: antiquewhite;
-      font-size: 20px;
-      width: 100%;
-      border-radius: 15px;
-     
-     }
+}
+.myimages{
+  background-color: aqua;
+  float: right;
+  height: auto;
+  width:50%;
+  border-radius: 5px;
+  background-color: transparent;
+  align-items: center; 
+  padding-right: 50px;
+}
+
+.myimages img{
+padding-right: 50px;
+float: right;
+height: 100%;
+border-radius: 5px;
+background-color: black;
+width: 90%;
+}
+.infos{
+  padding-left: 120px;
+  padding-top: 100px;
+  background-size: auto;
+  margin-top: 150px;
+  float: left;
+  color: antiquewhite;
+  font-size: 20px;
+  width: 45%;
+  border-radius: 15px;
+ 
+ }
 .bstyle{
   margin-top: 30px;
 }
@@ -634,14 +630,13 @@ p a{
     
     .info{
     padding-right:0; 
-    padding-left:5px; 
-    margin:10px;
+    padding-left:0; 
     float: left;
     font-size: 15px;
     width: 100%;
     height: auto;
     margin-left:0;
-    margin-top: 3px;
+    margin-top:0;
     margin-right:0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -658,7 +653,7 @@ p a{
     }
     
     .myimages img{
-    margin-top: 30px;
+    margin-top:50PX;
     padding-right:0;
     float: right;
     height: 100%;
@@ -670,7 +665,7 @@ p a{
       padding-left:0;
       padding-top: 10px;
       background-size: auto;
-      margin-top: 10px;
+      margin-top:0;
       float: left;
       color: antiquewhite;
       font-size: 20px;
@@ -683,11 +678,7 @@ p a{
      }
      .infos p{
       font-size: 15px;
-      margin-bottom: 20px;
      }
-    .bstyle{
-  margin-top: 5px;
-}
     .blogp{
       background-color: rgb(0, 0, 0);
       height: 200px;
