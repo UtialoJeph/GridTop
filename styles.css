@@ -629,10 +629,10 @@ p a{
   
   .banner-buttons a{
     
-  width:100%;
+  width:50%;
   top: 150px;
   right:5px;
-  left:5px;
+  left:15px;
   display: inline-block;
   margin:5px 10px;
   }
