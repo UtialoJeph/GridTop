@@ -323,6 +323,7 @@ transition: 1s;
       padding-left: 100px;
     }
 .blogp{
+  position: relative;
   background-color: rgb(0, 0, 0);
   height: 300px;
   padding-left: 300px;
@@ -441,7 +442,7 @@ color: rgb(240, 149, 116);
   .left1 h1{
     padding-top: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+  } 
   
   .left1 a{
     text-decoration:underline;
@@ -462,20 +463,39 @@ color: rgb(240, 149, 116);
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  
+  #bl{
+    height: 240px;    
+  }
 
+.ig{
+  background-color: #f82828;
+width: 100%;
+height: 200px;
+margin-bottom: 120px;
+display: flex;
 
-
+}
+.igimages{
+  background-color: rgb(0, 0, 0);
+  width: 20%;
+}
+#lim{
+  padding-right:120px;
+}
+#fim{
+  padding-left:120px;
+}
 .footer{
+    position: relative;
     height:auto;
     background-color: rgb(0, 0, 0);
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     display: flex;
     width: 100%;
+    bottom: 0;
 }
 .emailcont{
-    width: 30%;
     color:beige;
     float: left;
     padding-top: 40px;
@@ -486,7 +506,7 @@ color: rgb(240, 149, 116);
     color:rgb(240, 149, 116);
     }
 .title{
-    width: 30%;
+    width: 40%;
     padding-bottom: 50px;
     float: left;
 }
@@ -510,6 +530,8 @@ background-color: rgb(3, 3, 3);
 .title h1:hover{
     text-decoration: line-through;
 }
+
+
 .footer-bottom{
   
     width: 100%;
@@ -912,6 +934,25 @@ font-size: 15px;;
   
   padding-left:0;
 
+}
+.ig{
+  position:;
+background-color: #f82828;
+width: 100%;
+height: auto;
+margin-bottom: 120px;
+display:inline;
+}
+.igimages{
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+  padding-left: 110px;
+}
+#lim{
+  padding-right:0;
+}
+#fim{
+  padding-left:110px;
 }
   
 .footer{
