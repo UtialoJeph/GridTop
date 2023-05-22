@@ -1,1026 +1,432 @@
-@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Merienda:wght@600&family=Sacramento&display=swap');
-body{
-    background-color: black;
-    margin: 0;
-    color: white;
-    padding: 0;
-    scroll-behavior: smooth;
-    scroll-margin-top: smooth;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.upperheader p{
-    color:black;
-
-}
-.upperheader a{
-    text-decoration:overline;
-    color:white;
-    font-size: 18px;
-   }
-   .upperheader a:hover{
-    color:rgb(2, 2, 43);
-    transition: 1s ease;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/de7121b9b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Ewert&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>GridTopTechs</title>
     
-   }
-   .fa-messages{
-    font-size: 15px;
-    color: white;
-   }
-.upperheader{
-    display: flex;
-    top:0;
-    height:40px;
-    background-color: rgb(241, 166, 116);
-    z-index: 2;
-    position: absolute;
-    margin:0;
-    padding:0;
-    text-align: center;
-    width:100%;
-}
-.upperheader p{
-   float: left;
-   width: 80%;
-}
-.account{
-    width: 20%;
-    background-color: black;
-    font-size: 25px;
-    font-family: 'Creepster', cursive;
-    
-}
-.account a:hover{
-    letter-spacing: 2px;
-    color: rgb(255, 153, 0);
-    }
-.header{
-    color: aliceblue;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-.logoside{
-  width: 20%;
-  float: left;
+</head>
+<body>
   
-  }
-.logoside h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position:absolute;
-    top:30px;    
-    font-size:45px;
-    padding-left: 200px;       
-}
-
-.navbar{
-  padding-left: 300px;
-  width:80%;
-  float: right;
-}
-.navbar a{
-    z-index: 1;
-    float: left;
-    top: 75px;
-    text-decoration: none;
-    display: inline;
-    position:relative;
-    padding-left: 10px;
-    color: rgb(245, 253, 251);
-}
-.navbar a:hover{
-    text-decoration: overline;
-}
-
-
-.banner{
-    width: 100%;
-    background-color:transparent;
-    height:550px;
-    text-align: center;
-    }
-.banner h1{
-   font-family: 'Merienda', cursive;
-   font-size:70px;
-   color: rgb(248, 245, 245);   
+  <div class="upperheader">
     
-}
-.banner p{
-  font-family: 'Merienda', cursive;
-  font-size: 25px;
-  
-}
-.descr h1{
-  display: flex;
-  padding-left: 20px;
-  font-size: 30px;
-}
-.banner-buttons{
-float:right; 
-}
-
-.banner-buttons a{
-text-align:center;
-position:relative;
-right:400px;
-border-radius: 1px;
-font-size: 20px;
-width: 150px;
-text-decoration: none;
-display: inline-block;
-margin:0 10px;
-padding:20px;
-color:rgb(249, 249, 252);
-border: 1px solid rgb(250, 143, 81);
-background-color:transparent;
-z-index: 1;
-transition: color 0.5s;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.banner-buttons a span{
-width: 0%;
-height: 100%;
-position: absolute;
-top:0;
-left:0;
-background:rgb(250, 143, 81);
-z-index: -1;
-transition: 0.9s;
-border-radius: 5px;
-}
-
-.banner-buttons a:hover span{
-width: 100%;
-border-radius: 1px;
-
-}
-.banner-buttons a:hover{
-font-weight: bolder;
-padding: 20px;
-}
-.bvd{
-position: absolute;
-z-index: -5;
-height:100%;
-width: 100%;
-object-fit: cover;
-top:0;
-opacity: 0.5;
-z-index: -10;
-}
-.overlay{
-position: absolute;
-top:0;
-width:100%;
-height:100%;
-background-color: rgb(1, 23, 44);
-mix-blend-mode:soft-light;
-
-}
-.personal-info{
-margin-top: 100px;
-padding-bottom: 20px;
-height:700px;
-width: 100%;
-display: flex;
-background-color:rgb(0, 0, 0);
-
-}
-.myimage{
-  background-color: aqua;
-  float: left;
-  height: auto;
-  width:60%;
-  border-radius: 5px;
-  background-color: transparent;
-  align-items: center; 
-  padding-left: 50px;
-}
-
-.myimage img{
-padding-left: 50px;
-float: left;
-height: 100%;
-border-radius: 5px;
-background-color: black;
-width: 80%;
-}
-
-
-.info{
- padding-right: 120px;
- background-size: auto;
- margin-top: 150px;
- float: left;
- color: antiquewhite;
- font-size: 20px;
- width: 40%;
- border-radius: 15px;
-
-}
-.myimages{
-  background-color: aqua;
-  float: right;
-  height: auto;
-  width:50%;
-  border-radius: 5px;
-  background-color: transparent;
-  align-items: center; 
-  padding-right: 50px;
-}
-
-.myimages img{
-padding-right: 50px;
-float: right;
-height: 100%;
-border-radius: 5px;
-background-color: black;
-width: 90%;
-}
-.infos{
-  padding-left: 120px;
-  padding-top: 100px;
-  background-size: auto;
-  margin-top: 150px;
-  float: left;
-  color: antiquewhite;
-  font-size: 20px;
-  width: 45%;
-  border-radius: 15px;
- 
- }
-.bstyle{
-  margin-top: 30px;
-}
-.bstyle a{
-text-decoration: none;
-margin:0 10px;
-padding:20px;
-color:rgb(255, 255, 255);
-border: 1px solid rgb(250, 143, 81);
-background-color:transparent;
-transition: 1s;
-
-}
-.bstyle a:hover{
-  background-color: rgb(250, 143, 81);
-}
-
-.container{
-    display: flex;
-    height: auto;
-    background-color:rgb(0, 0, 0);
-    margin-bottom: 50px;
-    padding-left: 125px;
-}  
-
-
-.section{
-    padding-left:20px;
-    border:2px solid rgb(59, 59, 59);
-    color: aliceblue;
-    font-weight: bolder;
-    border-radius:5px;
-    position: relative;
-    height:300px;
-    background-color: rgb(0, 0, 0);
-    width:27%;
-    margin-left: 10px;
-    border-left:5px solid rgb(64, 64, 65);
-    }
-    .section:hover{
-        border-left:5px solid rgb(83, 80, 80);  
-    }
-
-    .projects{
-      display: flex;
-      height:450px;
-      width: 100%;
-      background-color: #f82828;
-    }
-    .projl{
-      background-color: rgb(0, 0, 0);
-      height:100%;
-      width: 50%;
-      float: left;
-           
-    }
-    .projl img{
-      padding-left: 100px;
-    }
-    .projr{
-      float: left;
-      background-color: rgb(0, 0, 0);
-      height: 100%;
-      width: 50%;
-    }
-    .pdesc{
-      padding-top: 10px;
-      font-size: 27px;
-    }
-    #pdesc{
-      padding-left: 100px;
-    }
-.blogp{
-  position: relative;
-  background-color: rgb(0, 0, 0);
-  height: 300px;
-  padding-left: 300px;
-  padding-right: 300px;
-  padding-top: 100px;
-}
-.blogp h2{
-  font-size: 14px;
-  color: rgb(238, 143, 80);
-}
-  .blogp p{
-  font-size: 45px;
-}
-.devstate{
-   margin-top: 100px;
-    color: wheat;
-    text-align: center;
-}
-.section a{
-    text-decoration:none;
-    color:rgb(240, 149, 116);
-    font-size: px;
-}
-.section a:hover{
-   text-decoration: underline;
-}
-   .gridimages{
-    padding-left: 120px;
-    width: 100%;
-    display:inline;
-    height: 350PX;
-    background-color: rgb(66, 157, 248);
-    border-radius: 5px;
-   
-   } 
-   .lef-t{
-    opacity: .7;
-    float: left;
-    width:25%;
-    height:300px;
-    background-color:  rgb(240, 149, 116);;
-    border-radius: 50%;  
-    padding-top: 30px;
-    position:relative;
-    border-bottom: 5px solid rgb(0, 0, 0);;
-    
-  }
-  .img-rott img{
-    z-index: 5;
-    bottom: 0px;
-    position:absolute;
-    width: 100%;
-    height:280px;
-    border-radius:50%;
-    transition: .6s ease;
-  }
-  .img-rott img:hover{
-    cursor: pointer;
-    transform-origin: left 50%;
-    transform: rotateZ(95deg);
-      
-  }
-.display{
-  display: flex;
-  height: 600px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 5px;
-  width: 100%;
-  padding-top: 120px;
-  padding-bottom: 50px;
-}
-.division{
-  float: left;
-  width: 33.3%;  
-  background-color: rgb(3, 3, 3);
-  padding-top: 50px;
-  border-radius: 15px;
-  padding-left: 5%;    
-    
-}
-
-.division a{
-text-decoration: none;
-color: rgb(240, 149, 116);
-}
-.division img{
-  align-items: center;
-  opacity: 0.5;
-  width: 90%;
-  border-radius: 15px;
-  height: 280px;
-  z-index: -1;
-}
-
-.container-pic{
-  margin-top: 5%;
-  display:flex;
-  margin-left: 20px;
-  margin-bottom: 10%;
-  }
-  .container-pic:after{
-    content:"";
-    display: table;
-    clear: both;
-    
-  }
-  
-  .left1{
-    width:33%;
-    float: left;
-    margin:2%;
-    padding-bottom:10px;
-    
-    
-  }
-  .left1 h1{
-    padding-top: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  } 
-  
-  .left1 a{
-    text-decoration:underline;
-    color: rgb(240, 149, 116);
-    font-size: 18px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .left1 img{
-  border-radius: 5px;
-  
-  }
-  
-  .left1 a:hover{
-    text-decoration: underline;
-  }
-  .left1 p{
-    padding-top: 5px;
-    font-size: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  #bl{
-    height: 240px;    
-  }
-
-.ig{
-  background-color: #f82828;
-width: 100%;
-height: 200px;
-margin-bottom: 120px;
-display: flex;
-
-}
-.igimages{
-  background-color: rgb(0, 0, 0);
-  width: 20%;
-}
-#lim{
-  padding-right:120px;
-}
-#fim{
-  padding-left:120px;
-}
-.footer{
-    position: relative;
-    height:auto;
-    background-color: rgb(0, 0, 0);
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    display: flex;
-    width: 100%;
-    bottom: 0;
-}
-.emailcont{
-    color:beige;
-    float: left;
-    padding-top: 40px;
-    padding-left: 75px;
-}
-.emailcont a{
-    font-size: 20px;
-    color:rgb(240, 149, 116);
-    }
-.title{
-    width: 40%;
-    padding-bottom: 50px;
-    float: left;
-}
-.title h1{ 
-   align-content: center;
-   text-align: center;
-   font-size: 30px;
-   padding-top: 90px;
-}
-.socialpage{
-float: left;
-width:40% ;
-background-color: rgb(3, 3, 3);
-}
-.socialpage i{
-    color: rgb(240, 149, 116);
-    font-size: 45px;
-    padding-top: 60px;
-    margin: 30px;
-}
-.title h1:hover{
-    text-decoration: line-through;
-}
-
-
-.footer-bottom{
-  
-    width: 100%;
-    height: 50px;
-    margin-top: 10px;
-    text-align: center;
-}
-.footer-bottom p{
-    display: inline;
-    color: rgb(78, 78, 77);
-}
-p a{
-    color:rgb(240, 149, 116);
-}
-
- /* The `popup chat - hidden by default */
- .chat-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 1px solid #9fa0a1;
-  z-index: 9;
-  border-radius: 5px;
-  color: #ddd;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: rgb(39, 38, 38);
-}
-
-/* Full-width textarea */
-.form-container textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 22px 0;
-  border: none;
-  border-radius: 5px;
-  background: #bbb2b2;
-  resize: none;
-  min-height: 200px;
-}
-
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/send button */
-.form-container .btn {
-  background-color: #617df7;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color:  rgb(253, 146, 74);
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
-@media all and (max-width:1200Px){
-  
-  .banner{
-    background-color: transparent;
-    padding: 0;
-    height:700px;
-    width: 100%;
-    top:800px;
-    padding-top: 45px;
-    font-size:15px;
-    color: rgb(243, 243, 243);   
-    font-family:Geofrgia, 'Times New Roman', Times, serif;
-}
-
-.T{
-  display: none;
-}
-.banner h1{
-  padding:0;
-  font-weight: normal;
-  position: relative;
-  top:80px;
-  font-size:40px;
-  font-family: 'Merienda', cursive;
-}
-.banner p{
-  display: none;
-}
-
-
-.bvd{
-  position: absolute;
-  z-index: -5;
-  height:150%;
-  width: 100%;
-  object-fit: cover;
-  top:0;
-  opacity: 0.5;
-  z-index: -10;
-  }
-  .overlay{
-  position: absolute;
-  top:0;
-  width:100%;
-  height:150%;
-  
-  }
-.upperheader{
-  display: flex;
-  top:0;
-  height:80px;
-  background-color: rgb(253, 146, 74);
-  z-index: 2;
-  position: absolute;
-  margin:0;
-  padding:0;
-  text-align: center;
-  width:100%;
-}
-
-.fa-bars{
-  padding:10px;
-  position: absolute;
-  font-size: 40px;
-  color: rgb(247, 247, 252);
-  z-index:2;
-  top:60px;
-  display:block;
-  
-}
-.navbar a{
-  display: none;
-  padding-left: 50px;
-  margin-top: px;
-  width: 95%;
-  background-color: ;
-  z-index: 1;
-  left:0;
-  top: 80px;
-  text-decoration: none;
-  padding: 10px;
-  color: rgb(245, 253, 251);
-}
-.banner-buttons{
-  float:right; 
-   
-  }
-
-  
-  .banner-buttons a{
-    
-  width:150px;
-  top: 150px;
-  right:10px;
-  display: inline-block;
-  margin:5px 10px;
-  }
-  .personal-info{
-    position: relative;
-    height:auto;
-    width: 100%;
-    display:inline-block;
-    background-color:rgb(0, 0, 0);
-    
-    }
-    .myimage{
-      width: 100%;
-      background-color: beige;
-      padding-left:0;
-    }
-    
-    .myimage img{
-    padding:0;
-    padding-top:0;
-    height:600px;
-    width:100%;
-        
-    }
-    .info p{
-      margin-top:1;
-    }
-    
-    
-    .info{
-    padding-right:0; 
-    padding-left:0; 
-    float: left;
-    font-size: 15px;
-    width: 100%;
-    height: auto;
-    margin-left:0;
-    margin-top:0;
-    margin-right:0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-    .myimages{
-      background-color: aqua;
-      float: left;
-      height: auto;
-      width:100%;
-      border-radius: 5px;
-      background-color: transparent;
-      padding-right:0;
-      padding-left: 0;
-    }
-    
-    .myimages img{
-    margin-top:50PX;
-    padding-right:0;
-    float: right;
-    height: 100%;
-    border-radius: 5px;
-    background-color: black;
-    width: 100%;
-    }
-    .infos{
-      padding-left:0;
-      padding-top: 10px;
-      background-size: auto;
-      margin-top:0;
-      float: left;
-      color: antiquewhite;
-      font-size: 20px;
-      width: 100%;
-      border-radius: 15px;
+    <p>Wanna Know more about me? Obviously Yes. <a href="">View My Repositories</a></p>
+    <div class="account">
+       <a href="Loginpage.html">JOIN US</a>
+    <i class="fa-solid fa-user"></i>
+   </div>
+   </div>
+    <div class="header">
      
-     }
-     .infos h1{
-      font-size: 20px;
-     }
-     .infos p{
-      font-size: 15px;
-     }
-     .bstyle{
-      margin-top: 80px;
-     }
-  
-    .blogp{
-      background-color: rgb(0, 0, 0);
-      height: 200px;
-      padding-left:15px;
-      padding-right: 0px;
-      padding-top: 100px;
-
-    }
-    .blogp h2{
-      font-size: 14px;
-      color: rgb(238, 143, 80);
-    }
-      .blogp p{
-      font-size: 20px;
-    }
-    
-    .devstate{
-      margin-top: 80px;
-    }
-    
-    .container{
-      padding-left: 0;
-      width: 100%;
-      display: inline;
-    }
-   
-    .display{
-      width: 100%;
-      display: none;
-    }
-    .division{
-      border-radius: 15px;
-      width: 90%;
-      margin-bottom: 20px;  
-      padding-left:0;
-      margin-left:0;    
-    }
-    .division img{
-      width: 100%;
-    }
-    /*
-        
-*/
- 
-  .chat-popup{
-   width: 70%;
-  }
-  
-  .upperheader{
-    height: 49px;
-  }
-  
-.upperheader p{
-font-size: 15px;;
-}
-.upperheader a{
-    text-decoration:overline;
-    color:white;
-    font-size: 12px;
-   }
-   .lef-t{
-    display:none;
-     
-   } 
-   .lef-t{
-    float: left;
-    width:80%;
-    height:300px;
-    background-color:  rgb(240, 149, 116);;
-    border-radius: 50%;  
-    margin-top: 30px;
-    position: relative;
-    margin-left: 50px;
-    border-bottom: 5px solid rgb(161, 160, 159);;
-    
-  }
-  .img-rott img{
-    z-index: 2;
-    top: 0px;
-    position:absolute;
-    height:300px;
-    border-radius:50%;
-    transition: .8s ease;
-    border-bottom: 5px solid  rgb(240, 149, 116);;
-  }
-
-  
-  .projects{
-    display:inline;
-    height:auto;
-    width: 100%;
-    background-color: #000000;
-      }
-  .projl{
-    background-color: rgb(0, 0, 0);
-    height:100%;
-    width: 100%;
-         
-  }
-  .projl img,.projr img{
-    width: 100%;
-    padding-left:0;
-  }
-  .projr{
-    float: left;
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 100%;
-  }
-  .pdesc{
-    padding-top: 10px;
-    font-size: 20px;
-    padding-left: 100px;
-    margin-bottom: 15px;
-  }
-  .container-pic .img{
-    width: 90%;
-
-   }
-   .container-pic{
-    display: inline-block;
-    
-    margin-top: 5%;
- 
-  }
-.left1{
-  display: inline-block;
-  width: 100%;    
-  margin:0;
-  
-}
-
-
-.left1 p{
-  width: 90%;
+      <video
+      src="https://ik.imagekit.io/midnightcoders/New_Folder/bv.mp4?updatedAt=1679375704712" class="bvd"
+     autoplay
+     muted
+     loop></video>
+     <div class="logoside">
+    <i class="fa-solid fa-bars" onclick=""></i>
+        <h1 class="T">GRIDTOP</h1>
+      </div>
       
-}#te{
-  background-color: #626464;
-  background-position: right;
-  
-  padding-left:0;
-  
-}
-#te2{
-  background-color: #454647;
-  background-position: right;
-  
-  padding-left:0;
-
-}
-.ig{
-  position:;
-background-color: #f82828;
-width: 100%;
-height: auto;
-margin-bottom: 120px;
-display:inline;
-}
-.igimages{
-  background-color: rgb(0, 0, 0);
-  width: 50%;
-  padding-left: 110px;
-}
-#lim{
-  padding-right:0;
-}
-#fim{
-  padding-left:110px;
-}
-  
-.footer{
-  position: relative;
-  height: auto;
-  display: inline;
-  width: 100%;
-}
-.emailcont{
-  width: 100%;
-  color:beige;
-  float: left;
-  margin-top: 10px;
-  padding-left:0;
-  text-align: center;
-}
-.emailcont a{
-  font-size: 20px;
-  color:rgb(240, 149, 116);
-  }
-.title{
-  width: 100%;
-  padding-bottom: 50px;
-  float: left;
-}
-.title h1{ 
- align-content: center;
- text-align: center;
- font-size: 30px;
- padding-top: 90px;
-}
-.socialpage{
-text-align: center;
-padding-bottom: 20px;
-width:100% ;
-background-color: rgb(3, 3, 3);
-}
-.socialpage i{
-  display: inline;
-  color: rgb(240, 149, 116);
-  font-size: 30px;
-  margin: 10px;
-  
-}
-.title h1:hover{
-  text-decoration: line-through;
-}
-.section{
-  width: 90%;
-  margin-left:0;
-  margin-bottom: 5px;
-}
-
-
-.footer-bottom{
-  position:relative;
-  background-color: rgb(0, 0, 0);
-   width: 100%;
-  height: 60px;
-  text-align: center;
-  bottom: 0;
-  }
-.footer-bottom p{
-  display: inline;
-  color: rgb(78, 78, 77);
-}
-p a{
-  color:rgb(240, 149, 116);
-}
+        <div class="navbar">
+            <a href="midnightcoders.w3spaces.com">PLUGINS</a>
+            <a href="">COURSES</a>
+            <a href="">SERVICES</a>
+            <a href="">MY WORK</a>
+            <a href="">ABOUT</a>
+            <a href="">MORE</a>
+            <a href="">CONTACT</a>
+        </div>   
+      </div>  
+    
    
+
+    
+    <div class="banner">
+        <h1>
+            <br>SOFTWARE DEVELOPER & COFFEE ENTHUSIAST
+          
+        </h1>
+        <div class="descr">
+        <P>
+          I develop  dynamic & static websites and provide satisfying solutions to all your technical needs.
+        </P>
+      </div>
+       
+    
+        <div class="banner-buttons">
+            <a href=""><span></span>HIRE AN EXPERT</a>
+            <a href=""><span></span>CONSULT</a>
+        </div>
+       
+    </div>
+    <div class="overlay"></div>
+ 
+   <div class="personal-info">
+       <div class="myimage">
+        <img src="https://ik.imagekit.io/midnightcoders/hero-bg4.jpg?updatedAt=1684497708762">
+       </div>
+       
+       <div class="info">
+        <h2>
+            My passion and focus is on WEB DESIGN.The rest sounds crap to me and can be done by junior developers.
+        </h2>
+        <p>
+            Let's be honest and cut through the marketing bullshit, you need a website that looks amazing and actually works. The bottom line, that's what I do. If you want to learn more about working with me, look through my website.
+        </p>
+      
+        <div class="bstyle">
+            
+          <a href=""><span></span>LEARN MORE</a>
+          
+        </div>
+       </div>
+      
+       
+   </div>
+   <div class="personal-info">
+
+    <div class="infos">
+      <h2>
+        My other passion is building
+        powerful personal brands.
+    </h2>
+    <p>
+      After running my own business as a personal band for the past 7 years and realizing I have a passion for this, I finally put together my thought about this into a complete course from my perspective. Learn what worked and what didn’t.
+    </p>
+  
+    <div class="bstyle">
+        
+      <a href=""><span></span>LEARN MORE</a>
+      
+    </div>
+    </div>
+    <div class="myimages">
+     <img src="https://ik.imagekit.io/midnightcoders/Images/splash.jpg?updatedAt=1673353180244">
+    </div>
+    
+    
+    </div>
+   
+    
+  </div>
+   
+   
+<!--
+   <div class="container">
+       
+    <div class="section">
+      <h2>
+        Code Shop
+      </h2>
+      <p>
+        Built by an expert, I provide high-quality Designing sevices, plugins,snippets and support that will help take your business to the next level.
+      </p>
+      <br><br><br><br>
+      <a href="">VIEW ALL PLUGINS</a>
+    </div>
+    <div class="section">
+        <h2>
+            Site Builds
+          </h2>
+          <p>
+            Looking to have me completely build out a custom and unique Squarespace site? Learn how I work with all of my clients to make this a realality.
+          </p>
+          <br><br><br><br>
+          <a href="">HIRE A DEVELOPER</a> 
+    </div>
+    <div class="section">
+        <h2>
+            Consulting
+          </h2>
+          <p>
+            Built your own Squarespace site and need some help? Bring me in for one-on-one training, feature requests, or just to answer your questions.
+          </p>
+          <br><br><br><br>
+          <a href="">LEARN MORE</a>
+    </div>
+
+</div>
+
+<div class="container">
+  
+    <div class="section">
+        <h2>
+            My Work
+          </h2>
+          <p>
+            Feel free to take a look at some of the latest Squarespace projects that I've been working on and the type of clients I typically work with.
+          </p>
+          <br><br><br><br>
+          <a href="">VIEW PROJECTS</a>
+    </div>
+    
+</div>
+   
+-->
+   
+   <h1 class="devstate">Everything GridTop|</h1>
+   <div class="container">
+       
+        <div class="section">
+          <h2>
+            Code Shop
+          </h2>
+          <p>
+            Built by an expert, I provide high-quality Designing sevices, plugins,snippets and support that will help take your business to the next level.
+          </p>
+          <br><br><br><br>
+          <a href="">VIEW ALL PLUGINS</a>
+        </div>
+        <div class="section">
+            <h2>
+                Site Builds
+              </h2>
+              <p>
+                Looking to have me completely build out a custom and unique Squarespace site? Learn how I work with all of my clients to make this a realality.
+              </p>
+              <br><br><br><br>
+              <a href="">HIRE A DEVELOPER</a> 
+        </div>
+        <div class="section">
+            <h2>
+                Consulting
+              </h2>
+              <p>
+                Built your own Squarespace site and need some help? Bring me in for one-on-one training, feature requests, or just to answer your questions.
+              </p>
+              <br><br><br><br>
+              <a href="">LEARN MORE</a>
+        </div>
+  
+    </div>
+   
+    <div class="container">
+      
+        <div class="section">
+            <h2>
+                My Work
+              </h2>
+              <p>
+                Feel free to take a look at some of the latest Squarespace projects that I've been working on and the type of clients I typically work with.
+              </p>
+              <br><br><br><br>
+              <a href="">VIEW PROJECTS</a>
+        </div>
+        <div class="section">
+            <h2>
+                Online Courses
+              </h2>
+              <p>
+                Take a look at my upcoming self-paced online Squarespace courses. Developed to get you up and running with the latest 7.1 version.
+              </p>
+              <br><br><br><br>
+              <a href="">VIEW PROJECTS</a> 
+        </div>
+        <div class="section">
+            <h2>
+                Reach Out
+              </h2>
+              <p>
+                Looking to hire a Squarespace developer, consultant, or you just have a general question that needs to be answered? Reach out.
+              </p>
+              <br><br><br><br>
+              <a href="">CONTACT ME</a> 
+        </div>
+    
+    </div>
+    </div>
+
+    
+  
+<div class="blogp">
+  <h2>
+    LATEST GRIDTOP PROJECTS
+  </h2>
+  <P>
+    Take a look at some of my latest GridTop projects that I’ve been busy working on.
+  </P>
+</div>
+<div class="projects">
+  <div class="projl">
+    <img src="https://ik.imagekit.io/midnightcoders/Squarespace-Coffee-Shop-Website-Example.jpg?updatedAt=1684572101237" height="75%" width="80%">
+    <div class="pdesc" id="pdesc">
+      Elementary Coffee Co.
+    </div>
+  </div>
+  <div class="projr">
+    <img src="https://ik.imagekit.io/midnightcoders/Squarespace_Video_Production_Website_Example.jpg?updatedAt=1684572101365" height="75%" width="80%">
+    <div class="pdesc">
+      Booklight
+    </div>
+  </div>
+ 
+</div>
+<div class="blogp">
+  <h2>
+    LATEST BLOG POSTS
+  </h2>
+  <P>
+    Read through some of my thoughts and insights on being a GRIDTOP developer.
+  </P>
+</div>
+<div class="container-pic">
+  <div class="left1" id="left1">
+  <div class="img">
+    <img src="https://ik.imagekit.io/midnightcoders/Images/hack5.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673353191947" alt="Avatar" class="image3" style="width:100%" height="500px">
+  </div>
+  <h2>I started a vlog</h2>
+  
+  <p>
+   Building GRIDTOP is a weekly vlog series that will be
+   documenting my journey as I grow my agency.
+  </p>
+  <a href="#">Read More</a>
+  </div>
+  <div class="left1" id="left1">
+    <div class="img">
+      <img src="https://ik.imagekit.io/midnightcoders/Images/hack6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673353272593" alt="Avatar" class="image3" style="width:100%" height="500px">
+     </div>
+     <h2>Introducing GRIDTOP</h2>
+    
+     <p>
+     Today, I'll like to introduce everyone to my new company, GRIDTOP. We're a  creative digital agency.
+     </p>
+     <a href="#">Read More</a>
+  </div>
+  <div class="left1" id="left1">
+    <div class="img">
+      <img src="https://ik.imagekit.io/midnightcoders/Images/hack4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673353279129" alt="Avatar" class="image3" style="width:100%" height="500px">
+     </div>
+     <h2>Code Shop growth</h2>
+    
+     <p>
+      GRIDTOP builds many developers 
+      who are competent enough to develop industrial strengh software.
+     </p>
+     <a href="#">Read More</a>
+  </div>
+</div>
+
+
+<div class="blogp" id="bl">
+  <h2>
+    MY INSTAGRAM FEED
+  </h2>
+  <P>
+    My life as a GRIDTOP developer.
+  </P>
+</div>
+       
+  <div class="ig">
+     <div class="igimages" id="fim">
+      <a href="">
+      <img src="https://ik.imagekit.io/midnightcoders/Images/plash.jpg?updatedAt=1673353179116" alt="Avatar" class="image3" style="width:95%" height="200px">
+      </a>
+    </div>
+   
+     
+     <div class="igimages">
+      <a href="">
+      <img src="https://ik.imagekit.io/midnightcoders/Images/hack4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673353279129" alt="Avatar" class="image3" style="width:95%" height="200px">
+      </a>
+    </div>
+    <div class="igimages">
+      <a href="">
+      <img src="https://ik.imagekit.io/midnightcoders/Images/hack4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673353279129" alt="Avatar" class="image3" style="width:95%" height="200px">
+      </a>
+    </div>
+   
+     <div class="igimages">
+      
+     <a href="">
+      <img src="https://ik.imagekit.io/midnightcoders/Images/wer.jpg?updatedAt=1673353225895" alt="Avatar" class="image3" style="width:95%" height="200px">
+     </a>
+    </div>
+  
+     
+     <div class="igimages">
+      <a href="">
+      <img src="https://ik.imagekit.io/midnightcoders/Images/unsplash.jpg?updatedAt=1673353274910" alt="Avatar" class="image3" style="width:95%" height="200px">
+      </a>
+    </div>
+    
+     <div class="igimages" id="lim">
+     <a href="">
+      <img src="https://ik.imagekit.io/midnightcoders/Images/hack3.jpg?updatedAt=1673353094034" alt="Avatar" class="image3" style="width:95%" height="200px">
+      </a>
+    </div>
+  
+  </div>
+    <div class="footer">
+      <div class="emailcont">
+          <a href="">6771.2021@students.ku.ac.ke</a><br><br>
+          <a href="">(+254-114836831)</a>
+      </div>
+      <div class="title">
+              <h1>GRIDTOP</h1>
+      </div>
+      
+      <div class="socialpage">
+       <i class="fa-brands fa-whatsapp"></i>
+       <i class="fa-brands fa-twitter"></i>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-linkedin"></i>
+      </div>
+      </div> 
+
+    
+</div>
+
+
+<div class="footer-bottom">
+  <p>©2023 Utialo Jeph. All rights reserved. Google Developer & Founder of <a href="">GRIDTOP.</a></p>
+<br>
+
+
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container" onmouseenter="bodyop()">
+    <h1>Chat with Jeph</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()" onmouseenter="bodyopc()">Close</button>
+  </form>
+</div>
+
+
+<script>
+    window.addEventListener("load",
+   function() {
+    setTimeout(function(){
+        document.getElementById("myForm").style.display = "block";
+        document.getElementById("top").style.opacity="0.05";
+    },5000)
+    
+      
+  
+});
+
+
+
+function bodyopc(){
+    document.getElementById("top").style.opacity="1";
 }
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
