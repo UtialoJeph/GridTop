@@ -426,7 +426,7 @@ color: rgb(240, 149, 116);
   margin-top: 5%;
   display:flex;
   margin-left: 20px;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
   }
   .container-pic:after{
     content:"";
