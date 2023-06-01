@@ -531,9 +531,9 @@ background-color: rgb(3, 3, 3);
 }
 .socialpage i{
     color: rgb(240, 149, 116);
-    font-size: 45px;
+    font-size: 25px;
     padding-top: 60px;
-    margin: 30px;
+    margin: 20px;
 }
 .title h1:hover{
     text-decoration: line-through;
@@ -549,10 +549,20 @@ background-color: rgb(3, 3, 3);
 }
 .footer-bottom p{
     display: inline;
-    color: rgb(78, 78, 77);
+    color: grey;
 }
 p a{
     color:rgb(240, 149, 116);
+}
+.tos a{
+  margin-left: 5px;
+  text-decoration: underline;
+  color: rgb(240, 149, 116);
+  font-size: 12px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tos a:hover{
+  color: grey;
 }
 
  /* The `popup chat - hidden by default */
@@ -615,7 +625,7 @@ p a{
   opacity: 1;
 }
 
-@media all and (max-width:1200Px){
+@media all and (max-width:1000Px){
   
   .banner{
     background-color: transparent;
