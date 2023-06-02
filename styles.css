@@ -525,6 +525,7 @@ flex-wrap: wrap;
     float: left;
 }
 .title h1{ 
+  font-family: 'Courier New', Courier, monospace;
    align-content: center;
    text-align: center;
    font-size: 30px;
