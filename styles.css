@@ -22,10 +22,7 @@ body{
     transition: 1s ease;
     
    }
-   .fa-messages{
-    font-size: 15px;
-    color: white;
-   }
+   
 .upperheader{
     display: flex;
     top:0;
@@ -39,12 +36,13 @@ body{
     width:100%;
 }
 .upperheader p{
+  font-family: 'Courier New', Courier, monospace;
    float: left;
-   width: 80%;
+   width: 95%;
 }
 .account{
-    width: 20%;
-    background-color: black;
+    width: 5%;
+    background-color: rgb(241, 166, 116);
     font-size: 25px;
     font-family: 'Creepster', cursive;
     
@@ -52,6 +50,9 @@ body{
 .account a:hover{
     letter-spacing: 2px;
     color: rgb(255, 153, 0);
+    }
+    .account i:hover{
+      color: black;
     }
 .header{
     color: aliceblue;
@@ -66,7 +67,7 @@ body{
   
   }
 .logoside h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Courier New', Courier, monospace;
     position:absolute;
     top:30px;    
     font-size:45px;
@@ -85,11 +86,16 @@ body{
     text-decoration: none;
     display: inline;
     position:relative;
-    padding-left: 10px;
-    color: rgb(245, 253, 251);
+    padding-left: 30px;
+    color: rgb(250, 143, 81);
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .navbar a:hover{
+  transition-duration:1s;
     text-decoration: overline;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
 }
 
 
@@ -553,6 +559,9 @@ background-color: rgb(3, 3, 3);
 }
 p a{
     color:rgb(240, 149, 116);
+}
+p a:hover{
+  color: rgb(236, 236, 236);
 }
 .tos a{
   margin-left: 5px;
