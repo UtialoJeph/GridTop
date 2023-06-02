@@ -518,6 +518,7 @@ flex-wrap: wrap;
 .emailcont a{
     font-size: 20px;
     color:rgb(240, 149, 116);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 .title{
     width: 40%;
