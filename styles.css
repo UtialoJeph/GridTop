@@ -75,9 +75,26 @@ body{
 }
 
 .navbar{
-  padding-left: 300px;
+  padding-left: 200px;
   width:80%;
   float: right;
+}
+.navbar i{
+  z-index: 1;
+  float: left;
+  top: -1px;
+  text-decoration: none;
+  display: inline;
+  position:absolute;
+  margin-left: 15px;
+  color:rgb(255, 255, 255);
+  font-size: 35px;
+    
+}
+#login{
+  margin-left: 100px;
+  color: #ddd;
+  font-weight: bolder;
 }
 .navbar a{
     z-index: 1;
@@ -95,7 +112,7 @@ body{
   transition-duration:1s;
     text-decoration: overline;
     color: rgb(255, 255, 255);
-    font-weight: bolder;
+    
 }
 
 
