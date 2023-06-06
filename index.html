@@ -16,19 +16,18 @@
     
 </head>
 <body>
-  function cutTopheader(){
-    document.getElementById("upperheader").style.display="none";
-}
-  <div class="upperheader">
+ <div class="upperheader" id="upperheader">
     
     <p>I Just released my First Online Course about how to. <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
     <div class="account">
-       <a href="Loginpage.html">
-        <i class="fa-solid fa-xmark"></i>
+       <a href="">
+        <i class="fa-solid fa-xmark" onmouseout="cutTopheader()"></i>
+        
        </a>
       
    </div>
    </div>
+  
     <div class="header">
     
       <video
