@@ -114,6 +114,12 @@ body{
     color: rgb(255, 255, 255);
     
 }
+.activenav a{
+  letter-spacing: 3px;
+   font-weight: bolder;
+  text-decoration: overline;
+  color: rgb(255, 255, 255);
+  }
 
 
 .banner{
