@@ -377,8 +377,11 @@ transition: 1s;
   font-size:28px;
   line-height: 35px;
 }
+.font{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .devstate{
-   margin-top: 100px;
+    margin-top: 100px;
     color: wheat;
     text-align: center;
 }
