@@ -225,6 +225,9 @@ background-color:rgb(0, 0, 0);
   align-items: center; 
   padding-left: 50px;
 }
+#hidden{
+  display: none;
+}
 
 .myimage img{
 padding-left: 50px;
@@ -248,7 +251,7 @@ width: 80%;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.info p, .infos p{
+.info p, .infos p,.infos h2{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .myimages{
@@ -329,7 +332,8 @@ transition: 1s;
 
     .projects{
       display: flex;
-      height:450px;
+      flex-wrap: wrap;
+      height:auto;
       width: 100%;
       
     }
@@ -341,7 +345,7 @@ transition: 1s;
            
     }
     .projl img{
-      padding-left: 100px;
+      margin-left: 100px;
     }
     .projr{
       float: left;
@@ -357,6 +361,7 @@ transition: 1s;
       padding-left: 100px;
     }
 .blogp{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
   background-color: rgb(0, 0, 0);
   height: 300px;
@@ -453,16 +458,9 @@ color: rgb(241, 166, 116);
 }
 
 .container-pic{
-  margin-top: 5%;
   display:flex;
   margin-left: 20px;
   margin-bottom: 1%;
-  }
-  .container-pic:after{
-    content:"";
-    display: table;
-    clear: both;
-    
   }
   
   .left1{
@@ -470,20 +468,18 @@ color: rgb(241, 166, 116);
     float: left;
     margin:2%;
     padding-bottom:10px;
-    
-    
-  }
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
   .left1 h1{
     padding-top: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
   } 
   
   .left1 a{
     text-decoration:underline;
     color: rgb(241, 166, 116);
     font-size: 18px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
+      }
   .left1 img{
   border-radius: 5px;
   
@@ -495,8 +491,7 @@ color: rgb(241, 166, 116);
   .left1 p{
     padding-top: 5px;
     font-size: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+     }
   #bl{
     height: 240px;    
   }
@@ -530,6 +525,7 @@ flex-wrap: wrap;
     border-top: .2px solid rgb(51, 51, 51);
     border-bottom: .2px solid rgb(27, 27, 27);
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     bottom: 0;
 }
@@ -693,7 +689,7 @@ p a:hover{
 .bvd{
   position: absolute;
   z-index: -5;
-  height:150%;
+  height:130%;
   width: 100%;
   object-fit: cover;
   top:0;
@@ -751,18 +747,19 @@ p a:hover{
   
   .banner-buttons a{
     
-  width:150px;
+  width:80%;
   top: 150px;
-  right:10px;
+  right:30px;
   display: inline-block;
   margin:5px 10px;
   }
   .personal-info{
     position: relative;
     height:auto;
-    width: 100%;
+    width: 80%;
     display:inline-block;
     background-color:rgb(0, 0, 0);
+    padding-left: 35px;
     
     }
     .myimage{
@@ -770,14 +767,21 @@ p a:hover{
       background-color: beige;
       padding-left:0;
     }
-    
+    #visible{
+      display: none;
+    }
     .myimage img{
     padding:0;
     padding-top:0;
-    height:600px;
+    height:400px;
     width:100%;
         
     }
+    #hidden{
+      display: block;
+
+    }
+    
     .info p{
       margin-top:1;
     }
@@ -839,11 +843,12 @@ p a:hover{
      }
   
     .blogp{
+      
       background-color: rgb(0, 0, 0);
-      height: 200px;
-      padding-left:15px;
+      height:auto;
+      padding-left:35px;
       padding-right: 0px;
-      padding-top: 100px;
+      padding-top: 10px;
 
     }
     .blogp h2{
@@ -859,8 +864,7 @@ p a:hover{
     }
     
     .container{
-      padding-left: 0;
-      width: 100%;
+      width: 80%;
       display: inline;
     }
    
@@ -924,28 +928,27 @@ font-size: 15px;;
     border-bottom: 5px solid  rgb(240, 149, 116);;
   }
 
-  
-  .projects{
-    display:inline;
-    height:auto;
-    width: 100%;
-    background-color: #000000;
-      }
+
+ 
+    
+   
+       
   .projl{
     background-color: rgb(0, 0, 0);
     height:100%;
-    width: 100%;
+    width: 90%;
          
   }
-  .projl img,.projr img{
-    width: 100%;
-    padding-left:0;
+  .projl img{
+    margin-left: 35px;
+  }
+  .projr img{
+   padding-left:35px;
   }
   .projr{
-    float: left;
     background-color: rgb(0, 0, 0);
     height: 100%;
-    width: 100%;
+    width: 90%;
   }
   .pdesc{
     padding-top: 10px;
@@ -953,13 +956,14 @@ font-size: 15px;;
     padding-left: 100px;
     margin-bottom: 15px;
   }
+  */
   .container-pic .img{
     width: 90%;
 
    }
    .container-pic{
     display: inline-block;
-    
+    padding-left: 50px;
     margin-top: 5%;
  
   }
@@ -992,6 +996,9 @@ font-size: 15px;;
 height: auto;
 margin-bottom: 120px;
 flex-wrap: wrap;
+margin:35px;
+margin-top: 0;
+width: 80%;
 }
 .igimages{
   background-color: rgb(0, 0, 0);
@@ -1006,17 +1013,17 @@ flex-wrap: wrap;
   padding-right:;
 }
 
+
 .footer{
-  position: relative;
-  height: auto;
-  display: inline;
-  width: 100%;
+   height:auto;  
 }
+
+
 .emailcont{
   width: 100%;
   color:beige;
   float: left;
-  margin-top: 10px;
+  margin-top: 50px;
   padding-left:0;
   text-align: center;
 }
@@ -1052,8 +1059,8 @@ background-color: rgb(3, 3, 3);
   text-decoration: line-through;
 }
 .section{
-  width: 90%;
-  margin-left:0;
+  width: 80%;
+  margin-left:30px;
   margin-bottom: 5px;
 }
 
