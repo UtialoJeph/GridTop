@@ -781,14 +781,13 @@ p a:hover{
     }
   .gridnav{
     width: 20%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
   }
   .nv{
     width: 10%;
-    padding-left: 15px;
     font-size: 30px;
     padding-top: 23px;
     width: 10%;
@@ -796,8 +795,7 @@ p a:hover{
   }
   .cartnav{
     width: 10%;
-    padding-right: 15px;
-    font-size: 30px;
+        font-size: 30px;
     padding-top: 23px;
   }
   .form-container {
