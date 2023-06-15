@@ -770,7 +770,40 @@ p a:hover{
 }
 
 @media all and (max-width:1000Px){
+  .form-container {
+    max-width: 325px;
+    background-color: rgb(0, 0, 0);
+  }
   
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 90%;
+    min-height: 120px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #617df7;
+    color: white;
+    padding: 10px 5px;
+    
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color:  rgb(253, 146, 74);
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
   .banner{
     background-color: transparent;
     padding: 0;
