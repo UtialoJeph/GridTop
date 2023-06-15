@@ -781,8 +781,8 @@ p a:hover{
     }
   .gridnav{
     width: 20%;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left:45px;
+    padding-right: 45px;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
   }
@@ -795,7 +795,7 @@ p a:hover{
   }
   .cartnav{
     width: 10%;
-        font-size: 30px;
+    font-size: 30px;
     padding-top: 23px;
   }
   .form-container {
