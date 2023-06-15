@@ -780,15 +780,23 @@ p a:hover{
     width: 100%;
     }
   .gridnav{
+    padding-left: 20x;
+    padding-right: 30px;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
   }
-  .nv, .cartnav{
+  .nv{
     width: 20%;
-    padding-left: 75px;
+    padding-left: 45px;
     font-size: 30px;
     padding-top: 23px;
 
+  }
+  .cartnav{
+    width: 20%;
+    padding-right: 45px;
+    font-size: 30px;
+    padding-top: 23px;
   }
   .form-container {
     max-width: 325px;
