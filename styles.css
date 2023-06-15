@@ -73,6 +73,9 @@ body{
     font-size:45px;
     padding-left: 200px;       
 }
+.smallnav{
+  display: none;
+}
 
 .navbar {
   display: flex;
@@ -770,6 +773,23 @@ p a:hover{
 }
 
 @media all and (max-width:1000Px){
+  .smallnav{
+    display: flex;
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    }
+  .gridnav{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .nv, .cartnav{
+    width: 20%;
+    padding-left: 75px;
+    font-size: 30px;
+    padding-top: 23px;
+
+  }
   .form-container {
     max-width: 325px;
     background-color: rgb(12, 12, 12);
@@ -864,16 +884,7 @@ p a:hover{
   width:100%;
 }
 
-.fa-bars{
-  padding:10px;
-  position: absolute;
-  font-size: 40px;
-  color: rgb(247, 247, 252);
-  z-index:2;
-  top:60px;
-  display:block;
-  
-}
+
 .navbar{
   display: none;
   }
