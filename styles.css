@@ -780,8 +780,8 @@ p a:hover{
     width: 100%;
     }
   .gridnav{
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
   }
@@ -790,6 +790,7 @@ p a:hover{
     padding-left: 15px;
     font-size: 30px;
     padding-top: 23px;
+    width: 10%;
 
   }
   .cartnav{
