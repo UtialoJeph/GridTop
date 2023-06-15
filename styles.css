@@ -780,6 +780,7 @@ p a:hover{
     width: 100%;
     }
   .gridnav{
+    width: 20%;
     padding-left: 50px;
     padding-right: 50px;
     font-size: 20px;
