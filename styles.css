@@ -715,7 +715,7 @@ p a:hover{
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 1px solid #9fa0a1;
+  border: 1px solid #000000;
   z-index: 9;
   border-radius: 5px;
   color: #ddd;
@@ -723,10 +723,10 @@ p a:hover{
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
+  max-width: 325px;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgb(39, 38, 38);
+  background-color: rgb(0, 0, 0);
 }
 
 /* Full-width textarea */
@@ -804,6 +804,8 @@ p a:hover{
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
+  
+  
   .banner{
     background-color: transparent;
     padding: 0;
@@ -853,7 +855,7 @@ p a:hover{
   display: flex;
   top:0;
   height:80px;
-  background-color: rgb(253, 146, 74);
+  background-color: rgb(241, 166, 116);
   z-index: 2;
   position: absolute;
   margin:0;
@@ -1027,16 +1029,16 @@ p a:hover{
   }
   
   .upperheader{
-    height: 49px;
+    height: 40px;
   }
   
-.upperheader p{
-font-size: 15px;;
+.upperheader p span{
+display: none;
 }
 .upperheader a{
     text-decoration:overline;
     color:white;
-    font-size: 12px;
+    font-size: 18px;
    }
    .lef-t{
     display:none;
