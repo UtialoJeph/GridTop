@@ -431,6 +431,7 @@ transition: 1s;
     width:27%;
     margin-left: 10px;
     border-left:5px solid rgb(64, 64, 65);
+    transition: transform 0.5s;
     }
     .section:hover{
     transform: translateY(-5px);
@@ -1194,8 +1195,8 @@ background-color: rgb(3, 3, 3);
   margin:15px auto;
   margin-bottom: 5px;
 }
-
-
+ .section:hover{transform: translateY(.1px);}
+      
 .footer-bottom{
   position:relative;
   background-color: rgb(0, 0, 0);
