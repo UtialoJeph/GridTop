@@ -765,7 +765,7 @@ p a:hover{
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-@media all and (max-width:650Px){  
+@media all and (max-width:1250Px){  
   .smallnav{
     display: flex;
     position: absolute;
