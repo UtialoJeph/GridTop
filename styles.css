@@ -433,8 +433,8 @@ transition: 1s;
     border-left:5px solid rgb(64, 64, 65);
     }
     .section:hover{
-      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-        border-left:5px solid rgb(167, 107, 67);
+    transform: translateY(-5px);
+    border-left:5px solid rgb(167, 107, 67);
     }
 
     .projects{
