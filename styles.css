@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Merienda:wght@600&family=Sacramento&display=swap');
 body{
+    max-width:auto;
+    min-width: auto;
     background-color: black;
-    margin: 0;
+    margin:auto;
     color: rgb(228, 228, 228);
-    padding: 0;
+    padding:auto;
     scroll-behavior: smooth;
     scroll-margin-top: smooth;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -212,24 +214,14 @@ body{
   visibility: visible;
 }
 .logcart{
+  display: flex;
   padding-top: 16px;
-  float: left;
-  width: 20%;
+  width: auto;
   color: #ffffff;
-  margin-left: 20px;
+  margin-left:0;
 }
 .logcart i{
 font-size: 30px;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-  }
 }
 
 
@@ -237,7 +229,7 @@ font-size: 30px;
 .banner{
     width: 100%;
     background-color:transparent;
-    height:550px;
+    height:500px;
     text-align: center;
     }
 .banner h1{
@@ -258,15 +250,16 @@ font-size: 30px;
 }
 .banner-buttons{
 float:right; 
+height: 100px;
+width: 100%;
 }
 
 .banner-buttons a{
 text-align:center;
 position:relative;
-right:400px;
 border-radius: 1px;
 font-size: 20px;
-width: 150px;
+width:12%;
 text-decoration: none;
 display: inline-block;
 margin:0 10px;
@@ -275,7 +268,7 @@ color:rgb(249, 249, 252);
 border: 1px solid rgb(241, 166, 116);
 background-color:transparent;
 z-index: 1;
-transition: color 0.5s;
+transition: color 0.1s;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -303,8 +296,8 @@ padding: 20px;
 .bvd{
 position: absolute;
 z-index: -5;
-height:100%;
-width: 100%;
+height:650px;
+width:100%;
 object-fit: cover;
 top:0;
 opacity: 0.5;
@@ -314,7 +307,7 @@ z-index: -10;
 position: absolute;
 top:0;
 width:100%;
-height:100%;
+height:650px;
 background-color: rgb(1, 23, 44);
 mix-blend-mode:soft-light;
 
@@ -426,7 +419,7 @@ transition: 1s;
 
 
 .section{
-  line-height: 20px;
+    line-height: 20px;
     padding-left:20px;
     border:2px solid rgb(59, 59, 59);
     color: rgb(195, 195, 196);
@@ -449,7 +442,7 @@ transition: 1s;
       flex-wrap: wrap;
       height:auto;
       width: 100%;
-      
+          
     }
     .projl{
       background-color: rgb(0, 0, 0);
@@ -771,8 +764,7 @@ p a:hover{
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-
-@media all and (max-width:1000Px){
+@media all and (max-width:650Px){  
   .smallnav{
     display: flex;
     position: absolute;
@@ -798,7 +790,7 @@ p a:hover{
     width: 20%;
     font-size: 30px;
     padding-top: 23px;
-    margin-right: 10px;
+    margin-right: 10px auto;
   }
   .form-container {
     max-width: 325px;
@@ -838,26 +830,21 @@ p a:hover{
   
   .banner{
     background-color: transparent;
-    padding: 0;
     height:700px;
-    width: 100%;
-    top:800px;
+    width: 100%;   
     padding-top: 45px;
     font-size:15px;
     color: rgb(243, 243, 243);   
-    font-family:Geofrgia, 'Times New Roman', Times, serif;
-}
+    }
 
 .T{
   display: none;
 }
 .banner h1{
   padding:0;
-  font-weight: normal;
   position: relative;
   top:80px;
   font-size:40px;
-  font-family: 'Merienda', cursive;
 }
 .banner p{
   display: none;
@@ -898,27 +885,23 @@ p a:hover{
 .navbar{
   display: none;
   }
-.banner-buttons{
-  float:right; 
-   
-  }
-
   
   .banner-buttons a{
     
   width:80%;
   top: 150px;
-  right:15px;
+   margin: auto;
   display: inline-block;
   margin:5px 10px;
   }
   .personal-info{
     position: relative;
     height:auto;
-    width: 80%;
+    width: 90%;
     display:inline-block;
     background-color:rgb(0, 0, 0);
-    padding-left: 35px;
+    padding-left:0;
+    margin:23px;
     
     }
     .myimage{
@@ -940,24 +923,16 @@ p a:hover{
       display: block;
 
     }
-    
-    .info p{
-      margin-top:1;
-    }
-    
-    
+       
     .info{
     padding-right:0; 
     padding-left:0; 
-    float: left;
     font-size: 15px;
     width: 100%;
     height: auto;
     margin-left:0;
     margin-top:0;
     margin-right:0;
-    background-size: cover;
-    background-repeat: no-repeat;
     }
     .myimages{
       background-color: aqua;
@@ -973,7 +948,6 @@ p a:hover{
     .myimages img{
     margin-top:50PX;
     padding-right:0;
-    float: right;
     height: 100%;
     border-radius: 5px;
     background-color: black;
@@ -986,7 +960,6 @@ p a:hover{
       margin-top:0;
       float: left;
       color: antiquewhite;
-      font-size: 20px;
       width: 100%;
       border-radius: 15px;
      
@@ -1005,9 +978,10 @@ p a:hover{
       
       background-color: rgb(0, 0, 0);
       height:auto;
-      padding-left:35px;
-      padding-right: 0px;
+      padding-left:0;
+      padding-right: 0;
       padding-top: 10px;
+      margin: 20px;
 
     }
     .blogp h2{
@@ -1019,12 +993,14 @@ p a:hover{
     }
     
     .devstate{
-      margin-top: 80px;
+      margin-top: 45px;
     }
     
     .container{
-      width: 80%;
-      display: inline;
+      width: 100%;
+      display: inline;      
+      padding-left:0;
+      
     }
    
     .display{
@@ -1092,30 +1068,29 @@ display: none;
     
    
        
-  .projl{
+  .projr,.projl{
     background-color: rgb(0, 0, 0);
     height:100%;
-    width: 90%;
+    width: 100%;
          
   }
   .projl img{
-    margin-left: 35px;
+    margin-left: 20px;
   }
   .projr img{
-   padding-left:35px;
+   padding-left:20px;
   }
-  .projr{
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 90%;
-  }
-  .pdesc{
+  
+     .pdesc{
     padding-top: 10px;
     font-size: 20px;
-    padding-left: 100px;
+    padding-left:20px;
     margin-bottom: 15px;
   }
-  */
+  #pdesc{
+    padding-left: 20px;
+  }
+  
   .container-pic .img{
     width: 90%;
 
@@ -1153,9 +1128,8 @@ display: none;
 }
 .ig{
 height: auto;
-margin-bottom: 120px;
 flex-wrap: wrap;
-margin:35px;
+margin:35px auto;
 margin-top: 0;
 width: 80%;
 }
@@ -1168,9 +1142,7 @@ width: 80%;
 #fim{
   padding-left:0;
 }
-#lim{
-  padding-right:;
-}
+
 
 
 .footer{
@@ -1212,15 +1184,15 @@ background-color: rgb(3, 3, 3);
   display: inline;
   color: rgb(240, 149, 116);
   font-size: 30px;
-  margin: 10px;
+  margin: 10px auto;
   
 }
 .title h1:hover{
   text-decoration: line-through;
 }
 .section{
-  width: 80%;
-  margin-left:25px;
+  width: 85%;
+  margin:15px auto;
   margin-bottom: 5px;
 }
 
