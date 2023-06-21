@@ -6,10 +6,25 @@ body{
     margin:auto;
     color: rgb(228, 228, 228);
     padding:auto;
-    scroll-behavior: smooth;
-    scroll-margin-top: smooth;
+    scroll-behavior:smooth ;
+    scroll-margin-top:smooth;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+html{
+  scroll-behavior:smooth ;
+}
+.reveal{
+position: relative;
+transform: translateY(50px);
+opacity:0;
+transition: all 1s ease;
+}
+.active{
+  position: relative;
+  transform: translateY(0px);
+  opacity:1;
+  }
+   
 .upperheader p{
     color:black;
 
@@ -434,8 +449,8 @@ transition: 1s;
     transition: transform 0.5s;
     }
     .section:hover{
-    transform: translateY(-5px);
-    border-left:5px solid rgb(167, 107, 67);
+      transform: translateY(-5px);
+      border-left:5px solid rgb(167, 107, 67);
     }
 
     .projects{
@@ -593,7 +608,8 @@ color: rgb(241, 166, 116);
       }
   .left1 img{
   border-radius: 5px;
-  height: 400px;
+  height:400px;
+  
   }
   
   .left1 a:hover{
@@ -622,7 +638,7 @@ flex-wrap: wrap;
   background-color: rgb(0, 0, 0);
   width: 15%;
   padding-left:1px;
-}
+  }
 
 #fim{
   padding-left:57px;
@@ -772,12 +788,15 @@ p a:hover{
     margin-top: 100px;
     width: 100%;
     }
+    
+    
   .gridnav{
     text-align: center;
     width: 60%;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
   }
+ 
   .nv{
     text-align: center;
     width: 20%;
@@ -786,6 +805,9 @@ p a:hover{
     width: 20%;
    
   }
+  
+  
+ 
   .cartnav{
     text-align: center;
     width: 20%;
@@ -793,8 +815,8 @@ p a:hover{
     padding-top: 23px;
     margin-right: 10px auto;
   }
-     .cartnav i{
-    color: #f5f5f5;
+  .cartnav a{
+   color: aliceblue;
   }
   .form-container {
     max-width: 325px;
@@ -1200,8 +1222,8 @@ background-color: rgb(3, 3, 3);
   margin:15px auto;
   margin-bottom: 5px;
 }
- .section:hover{transform: translateY(.1px);}
-      
+
+
 .footer-bottom{
   position:relative;
   background-color: rgb(0, 0, 0);
