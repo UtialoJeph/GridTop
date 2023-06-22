@@ -1,320 +1,1251 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.js"></script>
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Merienda:wght@600&family=Sacramento&display=swap');
+body{
+    max-width:auto;
+    min-width: auto;
+    background-color: black;
+    margin:auto;
+    color: rgb(228, 228, 228);
+    padding:auto;
+    scroll-behavior:smooth ;
+    scroll-margin-top:smooth;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+html{
+  scroll-behavior:smooth ;
+  scroll-snap-stop: always;
+}
+.reveal{
+position: relative;
+transform: translateY(75px);
+opacity:0;
+transition: all 1s ease;
+}
+.active{
+  position: relative;
+  transform: translateY(0px);
+  opacity:1;
+  }
+   
+.upperheader p{
+    color:black;
 
-    <script src="https://kit.fontawesome.com/de7121b9b7.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Ewert&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <title>GridTopTechs</title>
+}
+.upperheader a{
+    text-decoration:overline;
+    color:white;
+    font-size: 18px;
+   }
+   .upperheader a:hover{
+    color:rgb(2, 2, 43);
+    transition: 1s ease;
     
-</head>
-<body>
-  <style>
-.blogp p{
-    font-size: 35px;
+   }
+   
+.upperheader{
+    display: flex;
+    top:0;
+    height:40px;
+    background-color: rgb(241, 166, 116);
+    z-index: 2;
+    position: absolute;
+    margin:0;
+    padding:0;
+    text-align: center;
+    width:100%;
+}
+.upperheader p{
+  font-family: 'Courier New', Courier, monospace;
+   float: left;
+   width: 95%;
+}
+.account{
+    width: 5%;
+    background-color: rgb(241, 166, 116);
+    font-size: 25px;
+    font-family: 'Creepster', cursive;
+    
+}
+.account a:hover{
+    letter-spacing: 2px;
+    color: rgb(241, 166, 116);
+    }
+    .account i:hover{
+      color: black;
+    }
+.header{
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+.logoside{
+  width: 20%;
+  float: left;
+  
+  }
+.logoside h1{
+    font-family:'Courier New', Courier, monospace;
+    position:absolute;
+    top:30px;    
+    font-size:45px;
+    padding-left: 200px;       
+}
+.smallnav{
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  position: absolute;
+  padding-left:10px;
+  width:65%;
+  float: left;
+  top: 65px;
+  margin-left: 400px;
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding:0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar>ul>li {
+  white-space: nowrap;
+  padding: 10px 0 10px 30px;
+}
+
+
+.navbar a,
+.navbar a:focus {
+  font-size: 18px;
+  z-index: 1;
+  float: left;
+  top:0;
+  text-decoration: none;
+  display: inline;
+  position:relative;
+  padding-left:30px;
+  color: rgb(241, 166, 116);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 30px;
+  margin-left: 10px;
+  color: #f5f5f5;
+}
+
+
+.navbar>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 15px;
+  width: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  transition: all .1s ease-in-out 0s;
+  border-left: 1px;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #fff;
+}
+
+
+.navbar .dropdown ul {
+  border-radius:5px;
+  display: block;
+  position: absolute;
+  left:30px;
+  top:75px;
+  padding: 10px 10px;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #000000;
+  border-left:5px solid rgb(241, 166, 116);;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: .5s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  text-transform:none;
+  color: #f5f5f5;
+}
+
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #e4e4e4;
+  text-decoration: underline;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top:32px;
+  visibility: visible;
+ 
+}
+
+.navbar .dropdown .dropdown ul {
+  top:0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top:0;
+  left: 100%;
+  visibility: visible;
+}
+.logcart{
+  display: flex;
+  padding-top: 16px;
+  width: auto;
+  color: #ffffff;
+  margin-left:0;
+}
+.logcart i{
+font-size: 30px;
+}
+
+
+  
+.banner{
+    width: 100%;
+    background-color:transparent;
+    height:500px;
+    text-align: center;
+    }
+.banner h1{
+   font-family: 'Merienda', cursive;
+   font-size:70px;
+   
+    
+}
+.banner p{
+  font-family: 'Merienda', cursive;
+  font-size: 25px;
+  color: rgb(255, 255, 255);  
+}
+.descr h1{
+  display: flex;
+  padding-left: 20px;
+  font-size: 30px;
+}
+.banner-buttons{
+float:right; 
+height: 100px;
+width: 100%;
+}
+
+.banner-buttons a{
+text-align:center;
+position:relative;
+border-radius: 1px;
+font-size: 20px;
+width:12%;
+text-decoration: none;
+display: inline-block;
+margin:0 10px;
+padding:20px;
+color:rgb(249, 249, 252);
+border: 1px solid rgb(241, 166, 116);
+background-color:transparent;
+z-index: 1;
+transition: color 0.1s;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.banner-buttons a span{
+width: 0%;
+height: 100%;
+position: absolute;
+top:0;
+left:0;
+background:rgb(241, 166, 116);
+z-index: -1;
+transition: 0.9s;
+border-radius: 5px;
+}
+
+.banner-buttons a:hover span{
+width: 100%;
+border-radius: 1px;
+
+}
+.banner-buttons a:hover{
+font-weight: bolder;
+padding: 20px;
+}
+.bvd{
+position: absolute;
+z-index: -5;
+height:650px;
+width:100%;
+object-fit: cover;
+top:0;
+opacity: 0.5;
+z-index: -10;
+}
+.overlay{
+position: absolute;
+top:0;
+width:100%;
+height:650px;
+background-color: rgb(1, 23, 44);
+mix-blend-mode:soft-light;
+
+}
+.personal-info{
+margin-top: 100px;
+padding-bottom: 20px;
+height:700px;
+width: 100%;
+display: flex;
+background-color:rgb(0, 0, 0);
+
+}
+.myimage{
+  background-color: rgb(0, 0, 0);
+  float: left;
+  height: auto;
+  width:60%;
+  border-radius: 5px;
+  background-color: transparent;
+  align-items: center; 
+  padding-left: 50px;
+}
+#hidden{
+  display: none;
+}
+
+.myimage img{
+padding-left: 50px;
+float: left;
+height: 100%;
+border-radius: 5px;
+background-color: black;
+width: 80%;
+}
+
+
+.info{
+ padding-right: 120px;
+ background-size: auto;
+ margin-top: 150px;
+ float: left;
+ color: antiquewhite;
+ font-size: 20px;
+ width: 40%;
+ border-radius: 15px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info p, .infos p,.infos h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.myimages{
+  background-color: aqua;
+  float: right;
+  height: auto;
+  width:50%;
+  border-radius: 5px;
+  background-color: transparent;
+  align-items: center; 
+  padding-right: 50px;
+}
+
+.myimages img{
+padding-right: 50px;
+float: right;
+height: 100%;
+border-radius: 5px;
+background-color: black;
+width: 90%;
+}
+.infos{
+  padding-left: 120px;
+  padding-top: 100px;
+  background-size: auto;
+  margin-top: 150px;
+  float: left;
+  color: antiquewhite;
+  font-size: 20px;
+  width: 45%;
+  border-radius: 15px;
+ 
+ }
+.bstyle{
+  margin-top: 30px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bstyle a{
+text-decoration: none;
+margin:0 10px;
+padding:20px;
+color:rgb(255, 255, 255);
+border: 1px solid rgb(241, 166, 116);
+background-color:transparent;
+transition: 1s;
+
+}
+.bstyle a:hover{
+  background-color: rgb(241, 166, 116);
+}
+
+.container{
+    display: flex;
+    height: auto;
+    background-color:rgb(0, 0, 0);
+    margin-bottom: 50px;
+    padding-left: 125px;
+}  
+
+
+.section{
+    line-height: 20px;
+    padding-left:20px;
+    border:2px solid rgb(59, 59, 59);
+    color: rgb(195, 195, 196);
+    font-weight:lighter;
+    border-radius:5px;
+    position: relative;
+    height:300px;
+    background-color: rgb(0, 0, 0);
+    width:27%;
+    margin-left: 10px;
+    border-left:5px solid rgb(64, 64, 65);
+    transition: transform 0.5s;
+    }
+    .section:hover{
+      transform: translateY(-5px);
+      border-left:5px solid rgb(167, 107, 67);
+    }
+
+    .projects{
+      display: flex;
+      flex-wrap: wrap;
+      height:auto;
+      width: 100%;
+     
+             
+    }
+    .projl{
+      background-color: rgb(0, 0, 0);
+      height:100%;
+      width: 50%;
+      float: left;        
+    }
+    .projl img{
+      margin-left: 100px;
+    }
+    .projr{
+      float: left;
+      background-color: rgb(0, 0, 0);
+      height: 100%;
+      width: 50%;
+    }
+    .pdesc{
+      padding-top: 5px;
+      padding-bottom: 50px;
+      font-size: 27px;
+    }
+    #pdesc{
+      padding-left: 100px;
+    }
+.blogp{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+  background-color: rgb(0, 0, 0);
+  height: 300px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 100px;
+}
+.blogp h2{
+  font-size: 14px;
+  color:rgb(241, 166, 116);
+}
+  .blogp p{
+  font-size:28px;
+  line-height: 35px;
+}
+.font{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .devstate{
-    font-size: 55px;
+    margin-top: 100px;
+    color: wheat;
+    text-align: center;
 }
-.container{
-    height: auto;
+.section a{
+    text-decoration:none;
+    color:rgb(241, 166, 116);
+}
+.section a:hover{
+   text-decoration: underline;
+}
+   .gridimages{
+    padding-left: 120px;
+    width: 100%;
+    display:inline;
+    height: 350PX;
+    background-color: rgb(66, 157, 248);
+    border-radius: 5px;
+   
+   } 
+   .lef-t{
+    opacity: .7;
+    float: left;
+    width:25%;
+    height:300px;
+    background-color:  rgb(241, 166, 116);
+    border-radius: 50%;  
+    padding-top: 30px;
+    position:relative;
+    border-bottom: 5px solid rgb(0, 0, 0);;
+    
+  }
+  .img-rott img{
+    z-index: 5;
+    bottom: 0px;
+    position:absolute;
+    width: 100%;
+    height:280px;
+    border-radius:50%;
+    transition: .6s ease;
+  }
+  .img-rott img:hover{
+    cursor: pointer;
+    transform-origin: left 50%;
+    transform: rotateZ(95deg);
+      
+  }
+.display{
+  display: flex;
+  height: 600px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+.division{
+  float: left;
+  width: 33.3%;  
+  background-color: rgb(3, 3, 3);
+  padding-top: 50px;
+  border-radius: 15px;
+  padding-left: 5%;    
+    
+}
+
+.division a{
+text-decoration: none;
+color: rgb(241, 166, 116);
+}
+.division img{
+  align-items: center;
+  opacity: 0.5;
+  width: 90%;
+  border-radius: 15px;
+  height: 280px;
+  z-index: -1;
+}
+
+.container-pic{
+  display:flex;
+  margin-left: 20px;
+  margin-bottom: 1%;
+  }
+  
+  .left1{
+    width:33%;
+    float: left;
+    margin:2%;
+    padding-bottom:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  .left1 h1{
+    padding-top: 5px;
+    
+  } 
+  
+  .left1 a{
+    text-decoration:underline;
+    color: rgb(241, 166, 116);
+    font-size: 18px;
+      }
+  .left1 img{
+  border-radius: 5px;
+  height:400px;
+  
+  }
+  
+  .left1 a:hover{
+    text-decoration: underline;
+  }
+  .left1 p{
+    padding-top: 5px;
+    font-size: 25px;
+     }
+  #bl{
+    height:auto;    
+  }
+ 
+
+.ig{
+  background-color: #000000;
+width: 100%;
+height: 200px;
+margin-bottom: 120px;
+display:flex;
+flex-wrap: wrap;
+
+}
+.igimages{
+  float: left;
+  background-color: rgb(0, 0, 0);
+  width: 15%;
+  padding-left:1px;
+  }
+
+#fim{
+  padding-left:57px;
+}
+
+
+.footer{
+    
+    height:auto;
     background-color: rgb(0, 0, 0);
-    flex-wrap: wrap;
-    
+    border-top: .2px solid rgb(51, 51, 51);
+    border-bottom: .2px solid rgb(27, 27, 27);
+    display: flex;
+    width: 100%;
+    bottom: 0;
 }
-.projectpost{
-    border: 1px solid rgb(54, 54, 54);
-    float:left;
-    background-color: black;
-    height: 120px;
+.emailcont{
+    color:beige;
+    float: left;
+    padding-top: 40px;
+    padding-left: 75px;
+}
+.emailcont a{
+    font-size: 20px;
+    color:rgb(241, 166, 116);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+.title{
+    width: 40%;
+    padding-bottom: 50px;
+    float: left;
+}
+.title h1{ 
+  font-family: 'Courier New', Courier, monospace;
+   align-content: center;
+   text-align: center;
+   font-size: 30px;
+   padding-top: 90px;
+}
+.socialpage{
+float: left;
+width:40% ;
+background-color: rgb(3, 3, 3);
+}
+.socialpage i{
+    color: rgb(241, 166, 116);
+    font-size: 25px;
+    padding-top: 60px;
+    margin: 20px;
+}
+.title h1:hover{
+    text-decoration: line-through;
+}
+
+
+.footer-bottom{
+  
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+.footer-bottom p{
+    display: inline;
+    color: grey;
+}
+p a{
+    color:rgb(241, 166, 116);
+}
+p a:hover{
+  color: rgb(236, 236, 236);
+}
+.tos a{
+  margin-left: 5px;
+  text-decoration: underline;
+  color: rgb(241, 166, 116);
+  font-size: 12px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tos a:hover{
+  color: rgb(59, 57, 57);
+}
+
+ /* The `popup chat - hidden by default */
+ .chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 1px solid rgb(68, 68, 68);
+  z-index: 9;
+  border-radius: 5px;
+  color: #ddd;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 325px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(12, 12, 12);
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 5px;
+  background: #bbb2b2;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #617df7;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:  rgb(253, 146, 74);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+@media all and (max-width:1250Px){  
+  .smallnav{
+    display: flex;
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    }
+    
+    
+  .gridnav{
+    text-align: center;
+    width: 60%;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+  }
+ 
+  .nv{
+    text-align: center;
     width: 20%;
-    border-left: 5px solid rgb(49, 48, 48);
-    margin-left: 15px;
-    margin-bottom: 15px;
-    padding-left: 10px;
-}
-.projectpost a{
- font-size: 13px;
- text-decoration: none;
- color:rgb(240, 149, 116);
-}
-.projectpost h2{
-    font-weight: lighter;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.projectpost:hover{
-    transition: 1s;
-    border-left: 5px solid rgb(153, 152, 152);
-}
-@media all and (max-width:1200px){
-  .projectpost{    
-    width: 41%;  
-    margin-left: 14px;
-    margin-bottom: 15px;
-    padding-left: 10px;
-}
-}
-  </style>
-  <div class="upperheader" id="upperheader">
-    
-    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
-    <div class="account">
-       <a href="">
-        <i class="fa-solid fa-xmark" onmouseout="cutTopheader()"></i>
-        
-       </a>
-      
-   </div>
-   </div>
+    font-size: 30px;
+    padding-top: 23px;
+    width: 20%;
+   
+  }
+  
+  
  
-    <div class="header">
+  .cartnav{
+    text-align: center;
+    width: 20%;
+    font-size: 30px;
+    padding-top: 23px;
+    margin-right: 10px auto;
+  }
+  .cartnav a{
+   color: aliceblue;
+  }
+  .form-container {
+    max-width: 325px;
+    background-color: rgb(12, 12, 12);
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 90%;
+    min-height: 120px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #617df7;
+    color: white;
+    padding: 10px 5px;
     
-      <video
-      src="https://ik.imagekit.io/midnightcoders/New_Folder/bv.mp4?updatedAt=1679375704712" class="bvd"
-     autoplay
-     muted
-     loop></video>
-     <div class="logoside">
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color:  rgb(253, 146, 74);
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
+  
+  .banner{
+    background-color: transparent;
+    height:700px;
+    width: 100%;   
+    padding-top: 45px;
+    font-size:15px;
+    color: rgb(243, 243, 243);   
+    }
+
+.T{
+  display: none;
+}
+.banner h1{
+  padding:0;
+  position: relative;
+  top:80px;
+  font-size:40px;
+}
+.banner p{
+  display: none;
+}
+
+
+.bvd{
+  position: absolute;
+  z-index: -5;
+  height:750px;
+  width: 100%;
+  object-fit: cover;
+  top:0;
+  opacity: 0.5;
+  z-index: -10;
+  }
+  .overlay{
+  position: absolute;
+  top:0;
+  width:100%;
+  height:750px;
+  
+  }
+.upperheader{
+  display: flex;
+  top:0;
+  height:80px;
+  background-color: rgb(241, 166, 116);
+  z-index: 2;
+  position: absolute;
+  margin:0;
+  padding:0;
+  text-align: center;
+  width:100%;
+}
+
+
+.navbar{
+  display: none;
+  }
+  
+  .banner-buttons a{
     
-      <h1 class="T">GRIDTOP</h1>
-    </div>
+  width:80%;
+  top: 150px;
+   margin: auto;
+  display: inline-block;
+  margin:5px 10px;
+  }
+  .personal-info{
+    position: relative;
+    height:auto;
+    width: 80%;
+    display:inline-block;
+    background-color:rgb(0, 0, 0);
+    padding-left:0;
+    margin:30px;
     
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li class="dropdown"><a href="#"><span>HOME</span> </a>
-          
-          <ul>
-            <li><a href="index.html">HOME PAGE</a></li>
-            <li><a href="gridtop-codeshop.html">PLUGINS</a></li>
-            
-          </ul>
-        </li>
+    }
+    .myimage{
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      padding-left:0;
+    }
+    #visible{
+      display: none;
+    }
+    .myimage img{
+    padding:0;
+    padding-top:0;
+    height:400px;
+    width:100%;
         
-        <li class="dropdown"><a href="#"><span>COURSES</span> </a>
-          
-          <ul>
-            <li><a href="boost-geekmode.html">BUILDING A PERSONAL SITE</a></li>
-            <li><a href="gridtop-courses.html">GRIDTOP (COMING SOON) </a></li>
-            
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#">SERVICES</a>
-          
-          <ul>
-            <li><a href="#">GRIDTOP DEVELOPMENT</a></li>
-            <li><a href="#">GRIDTOP CONSULTING </a></li>
-            
-          </ul>
-        </li>
+    }
+    #hidden{
+      display: block;
+
+    }
        
-        
-        <li><a class="about" href="about-jeph.html">ABOUT</a></li>
-                  <li class="dropdown"><a href="#"><span>RESUME</span> </a>
-          
-          <ul>
+    .info{
+    padding-right:0; 
+    padding-left:0; 
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    margin-left:0;
+    margin-top:0;
+    margin-right:0;
+    }
+    .myimages{
+      background-color: aqua;
+      float: left;
+      height: auto;
+      width:100%;
+      border-radius: 5px;
+      background-color: transparent;
+      padding-right:0;
+      padding-left: 0;
+    }
+    
+    .myimages img{
+    margin-top:50PX;
+    padding-right:0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: black;
+    width: 100%;
+    }
+    .infos{
+      padding-left:0;
+      padding-top: 10px;
+      background-size: auto;
+      margin-top:0;
+      float: left;
+      color: antiquewhite;
+      width: 100%;
+      border-radius: 15px;
+     
+     }
+     .infos h1{
+      font-size: 20px;
+     }
+     .infos p{
+      font-size: 15px;
+     }
+     .bstyle{
+      margin-top: 35px;
+     }
+  
+    .blogp{
+      
+      background-color: rgb(0, 0, 0);
+      height:auto;
+      padding-left:0;
+      padding-right: 0;
+      padding-top: 10px;
+      margin: 20px;
+
+    }
+    .blogp h2{
+      font-size: 14px;
+      color: rgb(238, 143, 80);
+    }
+      .blogp p{
+      font-size: 20px;
+    }
+    
+    .devstate{
+      margin-top: 45px;
+    }
+    
+    .container{
+      width: 100%;
+      display: inline;      
+      padding-left:0;
            
-            <li><a href="#">BIODATA</a></li>
-            <li><a href="#">EDUCATIONAL LIFE</a></li>
-            <li><a href="#">MY WORK</a></li>
-            <li><a href="#">HOBBIES & INTERESTS</a></li>
-            <li><a href="contact-jeph.html">CONTACT</li>
-          </ul>
-        </li>
-        
-      </ul>
-      <div class="logcart">
-      <a href="Loginpage.html" class="about">LOGIN</a>
-          <a href="cart.html">
-          <i class="fa-solid fa-cart-shopping"></i>
-          </a>
-        </div>
-       
-    </nav>
-    
-</div>
-</header>
-<div class="smallnav">
-  <div class="nv">
-  <i class="fa-solid fa-bars"></i>
-  </div>
- <div class="gridnav">
-  <h2>GRIDTOP</h2>
-  </div>
-
- <div class="cartnav">
- <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
- </div>
- 
-
- </div>
-    <br><br>
-    <div class="banner">
-        <h1>
-            <br> <br>GridTop Portfolio
-          
-        </h1>
-        
-    
-       
-    </div>
-    <div class="overlay"></div>
-
-    <div class="blogp reveal active">
-        <h2>
-          I'M A GRIDTOP DEVELOPER
-        </h2>
-        <P>
-            Below you'll find a selection of some of my most recent GridTop projects that showcase the type of clients I work directly with.
-        </P>
-      </div>
-      <div class="projects reveal active">
-        <div class="projl">
-          <img src="https://ik.imagekit.io/midnightcoders/Squarespace-Coffee-Shop-Website-Example.jpg?updatedAt=1684572101237" height="75%" width="80%">
-          <div class="pdesc" id="pdesc">
-            Elementary Coffee Co.
-          </div>
-        </div>
-        <div class="projr reveal active">
-          <img src="https://ik.imagekit.io/midnightcoders/Squarespace_Video_Production_Website_Example.jpg?updatedAt=1684572101365" height="75%" width="80%">
-          <div class="pdesc">
-            Booklight
-          </div>
-        </div>
-       
-      </div>
-      <div class="projects">
-        <div class="projl reveal active">
-          <img src="https://ik.imagekit.io/midnightcoders/Images/backm.jpg?updatedAt=1673352950626" height="75%" width="80%">
-          <div class="pdesc" id="pdesc">
-            Code Tutor
-          </div>
-        </div>
-        <div class="projr reveal active">
-          <img src="https://ik.imagekit.io/midnightcoders/Images/football.webp?updatedAt=1685978043648" height="75%" width="80%">
-          <div class="pdesc">
-            Next Level Athletix
-          </div>
-        </div>
-       
-      </div><div class="projects">
-  <div class="projl reveal active">
-    <img src="https://ik.imagekit.io/midnightcoders/flip.jpg?updatedAt=1685976472013" height="75%" width="80%">
-    <div class="pdesc" id="pdesc">
-    Gymnastic
-    </div>
-  </div>
-  <div class="projr reveal active">
-    <img src="https://ik.imagekit.io/midnightcoders/swim.jpg?updatedAt=1685976729542" height="75%" width="80%">
-    <div class="pdesc">
-     Swimming Champ.
-    </div>
-  </div>
- 
-</div>
-<div class="projects">
-    <div class="projl reveal active">
-      <img src="https://ik.imagekit.io/midnightcoders/cyclist.jpg?updatedAt=1685976588696" height="75%" width="80%">
-      <div class="pdesc" id="pdesc">
-        Cyclist
-      </div>
-    </div>
-    <div class="projr reveal active">
-      <img src="https://ik.imagekit.io/midnightcoders/images.jpg?updatedAt=1685976471787" height="75%" width="80%">
-      <div class="pdesc">
-        Pianist
-      </div>
-    </div>
+    }
    
-  </div>
-   
-  <h1 class="devstate font">Other Projects</h1>
-<div class="container">
-  <div class="projectpost  reveal active">
-    <h2> MAT Academy</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>CCP Africa</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>Carlile Collge</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>Mozilla Firefox</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>W3Spaces</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>CodeShop</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>The Pulse Magazine</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>GitHub</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>DripHub</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2>GDSC</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
-  <div class="projectpost  reveal active">
-    <h2> DrayNow</h2>
-    <a href="">VIEW PROJECT</a>
-  </div>
+    .display{
+      width: 100%;
+      display: none;
+    }
+    .division{
+      border-radius: 15px;
+      width: 90%;
+      margin-bottom: 20px;  
+      padding-left:0;
+      margin-left:0;    
+    }
+    .division img{
+      width: 100%;
+    }
+    /*
+        
+*/
  
-</div>
+  .chat-popup{
+   width: 70%;
+  }
+  
+  .upperheader{
+    height: 40px;
+  }
+  
+.upperheader p span{
+display: none;
+}
+.upperheader a{
+    text-decoration:overline;
+    color:white;
+    font-size: 18px;
+   }
+   .lef-t{
+    display:none;
+     
+   } 
+   .lef-t{
+    float: left;
+    width:80%;
+    height:300px;
+    background-color:  rgb(240, 149, 116);;
+    border-radius: 50%;  
+    margin-top: 30px;
+    position: relative;
+    margin-left: 50px;
+    border-bottom: 5px solid rgb(161, 160, 159);;
+    
+  }
+  .img-rott img{
+    z-index: 2;
+    top: 0px;
+    position:absolute;
+    height:300px;
+    border-radius:50%;
+    transition: .8s ease;
+    border-bottom: 5px solid  rgb(240, 149, 116);;
+  }
 
-    <div class="footer">
-      <div class="emailcont reveal active">
-          <a href="">6771.2021@students.ku.ac.ke</a><br><br>
-          <a href="">(+254-114836831)</a>
-      </div>
-      <div class="title">
-              <h1>GRIDTOP</h1>
-      </div>
+
+ 
+    
+   
+       
+  .projr,.projl{
+    background-color: rgb(0, 0, 0);
+    height:100%;
+    width: 90%;
+    margin: 20px;
+         
+  }
+  .projl img{
+    width: 100%;
+    margin-left:0;
+    margin-bottom: 0;
+  }
+  .projr img{
+   padding-left:0;
+   width: 100%;
+   margin-left:0;
+  margin-bottom: 0;
+  }
+  
+     .pdesc{
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left:20px;
+    margin-bottom: 15px;
+  }
+  #pdesc{
+    padding-left: 20px;
+  }
+  
+  .container-pic .img{
+    width: 90%;
+
+   }
+   .container-pic{
+    display: inline-block;
+    padding-left:0;
+    margin-top: 5%;
+ 
+  }
+.left1{
+  display: inline-block;
+  width: 100%;    
+  margin:0;
+  padding-bottom:50px;
+}
+
+
+.left1 p{
+  width: 90%;
       
-      <div class="socialpage reveal active">
-       <i class="fa-brands fa-whatsapp"></i>
-       <i class="fa-brands fa-twitter"></i>
-       <i class="fa-brands fa-instagram"></i>
-       <i class="fa-brands fa-linkedin"></i>
-      </div>
-      </div> 
+}#te{
+  background-color: #626464;
+  background-position: right;
+  
+  padding-left:0;
+  
+}
+#te2{
+  background-color: #454647;
+  background-position: right;
+  
+  padding-left:0;
 
-    
-</div>
+}
+.ig{
+height: auto;
+flex-wrap: wrap;
+margin:25px auto;
+margin-top: 0;
+width: 80%;
+}
+.igimages{
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+  padding-left:0;
+  }
+  
+#fim{
+  padding-left:0;
+}
 
-<div class="footer-bottom">
-  <p>©2023 Utialo Jeph. All rights reserved. Google Developer & Founder of <a href="">GRIDTOP.</a></p><br>
-  <h2 class="tos">
-    <a href="terms-of-service.html">Terms of Service</a>
-    <a href="return-policy.html">Return Policy</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-  </h2>
-<br>
-</div>
 
 
+.footer{
+   height:auto;  
+   flex-wrap: wrap;
+}
 
 
-</body>
-</html>
+.emailcont{
+  width: 100%;
+  color:beige;
+  float: left;
+  padding-left:0;
+  text-align: center;
+}
+.emailcont a{
+  font-size: 20px;
+  color:rgb(240, 149, 116);
+  }
+.title{
+  width: 100%;
+  padding-bottom: 50px;
+  float: left;
+}
+.title h1{ 
+ align-content: center;
+ text-align: center;
+ font-size: 30px;
+ padding-top: 90px;
+}
+.socialpage{
+text-align: center;
+padding-bottom: 20px;
+width:100% ;
+background-color: rgb(3, 3, 3);
+}
+.socialpage i{
+  display: inline;
+  color: rgb(240, 149, 116);
+  font-size: 30px;
+  margin: 10px;
+}
+.socialpage a{
+  text-decoration: none;
+}
+.title h1:hover{
+  text-decoration: line-through;
+}
+.section{
+  width: 85%;
+  margin:15px auto;
+  margin-bottom: 5px;
+}
+
+
+.footer-bottom{
+  position:relative;
+  background-color: rgb(0, 0, 0);
+   width: 100%;
+  height: 60px;
+  text-align: center;
+  bottom: 0;
+  }
+.footer-bottom p{
+  display: inline;
+  color: rgb(78, 78, 77);
+}
+p a{
+  color:rgb(240, 149, 116);
+}
+   
+}
