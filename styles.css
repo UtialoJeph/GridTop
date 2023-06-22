@@ -1061,9 +1061,12 @@ p a:hover{
 display: none;
 }
 .upperheader a{
-    text-decoration:overline;
     color:white;
     font-size: 18px;
+    text-decoration: none;
+   }
+   .fa-xmark{
+    display: none;
    }
    .lef-t{
     display:none;
