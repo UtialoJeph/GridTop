@@ -207,7 +207,8 @@ transition: all 1s ease;
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
   color: #e4e4e4;
-  text-decoration: underline;
+  text-decoration: none;
+  color:rgb(241, 166, 116);
 }
 
 .navbar .dropdown:hover>ul {
