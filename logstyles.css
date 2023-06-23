@@ -64,7 +64,7 @@ body{
   .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color:  #0357f4;
+    color:  #fa5e03;
     font-size: 12px;
   }
   
@@ -72,7 +72,7 @@ body{
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color:  #0357f4;
+    color:  #f46f03;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -86,10 +86,10 @@ body{
     background: #000000;
     color: #fff;
     border-radius:1px;
-    box-shadow: 0 0 5px #5d93f0,
-                0 0 25px  #5d93f0,
-                0 0 50px  #5d93f0,
-                0 0 100px  #5d93f0;
+    box-shadow: 0 0 5px #fa5e03,
+                0 0 25px #fa5e03,
+                0 0 50px #fa5e03,
+                0 0 100px  #fa5e03;
   }
   
   .login-box a span {
@@ -102,7 +102,7 @@ body{
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #0357f4);
+    background: linear-gradient(90deg, transparent, #fa5e03);
     animation: btn-anim1 1s linear infinite;
   }
   
@@ -139,7 +139,7 @@ body{
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent,  #0357f4);
+    background: linear-gradient(270deg, transparent,  #fa5e03);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
   }
@@ -158,7 +158,7 @@ body{
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
+    background: linear-gradient(360deg, transparent, #fa5e03);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s;
   }
@@ -189,18 +189,18 @@ input[type=text], input[type=password] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #0f0f0f;
 }
 
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color: #050505;
   outline: none;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #043eaa;
+  background-color: #aa4f04;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -243,7 +243,7 @@ button:hover {
   width: 150%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #1960f8;
+  background-color: #e66700;
   padding-top: 50px;
 }
 
@@ -291,4 +291,5 @@ hr {
   .cancelbtn, .signupbtn {
      width: 100%;
   }
+  
 }
