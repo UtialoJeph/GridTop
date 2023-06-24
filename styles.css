@@ -494,7 +494,7 @@ transition: 1s;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
   background-color: rgb(0, 0, 0);
-  height: 300px;
+  height:auto;
   padding-left: 300px;
   padding-right: 300px;
   padding-top: 100px;
@@ -1256,4 +1256,26 @@ p a{
   color:rgb(240, 149, 116);
 }
    
+}
+/*
+Shared CSS
+*/
+.snippet{
+  border:.2px solid rgb(41, 41, 41);
+  border-left: 4px solid rgb(41, 41, 41);
+  padding: 30px;
+  margin-left: 18px;
+  width: 25%;
+  height:auto;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.snippet a{
+  text-decoration: none;
+  color:rgb(241, 166, 116);
+  font-size: 15px;
+}
+.snippet h3{
+  font-size: 25px;
+  font-weight: lighter;
 }
