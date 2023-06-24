@@ -699,6 +699,9 @@ background-color: rgb(3, 3, 3);
     padding-top: 60px;
     margin: 20px;
 }
+.socialpage i:hover{
+ color: rgb(252, 252, 252);
+}
 .title h1:hover{
     text-decoration: line-through;
 }
