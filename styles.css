@@ -266,7 +266,6 @@ font-size: 30px;
   font-size: 30px;
 }
 .banner-buttons{
-float:right; 
 height: 100px;
 width: 100%;
 }
@@ -737,7 +736,7 @@ p a:hover{
 
  /* The `popup chat - hidden by default */
  .chat-popup {
-  display: none;
+  display:none;
   position: fixed;
   bottom: 0;
   right: 15px;
@@ -756,7 +755,7 @@ p a:hover{
 }
 
 /* Full-width textarea */
-.form-container textarea {
+.form-container textarea[name=msg] {
   width: 100%;
   padding: 10px;
   margin: 5px 0 22px 0;
