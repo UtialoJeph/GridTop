@@ -18,3 +18,42 @@ function reveal(){
         }
      }
 }
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function openForm_inq() {
+  document.getElementById("myForm-inquiry").style.display = "block";
+}
+function openForm_hello() {
+  document.getElementById("myForm-hello").style.display = "block";
+}
+
+function closeForm() {
+  document.body.style.overflow = "visible";
+  document.getElementById("myForm").style.display = "none";
+  document.body.style.opacity='1';
+
+ }
+ function closeForm_inq() {
+  document.body.style.overflow = "visible";
+  document.getElementById("myForm-inquiry").style.display = "none";
+  document.body.style.opacity='1';
+
+ }
+ function closeForm_hello() {
+  document.body.style.overflow = "visible";
+  document.getElementById("myForm-hello").style.display = "none";
+  document.body.style.opacity='1';
+
+ }
+
+    
+function halt_bodyscroll(){
+document.body.style.overflow = "hidden";
+document.body.style.opacity='1';
+}
+function opacity_interchange(){ 
+ document.getElementById('myForm').style.opacity='1';
+  }
+  
