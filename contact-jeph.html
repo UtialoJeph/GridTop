@@ -30,7 +30,7 @@
       
         
 <style>
-  #myForm, #myForm-inquiry, #myForm-hello{
+   #myForm, #myForm-inquiry, #myForm-hello{
     display: none;
   }
     .container{
@@ -81,7 +81,7 @@ button:hover{
   z-index:9;
   width: 45%;
   height:auto;
-  background-color: rgb(0, 131, 218);
+  background-color: rgb(245, 245, 245);
   transform: translateX(63%);
   transform: translateY();
   }
@@ -102,7 +102,7 @@ button:hover{
   width:90% ;
   font-size: 15px;
   padding-left: 15px;
-   border-left: 2px solid rgb(241, 166, 116);
+  border-left: 2px solid rgb(241, 166, 116);
   margin-top: 30px;
 }
 .form-container i{
@@ -116,12 +116,13 @@ button:hover{
   width: 100%;
 
 }
-.ln,.md{
+.md{
   margin-right: 79px;
 }
 .ln{
   margin-left:85px ;
 }
+
 .form-container label span{
   font-size: 12px; 
 }
@@ -165,6 +166,40 @@ button:hover{
   color: #ffffff;
   background-color: rgb(241, 166, 116);
   cursor:pointer;
+}
+@media all and (max-width:1250Px){  
+  .form-popup {
+  inset:0;
+  width: 100%;
+  transform: translateX(0);
+    }
+  .form-popup::-webkit-scrollbar {
+  display: none;
+}
+/* Add styles to the form container */
+.form-container {
+  position:absolute;
+  padding-left:20px;
+    }
+    .form-container label{
+  margin-right: 10px;
+  width: 100%;
+
+}
+.form-container input[type=submit]{
+  color:rgb(241, 166, 116);
+  padding: 15px;
+  width: 30%;
+  border:1px solid rgb(241, 166, 116);
+  margin-left:120px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+  transition: .3s ease;
+}
+.ln{
+  margin-left:140px ;
+}
 }
 </style>
  
@@ -314,7 +349,7 @@ button:hover{
     <i class="fa-solid fa-xmark"  onclick="closeForm()"></i>
    <br><br><br><label for="email"><b><br>Full Name <span>(required)</span></b></label>
     <br><label for="n">First Name</label>
-    <label for="n" class="ln">Last Name</label>
+    <label for="n"  class="ln">Last Name</label>
     <input type="text" placeholder="" name="Fname" required>
   
     <input type="text" placeholder="" name="Lname" required>
@@ -401,7 +436,7 @@ button:hover{
           rows="5" cols="33">
 
 </textarea>
-<input type="submit" value="Send Inquiry">
+<input type="submit" value="Submit Ticket">
    
   </form>
 </div>
