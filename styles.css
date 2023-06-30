@@ -1038,7 +1038,7 @@ p a:hover{
  
 .chat-popup {
   width: 30%;  
-  bottom: 5px;
+  bottom: 150px;
   right: 10px;
   border: .1px solid rgb(51, 42, 42);
   z-index: 9999;
