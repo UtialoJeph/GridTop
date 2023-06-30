@@ -342,8 +342,9 @@
     My life as a GRIDTOP developer.
   </P>
 </div>
-    
-    <div class="ig reveal" >
+
+      
+  <div class="ig reveal" >
      <div class="igimages reveal active" id="fim">
       <a href="">
       <img src="https://ik.imagekit.io/midnightcoders/Images/plash.jpg?updatedAt=1673353179116" alt="Avatar" class="image3" style="width:95%" height="200px">
@@ -417,14 +418,11 @@
 
 
 <div class="chat-popup" id="myForm-chat">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat with Jeph</h1>
+  <form class="form-container">
+    <h1 class="chat">Chat with Jeph</h1>
+    <i class="fa-solid fa-xmark" onclick="closeForm()"></i>
+    <a href="https://wa.me/254114836831" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
 
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()" onmouseenter="bodyopc()">Close</button>
   </form>
 </div>
 
@@ -434,7 +432,7 @@
    function() {
     setTimeout(function(){
         document.getElementById("myForm-chat").style.display = "block";
-       },5000)
+       },10000)
 });
 function closeForm() {
   document.getElementById("myForm-chat").style.display = "none";
