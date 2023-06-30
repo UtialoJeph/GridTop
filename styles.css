@@ -764,6 +764,14 @@ p a:hover{
   font-size: 15px;
   margin-bottom: 200px;
   }
+form img{
+    border-radius:5px ;
+    right:0;
+    top:0;
+    width: 45px;
+    height: 42px;
+    position: absolute;
+  }
 .chat{
   margin-top: 30px;
   font-size: 25px;
