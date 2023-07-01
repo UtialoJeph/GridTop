@@ -231,12 +231,12 @@ transition: all 1s ease;
   visibility: visible;
 }
 .logcart{
-  display: flex;
-  padding-top: 16px;
-  width: auto;
-  color: #ffffff;
-  margin-left:0;
-}
+  justify-content: right;
+   display: flex;
+   padding-top: 16px;
+   width:60%;
+   color: #ffffff;
+  }
 .logcart i{
 font-size: 30px;
 }
