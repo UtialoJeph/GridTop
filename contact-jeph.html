@@ -31,7 +31,7 @@
         
 <style>
    #myForm, #myForm-inquiry, #myForm-hello{
-    display: none;
+    display:block;
   }
     .container{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -83,7 +83,7 @@ button:hover{
   height:auto;
   background-color: rgb(245, 245, 245);
   transform: translateX(63%);
-  transform: translateY();
+  
   }
   .form-popup::-webkit-scrollbar {
   display: none;
@@ -135,7 +135,7 @@ button:hover{
   background: #f7f7fa;
   }
 .form-container input[name=em]{
-  width:86.5%;
+  width:91%;
   margin-right:12px;
 
 }
@@ -147,7 +147,7 @@ button:hover{
   border:.1px solid rgb(2, 2, 2);
 }
 .form-container textarea[name=comment]{
-min-width:512px;
+ min-width:512px;
  max-width:512px;
  background-color: #eeeded;
 }
@@ -169,41 +169,57 @@ min-width:512px;
 }
 @media all and (max-width:1250Px){  
   .form-popup {
+  background-color: rgb(255, 255, 255);
   inset:0;
   width: 100%;
   transform: translateX(0);
-    }
+  justify-content: center;
+      }
   .form-popup::-webkit-scrollbar {
   display: none;
 }
 /* Add styles to the form container */
 .form-container {
-  position:absolute;
+  max-width: 90%;
+  background-color: rgb(255, 255, 255);
+  position:fixed;
+  justify-content:center;
   padding-left:20px;
-    }
+  }
     .form-container label{
   margin-right: 10px;
   width: 100%;
 
 }
-.form-container input[type=submit]{
-  color:rgb(241, 166, 116);
-  padding: 15px;
-  width: 30%;
-  border:1px solid rgb(241, 166, 116);
-  margin-left:100px;
-  margin-top: 20px;
-  margin-bottom: 35px;
-  background-color: #ffffff;
-  transition: .3s ease;
-}
+
+
 .ln{
-  margin-left:140px ;
+  margin-left:85px ;
 }
-    .form-container h1{
+.form-container h1{
   padding-left: 5px;
   
 }
+.form-container textarea[name=comment]{
+ min-width:100%;
+ max-width:100%;
+ background-color: #eeeded;
+}
+.form-container i{
+  margin-top: 30px;
+ 
+  width:5%;
+  float: right;
+}
+.form-container input[type=submit]{
+  color:rgb(241, 166, 116);
+  padding: 20px;
+  width: 40%;
+  border:1px solid rgb(241, 166, 116);
+  margin-left:110px;
+ 
+}
+
 }
 </style>
  
@@ -440,7 +456,7 @@ min-width:512px;
           rows="5" cols="33">
 
 </textarea>
-<input type="submit" value="Send Inquiry">
+<input type="submit" value="Submit Ticket">
    
   </form>
 </div>
@@ -492,11 +508,11 @@ min-width:512px;
               <h1>GRIDTOP</h1>
       </div>
       
-       <div class="socialpage">
-       <a href="https://wa.me/254114836831" target="_blank"><i class="fa-brands fa-whatsapp  reveal"></i></a>
-       <a href="https://twitter.com/Jeph_coder" target="_blank"><i class="fa-brands fa-twitter  reveal"></i></a>
-       <a href="https://www.instagram.com/gridtop_developers/" target="_blank"> <i class="fa-brands fa-instagram  reveal"></i></a>
-       <a href="https://www.linkedin.com/in/jephtha-utialo-8662b7232/" target="_blank"><i class="fa-brands fa-linkedin  reveal"></i></a>
+      <div class="socialpage reveal active">
+       <a href="https://wa.me/254114836831" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+       <a href="https://twitter.com/Jeph_coder" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+       <a href="https://www.instagram.com/gridtop_developers/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/jephtha-utialo-8662b7232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
       </div> 
     </div>
@@ -505,7 +521,7 @@ min-width:512px;
   <h2 class="tos">
     <a href="terms-of-service.html">Terms of Service</a>
     <a href="return-policy.html">Return Policy</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="">Privacy Policy</a>
   </h2>
 <br>
 </div>
