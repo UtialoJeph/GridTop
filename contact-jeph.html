@@ -191,6 +191,8 @@ button:hover{
 .form-container i{
   margin-top:1px; 
   width: 5%;
+  background-color: rgb(255, 255, 255);
+  TOP:0;
  }
  .ln{
   margin-left:45px ;
@@ -216,8 +218,8 @@ button:hover{
 
 }
 .form-container textarea[name=comment]{
- min-width:320px;
- max-width:320px;
+ min-width:300px;
+ max-width:300px;
  background-color: #eeeded;
 }
 
@@ -429,8 +431,9 @@ button:hover{
      
 <div class="form-popup" id="myForm-inquiry"onmouseenter="halt_bodyscroll()">
   <form action="/action_page.php" class="form-container">
-    <h1>CONTACT DETAILS</h1>
     <i class="fa-solid fa-xmark"  onclick="closeForm_inq()"></i>
+    <h1>CONTACT DETAILS</h1>
+    
    <br><br><br><label for="email"><b><br>Full Name <span>(required)</span></b></label>
     <br><label for="n">First Name</label>
     <label for="n" class="ln">Last Name</label>
@@ -480,8 +483,9 @@ button:hover{
      
 <div class="form-popup" id="myForm-hello"onmouseenter="halt_bodyscroll()">
   <form action="/action_page.php" class="form-container">
-    <h1>CONTACT DETAILS</h1>
     <i class="fa-solid fa-xmark"  onclick="closeForm_hello()"></i>
+    <h1>CONTACT DETAILS</h1>
+   
    <br><br><br><label for="email"><b><br>Full Name <span>(required)</span></b></label>
     <br><label for="n">First Name</label>
     <label for="n" class="ln">Last Name</label>
