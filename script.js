@@ -44,3 +44,15 @@ function closeForm() {
   document.body.style.overflow = "visible";
   document.getElementById("myForm-hello").style.display = "none";
    }
+
+   /*
+   Loader
+    */
+  
+   const load = document.querySelector('.loader');
+   window.addEventListener("load",
+   function() {
+    setTimeout(function(){
+    load.style.display="none";
+       },5000)
+});

@@ -10,6 +10,35 @@ body{
     scroll-margin-top:smooth;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+.loader{
+  display:none;
+  z-index: 999;
+  position: fixed;
+  background-color: #2597ac;
+  width: 100%;
+  height:800px;
+  margin: auto;
+  transition: opacity 0.75s, visibility 0.75s ;
+}
+.load-hidden{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.loader-geek{
+   margin-left: 20%;
+  width: 50%;
+  margin: auto;
+  height: auto;
+  margin-top: 200px;
+  transition: opacity 0.75s, visibility 0.75s ;
+ }
+
+.loader-geek img{
+  width: 100%;
+  height:100%;
+ }
+
 html{
   scroll-behavior:smooth ;
   scroll-snap-stop: always;
@@ -251,7 +280,7 @@ font-size: 30px;
     }
 .banner h1{
    font-family: 'Merienda';
-   font-size:75px;
+   font-size:80px;
    
     
 }
@@ -736,7 +765,7 @@ p a:hover{
 
  /* The `popup chat - hidden by default */
  .chat-popup {
-  display: none;
+  display:none;
   position: fixed;
   bottom: 50px;
   right: 15px;
@@ -764,12 +793,12 @@ p a:hover{
   font-size: 15px;
   margin-bottom: 200px;
   }
-form img{
-    border-radius:0px 5px 0px 5px;
+  form img{
+    border-radius:0px 5px 0px 5px ;
     right:0;
     top:0;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     position: absolute;
   }
 .chat{
@@ -779,6 +808,19 @@ form img{
 
 
 @media all and (max-width:1250Px){  
+  .load{
+    width: 100%;
+   height:50vh;
+   margin: auto;
+ 
+ }
+ .loader-geek{
+   margin-left: 20%;
+   width: 50%;
+   margin: auto;
+   height: auto;
+   margin-top: 150px;
+  }
   .smallnav{
     display: flex;
     position: absolute;
