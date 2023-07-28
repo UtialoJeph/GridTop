@@ -1,15 +1,15 @@
 .terms{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
+    width:50%;
     display: flex;
     height:auto;
     background-color: rgb(0, 0, 0);
+    margin: auto;
 }
 .centered{
     line-height: 28px;
-    width:45%;
-    background-color: rgb(0, 0, 0);
-    margin-left: 28%;
+    width:100%;
+    margin:auto;
     margin-top: 170px;
     
  }
@@ -36,7 +36,7 @@
  .centered a:hover{
     color: white;
  }
-  @media all and (max-width:1200px){
+  @media all and (max-width:750px){
    .terms{
       width: 90%;
       margin: 25px;     
