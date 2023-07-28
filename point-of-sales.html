@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/de7121b9b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Ewert&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>GridTopTechs</title>
+    
+</head>
+<body>
+    <style>
+      
+  .banner{
+   height: auto;
+   width: 90%;
+   margin-top: 0;
+   margin-bottom: 75px;
+  }
+  #banner{
+    margin-top: 100px;
+  }
+  .personal-info{
+    height: auto;
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .infos{
+margin-top: 0;
+  }
+ .myimage img,
+.myimages img{
+height: 75%;
+margin-top: 50px;
+}
+
+.info{
+ padding-right: 0;
+ margin-top:0;
+ 
+}
+
+.left1 p{
+   padding: 15px;
+}
+.left1 img{
+  width: 50%;
+  height: auto;
+
+}
+.container{
+  margin: auto;
+  width: 90%;
+  flex-wrap: wrap;
+  height: auto;
+  }
+.card{
+  border-radius: 5px;
+  height: 250px;
+  margin: 10px;
+  text-align: center;
+  width: 23%;
+  background-color: rgb(44, 44, 44);
+}
+.card p, .card h4{
+  padding: 10px;
+}
+.card img{
+  height: 50px;
+  width: 20%;
+}
+#cr{
+  width:50% ;
+}
+
+
+@media all and (max-width:650px){
+
+#cr{
+  width: 90%;
+}
+.banner{
+  width: 95%;
+}
+  .left1 p{
+   padding:0;
+} 
+.card{
+  width: 80%;
+}
+.container{
+  width: 90%;
+}
+
+.banner p{
+  display: flex;
+}
+.banner-buttons{
+
+  height:auto;
+
+margin-bottom: 200px;
+margin-top: 0;
+}
+
+}
+
+
+   </style>
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+        <i class="fa-solid fa-xmark" onclick="cutTopheader()"></i>
+    
+   </div>
+   </div>
+
+     <div class="title-nav-cart">
+      
+     <div class="logoside">
+    
+        <h1 class="T">GRIDTOP</h1>
+      </div>
+      
+      <nav class="navbar">
+        <ul>
+          <li><a class="about" href="index.html">HOME</a></li>
+          <li><a class="about" href="gridtop-codeshop.html">PLUGINS</a></li>
+          <li class="dropdown"><a href="gridtop-courses.html"><span>COURSES</span> </a>
+            
+            <ul>
+              <li><a href="boost-geekmode.html">BUILDING A PERSONAL SITE</a></li>
+              <li><a href="">GRIDTOP (COMING SOON) </a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">SERVICES</a>
+            
+            <ul>
+              <li><a href="services.html">IT SUPPORT & SOFTWARES</a></li>
+              <li><a href="services.html">WEBSITES & MARKETING</a></li> 
+                           
+            </ul>
+          </li>
+         
+          
+          <li><a class="about" href="contact-jeph.html">CONTACT</a></li>
+          
+          <li class="dropdown"><a href="#"><span>MORE</span> </a>
+            
+            <ul>
+             
+              <li><a href="about-jeph.html">ABOUT ME</a></li>
+              <li><a href="gridtop-developer.html">GRIDTOP DEVS</a></li>
+              <li><a href="my-work.html">MY WORK</a></li>
+              <li><a href="#">HOBBIES & INTERESTS</a></li>
+              <li><a href="#">NEWS & OFFERS</a></li>
+            </ul>
+          </li>                   
+        </ul>      
+       </nav> 
+       
+    
+       
+    </div>
+    
+  
+     
+    <div class="smallnav">
+      <div class="nv">
+      <i class="fa-solid fa-bars" onclick="openMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+     <div class="mobilenav" id="mobilenav">
+      
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+    
+   </div>
+   </div>
+      
+
+   <div class="mbnav"> 
+
+    <div class="nav-each firstnav"><a href="index.html">HOME</a><br></div>
+    <div class="nav-each"><a href="gridtop-codeshop.html">PLUGINS</a><br></div>
+    <div class="nav-each"> <a href="boost-geekmode.html">PORTFOLIOS</a><br></div>
+    <div class="nav-each"> <a href="services.html">SERVICES</a><br></div>
+    <div class="nav-each"> <a href="services.html">SOFTWARES</a><br></div>
+    <div class="nav-each"> <a href="contact-jeph.html">CONTACT</a><br></div>
+    <div class="nav-each"> <a href="about-jeph.html">ABOUT ME</a><br></div>
+    <div class="nav-each"> <a href="gridtop-developer.html">GRIDTOP DEVS</a><br></div>
+    <div class="nav-each"> <a href="my-work.html">MY WORK</a><br></div>
+    <div class="nav-each"> <a href="">HOBBIES</a><br></div>
+    <div class="nav-each lastnav"><a href="Loginpage.html">LOGIN</a><br></div>
+  </div>
+        
+    <div class="smallnav">
+      <div class="nv">
+        <i class="fa-solid fa-xmark" onclick="cutMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+    
+     </div> 
+     
+
+    
+    <div class="banner">
+        
+        <div class="personal-info reveal active">
+                 <div class="infos reveal active">
+             <p>
+                CUTTING EDGE POS SYSTEMS
+             </p>
+            <h2>
+                 POS System Installation and Support
+            </h2>
+            <p>
+                Quick Touch POS is all in one retail & restaurant
+                 POS solution that offers a lot of features such as
+                  Point of Sale, Promotions, Recurring Sales, Purchases,
+                   Stock, CRM, Accounting and Payments (Offline, Online & Credit/Debit Cards)
+                    & many more.
+            </p>
+                      
+            <div class="bstyle reveal active">
+                
+              <a href="contact-jeph.html"><span></span>CONTACT US</a>
+              
+            </div>
+       </div>
+            <div class="myimages">
+             <img src="https://ik.imagekit.io/midnightcoders/POS-systems.png?updatedAt=1690212602239">
+            </div>
+            
+            
+            
+    </div>
+    <div class="personal-info reveal active">
+        <div class="myimage">
+         <img src="https://ik.imagekit.io/midnightcoders/inventory.webp?updatedAt=1690211870512">
+        </div>
+        
+        <div class="info">
+         <h2>
+            “Choosing GridTop as a POS partner makes sense for our business.”
+         </h2>
+         <p>
+             Mwananchi supermarket came to us for guidance on implementing POS technology into their checkout process to help grow their business.
+
+ 
+
+            In 2021, GridTop worked with Mwananchi Supermarket to redesign their front-end point-of-sale system. In six months, they went from four self-checkout stations to six.
+            
+             
+            
+            GridTop is there for Mwananchi as both their software and on-location technology experts to ensure their business continues to run smoothly.
+            
+             
+            
+            “This is a game-changer – these programs use flexible integrations that LOC software offers and are implemented by our local software experts.”
+            
+             
+         </p>
+         <p><b>McDonalds Mwangangi</b></p>
+         <p><i>Director of Operations, Mwananchi Supermarket.</i></p>
+       
+         
+        </div>
+       
+        
+    </div>
+    </div>
+    <div class="banner font reveal">
+      
+      <h2>Our Approach Has Helped Many Supermarkets</h2>  
+      <h3>We offer support every step of the way to get your system where it needs to be.</h3>   
+     
+    </div>
+    <div class="container-pic reveal">
+      <div class="left1">
+      <div class="img">
+        <img src="https://ik.imagekit.io/midnightcoders/analytics-1.svg?updatedAt=1690264037432">
+          </div>
+      
+      <h2><b>System Consulting</b></h2>
+      
+      <p>
+        We can identify the best combination of POS software and hardware to fit your unique needs. We partner with leading hardware and 
+        software vendors to provide our customers with the best available back office and front end POS solutions.
+      </p>
+     </div>
+      <div class="left1">
+        <div class="img">
+          <img src="https://ik.imagekit.io/midnightcoders/coding-2.svg?updatedAt=1690264037405">
+         </div>
+         <h2><b>Installation Services</b></h2>
+        
+         <p>
+          Our specialists will travel to your location(s) and install your POS system. We will set up and test all equipment and perform
+           quality assurance to ensure everything is running as it should. Our team will also train your staff on how your new POS system works.
+         </p>
+       
+        
+      </div>
+      <div class="left1" id="left1">
+        <div class="img">
+          <img src="https://ik.imagekit.io/midnightcoders/support-2.svg?updatedAt=1690264037508">
+    
+              </div>
+         <h2>Maintenance and Support</h2>
+        
+         <p>
+          Our Help Desk & regional field service technicians are here to help you stay online 24/7. If you experience an issue with your LOC POS software or hardware, we will take action to resolve the issue as quickly as possible.
+           We also offer maintenance plans that include the latest updates to your system.
+         </p>
+        
+      </div>
+    </div>
+    <div class="banner font reveal" id="cr">
+      
+      <h2>Custom Retail Software</h2>  
+      <h3>We fully support LOC store management suite (SMS) software solutions designed to provide our customers with industry-leading features that define modern retailing. LOC SMS Software can be customized to meet your needs and includes the following features:</h3>   
+     
+    </div>
+  <div class="container font">
+    <div class="card">
+      <h4>Point of Sale</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/web-design-2.png?updatedAt=1690269610446">
+      <p>Process transactions quickly through an HTML5 based touch screen interface</p>
+    </div>
+    <div class="card">
+      <h4>Back Office Management</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/computer-1.png?updatedAt=1690269610305">
+      <p>Full-featured item maintenance, including movement analysis & profitability by category by store</p>
+    </div>
+    <div class="card">
+      <h4>Loyalty</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/crm-1.png?updatedAt=1690269610305">
+      <p>Maintain customer profiles, build full loyalty programs, and deliver electronic coupons during or after the transaction</p>
+    </div>
+    <div class="card">
+      <h4>Inventory Control</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/real-estate.png?updatedAt=1690269609763">
+      <p>Controls for receiving and cost of goods management, with inter-store transfers</p>
+    </div>
+    <div class="card">
+      <h4>Fuel Integration</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/gears-1.png?updatedAt=1690269610625">
+      <p>Fully integrated fuel module, including pump management and cross-marketing</p>
+    </div>
+    <div class="card">
+      <h4>Warehouse Management</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/manufacturing-1.png?updatedAt=1690269610297">
+      <p>Efficiently manage ordering and shipping processes throughout the entire chain</p>
+    </div>
+    <div class="card">
+      <h4>Kiosk & Price Checker</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/mobile-1.png?updatedAt=1690269609753">
+      <p>Verify price, customer points, balance, and promotions in every store</p>
+    </div>
+    <div class="card">
+      <h4>In-House Gift Cards</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/credit-card.svg?updatedAt=1690270984055">
+      <p>Manage gift cards and voucher balances, including online redemption</p>
+    </div>
+    <div class="card">
+      <h4>Centralized Reports & Price Updates</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/chart-2-1.png?updatedAt=1690269610279">
+      <p>Deploy tighter control measures with less interaction</p>
+    </div>
+    <div class="card">
+      <h4>Labor Management</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/clock-2-1.png?updatedAt=1690271170156">
+      <p>Integrate labor costs into financial reporting and pull it any time</p>
+    </div>
+    <div class="card">
+      <h4>Security</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/cyber-security-2.png?updatedAt=1690269610462">
+      <p>Fully PCI compliant, certified with both PCI DSS and Visa PABP</p>
+    </div>
+    <div class="card">
+      <h4>Merchandising</h4>
+      <img src="https://ik.imagekit.io/midnightcoders/piggy-bank.png?updatedAt=1690269609853">
+      <p>Unparalleled sale and promotional options, offering virtually unlimited combinations and offers
+
+      </p>
+    </div>
+  </div>
+  <div class="banner font" id="banner">
+       <h2 style="font-size: 40px;font-weight: lighter;">Let’s build something great together.</h2>  
+    
+       <div class="bstyle reveal active">
+            
+        <a href="contact-jeph.html"><span></span>Contact us</a>
+        
+      </div>
+ </div>
+    <div class="footer">
+      <div class="emailcont reveal active">
+         <a href="mailto:utialojephtha@gmail.com">6771.2021@students.ku.ac.ke</a><br><br>
+          <a href="tel:+254114836831">(+254-114836831)</a>
+      </div>
+      <div class="title">
+              <h1>GRIDTOP</h1>
+      </div>
+      
+      <div class="socialpage reveal active">
+       <a href="https://wa.me/254114836831" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+       <a href="https://twitter.com/Jeph_coder" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+       <a href="https://www.instagram.com/gridtop_developers/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/jephtha-utialo-8662b7232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      </div> 
+    </div>
+<div class="footer-bottom">
+  <p>©2023 Utialo Jeph. All rights reserved. Google Developer & Founder of <a href="https://utialojeph.github.io/gd/" target="_blank">GRIDTOP.</a></p><br>
+  <h2 class="tos">
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="return-policy.html">Return Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </h2>
+<br>
+</div>
+
+<div class="logcart">
+  <a href="Loginpage.html">LOGIN</a>
+      <a href="cart.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+</div>  
+
+
+</body>
+</html>

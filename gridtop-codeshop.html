@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/de7121b9b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Ewert&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>GridTopTechs</title>
+    
+</head>
+
+<body>
+  <style>
+    .banner{
+      height: 350PX;
+      margin-top: 150px;
+    }
+    .container{
+      justify-content: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding-top: 25px;
+      display:flex;
+      flex-wrap: wrap;
+      height: auto;
+      background-color: rgb(0, 0, 0);
+      width: 80%;
+      margin: auto;
+      margin-top: 0;
+     
+    }
+    
+    .blogp{
+       padding-top: 20px;
+       font-weight: lighter;
+      }
+      .snippet h2{
+        font-size: 21px;
+        font-weight: lighter;
+      }
+      .respans{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+     }
+      .bstyle{
+        float: left;
+        width: auto;        
+        height: auto;
+     }
+    .answer{
+      width: 40%;
+      background-color: rgb(0, 0, 0);
+      padding-top: 50px;
+      float:left;
+      margin-left: 20px;
+     }
+     .answer a{
+      text-decoration: none;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: rgb(224, 224, 224);
+     }
+    .answer a:hover{
+      color: rgb(0, 116, 248);
+    }
+    .personal-info{
+      height:500px;
+    }
+     
+    @media all and (max-width:750Px){  
+      .banner{
+      margin-top: 0;
+    }
+      .container{
+      margin: 2px auto;
+      padding-left:0px;
+      margin-top: 0;
+         }
+    .snippet{
+      margin: 18px auto;
+      width: 90%;
+      margin-bottom: 10px;
+      margin-left: 0px;
+    }
+    .answer{padding-left: 25px;} 
+      
+    }
+  </style>
+  
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+        <i class="fa-solid fa-xmark" onclick="cutTopheader()"></i>
+    
+   </div>
+   </div>
+
+  
+    
+     <div class="title-nav-cart">
+      
+     <div class="logoside">
+    
+        <h1 class="T">GRIDTOP</h1>
+      </div>
+      
+      <nav class="navbar">
+        <ul>
+          <li><a class="about" href="index.html">HOME</a></li>
+          <li><a class="about" href="gridtop-codeshop.html">PLUGINS</a></li>
+          <li class="dropdown"><a href="#"><span>COURSES</span> </a>
+            
+            <ul>
+              <li><a href="boost-geekmode.html">BUILDING A PERSONAL SITE</a></li>
+              <li><a href="gridtop-courses.html">GRIDTOP (COMING SOON) </a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">SERVICES</a>
+            
+            <ul>
+              <li><a href="services.html">IT SUPPORT & SOFTWARES</a></li>
+              <li><a href="services.html">WEBSITES & MARKETING</a></li> 
+            </ul>
+          </li>
+         
+          
+          <li><a class="about" href="contact-jeph.html">CONTACT</a></li>
+          
+          <li class="dropdown"><a href="#"><span>MORE</span> </a>
+            
+            <ul>
+             
+              <li><a href="about-jeph.html">ABOUT ME</a></li>
+              <li><a href="gridtop-developer.html">GRIDTOP DEVS</a></li>
+              <li><a href="my-work.html">MY WORK</a></li>
+              <li><a href="#">HOBBIES & INTERESTS</a></li>
+              <li><a href="#">NEWS & OFFERS</a></li>
+            </ul>
+          </li>                   
+        </ul>      
+       </nav> 
+       
+    
+       
+    </div>
+    
+  
+    <div class="smallnav">
+      <div class="nv">
+      <i class="fa-solid fa-bars" onclick="openMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+     <div class="mobilenav" id="mobilenav">
+      
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+    
+   </div>
+   </div>
+      
+
+   <div class="mbnav"> 
+
+    <div class="nav-each firstnav"><a href="index.html">HOME</a><br></div>
+    <div class="nav-each"> <a href="boost-geekmode.html">PORTFOLIOS</a><br></div>
+    <div class="nav-each"><a href="gridtop-courses.html">COURSES</a><br></div>
+    <div class="nav-each"> <a href="services.html">SERVICES</a><br></div>
+    <div class="nav-each"> <a href="services.html">SOFTWARES</a><br></div>
+    <div class="nav-each"> <a href="contact-jeph.html">CONTACT</a><br></div>
+    <div class="nav-each"> <a href="about-jeph.html">ABOUT ME</a><br></div>
+    <div class="nav-each"> <a href="gridtop-developer.html">GRIDTOP DEVS</a><br></div>
+    <div class="nav-each"> <a href="my-work.html">MY WORK</a><br></div>
+    <div class="nav-each"> <a href="">HOBBIES</a><br></div>
+    <div class="nav-each lastnav"><a href="Loginpage.html">LOGIN</a><br></div>
+  </div>
+        
+    <div class="smallnav">
+      <div class="nv">
+        <i class="fa-solid fa-xmark" onclick="cutMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+    
+     </div> 
+    <div class="banner">
+        <h1>
+          The Code Shop
+          
+        </h1>
+        
+    
+        <div class="banner-buttons">
+            <a href="contact-jeph.html"><span></span>GET SUPPORT </a>
+           
+        </div>
+       
+    </div>
+   
+<div class="container">
+<div class="snippet  reveal active">
+<h3>Image Captions</h3>
+<h5>Code Snippet</h5>
+<br><br><br>
+<a href="">VIEW EXAMPLES</a>
+</div>
+<div class="snippet  reveal active">
+  <h3>Gallery Grid Captions</h3>
+  <h5>Code Snippet</h5>
+  <br><br><br>
+  <a href="">VIEW EXAMPLES</a>
+</div>
+<div class="snippet  reveal active">
+  <h3>Pricing Tables</h3>
+  <h5>Code Snippet</h5>
+  <br><br><br>
+  <a href="">VIEW EXAMPLES</a>
+</div>
+<div class="snippet  reveal active">
+  <h3>Dropdown <br>Accordions</h3>
+  <h5>Code Snippet</h5>
+  <br><br><br>
+  <a href="">VIEW EXAMPLES</a>
+</div>
+<div class="snippet  reveal active">
+  <h3>Reveal effects<br>Accordions</h3>
+  <h5>Code Snippet</h5>
+  <br><br><br>
+  <a href="">VIEW EXAMPLES</a>
+</div>
+<div class="snippet  reveal active">
+  <h3>Navigation Bars<br>Accordions</h3>
+  <h5>Code Snippet</h5>
+  <br><br><br>
+  <a href="">VIEW EXAMPLES</a>
+</div>
+</div>
+<div class="blogp  reveal active">
+  <h2>
+    CODE SHOP MISSION
+  </h2>
+  <P>
+    Code Shop was built to help & support the growing GridTop community through code snippets, video training, and tips & tricks.
+  </P>
+</div>
+<div class="container">
+  <div class="snippet  reveal active">
+  <h3>Code Snippets</h3>
+  <h2>These are exclusively made for GridTop sites and will offer custom design options with easy to understand instructions.</h2>
+  
+  </div>
+  
+  <div class="snippet  reveal active">
+    <h3>Video Training</h3>
+    <h2>The training will go over some great insights to help users understand how to get the most out of their GridTop site.</h2>
+    
+  </div>
+  <div class="snippet  reveal active">
+    <h3>Tips & Tricks</h3>
+    <h2>Learn from my mistakes and let me show you how to accomplish unique sections of your GridTop site that will impress.</h2>
+    
+  </div>
+   </div>
+   <div class="personal-info  reveal active">
+    <div class="myimage" id="myimage">
+     <img src="https://ik.imagekit.io/midnightcoders/codinclasses.jpg?updatedAt=1687943834926">
+    </div>
+    
+    <div class="info">
+     <h2>
+      Code Shop Support.
+     </h2>
+     <p>
+      I stand behind my work and support all of my Code Shop customers. Simply, submit a support ticket.
+     </p>
+   
+     <div class="bstyle">
+         
+       <a href="contact-jeph.html"><span></span>GET SUPPORT</a>
+       
+     </div>
+    </div>
+   
+    
+</div>
+  
+<div class="blogp  reveal active">
+  <h2>
+    WHAT I STAND FOR
+  </h2>
+  <P>
+    Even though I run my own creative digital agency over at <a href="">GridTop</a> this short video highlights my passions for what I believe in.
+
+  </P>
+</div>
+<div class="blogp  reveal active">
+  <h2>
+   HIRE A DEVELOPER
+  </h2>
+  <P>
+    Even though I run my own creative digital agency over at <a href="">GridTop</a> this short video highlights my passions for what I believe in.
+
+  </P>
+</div>
+<div class="blogp  reveal active">
+  <h2>
+   NEED A DEVELOPER?
+  </h2>
+  <P>
+    You can also hire me as a GridTop developer or consultant. I can completely build your website or answer your questions.
+
+  </P><br><br>
+  <div class="respans">
+  <div class="bstyle resp reveal active">
+         
+    <a href=""><span></span>BUILD YOUR WEBSITE</a>
+  </div>
+  <div class="answer ">
+    <a href="">ANSWER YOUR QUESTIONS</a>
+  </div>
+</div>
+</div>
+<br><br><br><br><br><br><br>
+
+<div class="footer">
+  <div class="emailcont reveal active">
+     <a href="mailto:utialojephtha@gmail.com">6771.2021@students.ku.ac.ke</a><br><br>
+      <a href="tel:+254114836831">(+254-114836831)</a>
+  </div>
+  <div class="title">
+          <h1>GRIDTOP</h1>
+  </div>
+  
+  <div class="socialpage reveal active">
+   <a href="https://wa.me/254114836831" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+   <a href="https://twitter.com/Jeph_coder" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+   <a href="https://www.instagram.com/gridtop_developers/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+   <a href="https://www.linkedin.com/in/jephtha-utialo-8662b7232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  </div> 
+</div>
+
+<div class="footer-bottom">
+  <p>©2023 Utialo Jeph. All rights reserved. Google Developer & Founder of <a href="https://utialojeph.github.io/gd/" target="_blank">GRIDTOP.</a></p><br>
+  <h2 class="tos">
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="return-policy.html">Return Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </h2>
+<br>
+</div>
+
+
+<div class="logcart">
+  <a href="Loginpage.html">LOGIN</a>
+      <a href="cart.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+</div>  
+
+</body>
+</html>

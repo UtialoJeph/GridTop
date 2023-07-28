@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/de7121b9b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Ewert&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>GridTopTechs</title>
+    
+</head>
+<body>
+    <style>
+        .upperheader{
+            background-color: rgb(0, 116, 248);;
+        }
+        .navbar a{
+            color: rgb(0, 116, 248);
+        }
+        .banner{
+           margin-top: 200px;
+                }
+        .lighter{
+            font-weight: lighter;
+        }
+        .banner-buttons{
+          width:90%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        .banner-buttons a{
+            border-color:rgb(0, 116, 248);
+            width: 250px;
+            background-color:none;
+        }
+               .container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 98%;
+            height: auto;
+            background-color: rgb(0, 0, 0);
+        }
+        .card{
+            padding: 10px;
+            height: 350px;
+            width: 20%;
+            background-color: rgb(31, 31, 31);
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 12px rgba(127, 137, 161, 0.25);
+        }
+        .card p{
+        font-size: 20px;
+        }
+        .card:hover{
+            background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(38,38,38,1) 35%, rgba(139,142,143,1) 100%);
+           }
+        .card h2{
+            color:rgb(0, 116, 248);
+            border-bottom: .5px solid rgb(94, 92, 92);
+            padding-bottom: 5px;
+        
+        }
+        .card[data-id="it"],.card[data-id="software"], .card[data-id="marketing"]{
+         display: none;
+       }
+       .card-a{
+         text-decoration: none;
+         color: rgb(255, 255, 255);
+       }
+        @media all and (max-width:1300Px){  
+            .card{
+             width: 25%;
+             height: 350px;
+        }
+    }
+        @media all and (max-width:1050Px){  
+            .card{
+             width: 40%;
+        }
+    }
+        @media all and (max-width:650Px){  
+            .banner{
+                height: auto;
+            margin-top: 100px;
+            }
+            .cis{
+                font-size: 20px;
+            }
+            .banner-buttons a{
+                top:0;
+            }
+            .card{
+            height: 250px;
+            width: 90%;
+        }
+        }
+    </style>
+   
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+        <i class="fa-solid fa-xmark" onclick="cutTopheader()"></i>
+    
+   </div>
+   </div>
+
+   
+     <div class="title-nav-cart">
+      
+     <div class="logoside">
+    
+        <h1 class="T">GRIDTOP</h1>
+      </div>
+      
+      <nav class="navbar">
+        <ul>
+          <li><a class="about" href="index.html">HOME</a></li>
+          <li><a class="about" href="gridtop-codeshop.html">PLUGINS</a></li>
+          <li class="dropdown"><a href="gridtop-courses.html"><span>COURSES</span> </a>
+            
+            <ul>
+              <li><a href="boost-geekmode.html">BUILDING A PERSONAL SITE</a></li>
+              <li><a href="">GRIDTOP (COMING SOON) </a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">SERVICES</a>
+            
+            <ul>
+              <li><a href="services.html">WEBSITE & MARKETING</a></li>
+              <li><a href="services.html">SOFTWARE & PRODUCTIVITY</a></li>
+                           
+            </ul>
+          </li>
+         
+          
+          <li><a class="about" href="contact-jeph.html">CONTACT</a></li>
+          
+          <li class="dropdown"><a href="#"><span>MORE</span> </a>
+            
+            <ul>
+             
+              <li><a href="about-jeph.html">ABOUT ME</a></li>
+              <li><a href="gridtop-developer.html">GRIDTOP DEVS</a></li>
+              <li><a href="my-work.html">MY WORK</a></li>
+              <li><a href="#">HOBBIES & INTERESTS</a></li>
+              <li><a href="">NEWS & OFFERS</a></li>
+            </ul>
+          </li>                   
+        </ul>      
+       </nav> 
+       
+    
+       
+    </div>
+    
+  
+     
+    <div class="smallnav">
+      <div class="nv">
+      <i class="fa-solid fa-bars" onclick="openMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+     <div class="mobilenav" id="mobilenav">
+      
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+    
+   </div>
+   </div>
+      
+
+   <div class="mbnav"> 
+
+    <div class="nav-each firstnav"><a href="index.html">HOME</a><br></div>
+    <div class="nav-each"><a href="gridtop-codeshop.html">PLUGINS</a><br></div>
+    <div class="nav-each"> <a href="boost-geekmode.html">PORTFOLIOS</a><br></div>
+    <div class="nav-each"> <a href="services.html">WEBSITES</a><br></div>
+    <div class="nav-each"> <a href="services.html">SOFTWARES</a><br></div>
+    <div class="nav-each"> <a href="contact-jeph.html">CONTACT</a><br></div>
+    <div class="nav-each"> <a href="about-jeph.html">ABOUT ME</a><br></div>
+    <div class="nav-each"> <a href="gridtop-developer.html">GRIDTOP DEVS</a><br></div>
+    <div class="nav-each"> <a href="my-work.html">MY WORK</a><br></div>
+    <div class="nav-each"> <a href="">HOBBIES</a><br></div>
+    <div class="nav-each lastnav"><a href="Loginpage.html">LOGIN</a><br></div>
+  </div>
+        
+    <div class="smallnav">
+      <div class="nv">
+        <i class="fa-solid fa-xmark" onclick="cutMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+    
+     </div> 
+     
+
+    
+    <div class="banner" id="banner">
+       <h2 class="lighter cis">CONSULTING. IMPLEMENTATION. SUPPORT</h2><br>
+       <h2>Business Technology Services</h2>  
+       <h3 class="lighter" id="land">Use the filters below to sort through the various technology services we offer.</h3>   
+       <h2>I need help with . . .</h2>
+
+       
+       <div class="banner-buttons">
+        <a href="#banner" class="filter-button" target="_self" data-target="it" id="bg" onclick="bgFirst(1)">IT Support & Security</a>
+        <a href="#banner" class="filter-button" target="_self" data-target="software" id="bg2" onclick="bgSecond(1)">Software & Productivity</a>
+        <a href="#banner" class="filter-button" target="_self" data-target="marketing" id="bg3" onclick="bgThird(1)">Website & Marketing</a>
+       </div>
+    </div>
+    <div class="container font" id="container">
+      <div class="card" data-id="marketing">
+         <a href="website-design-development.html" class="card-a">
+         <h3>MARKETING</h3>
+         <h2>Web Design and Development</h2>
+         <p>
+            Our team creates custom, responsive websites so your business can stand out online. 
+            Receive ongoing assistance with our website maintenance & security plans.
+         </p>
+         </a>
+      </div>
+      <div class="card" data-id="it">
+         <a href="point-of-sales.html" class="card-a">
+         <h3>INFORMATION TECHNOLOGY</h3>
+         <h2>Point of Sales</h2>
+         <p>
+           Optimize your business with modern Point of Sale solutions. Receive installation services, IT support, and more for streamlined shopping experince.
+         </p>
+      </a>
+      </div>
+ 
+      <div class="card" data-id="software">
+         <a href="" class="card-a">
+         <h3>SOFTWARE</h3>
+         <h2>Back Office Software Systems</h2>
+         <p>
+            Run your business more smoothly behind-the-scenes. We build back office systems designed to increase productivity & help 
+            your company reach its full potential.
+         </p>
+         </a>
+      </div>
+   
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Managed IT Services</h2>
+            <p>
+                Receive consistent support From
+                your dedicated team with the Gridtop Assurance plan.
+                Stay focused on your business. We'll make the technology happen.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Email Marketing</h2>
+            <p>
+               Send emails that resonate with your audience. We provide full-service email
+               marketing services, from platform management to copywriting and creative design.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>IT Services in Greater East Africa | Gain help anytime, anywhere</h2>
+            <p>
+            GRIDTOP resolves IT issues at your business and provides powerful cyber security, whether you need remote assistance or onsite help in East Africa.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Office Productivity Software</h2>
+            <p>
+               Give your team the tools they need to accomplish more! We specialize in complex 
+               integrations and customizations to fit all software solutions.
+            </p>
+            </a>
+         </div>
+        
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>IT Services in the greater Nairobi Area| Gain 24/7 support</h2>
+            <p>
+               Our experienced teams provide rapid response IT support and ensure powerful cyber security for your business, both onsite inthe Greater Nairobi Region & offsite.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Mobile App Development</h2>
+            <p>
+             Everyone expects to interact with your business on the go. Create a custom 
+             solution for any device with easy navigation and offline connectivity.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>professional Photography</h2>
+            <p>
+               Help your business stand out with professional Photography. Build interest and trust with high-quality
+               product shots, headshots, and corporate photos.
+
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Proactive Cyber Security</h2>
+            <p>
+               Prevention is key for cyber security. Our Proactive
+               services include risk assessments and ongoing scans & monitoring to secure your business, systems, and data.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>IT Projects</h2>
+            <p>
+               Accomplish your IT initiatives with minimal disruption. We can assist 
+               with server hardware upgrades, data recovery, security solutions, and more.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Business Continuity & Disaster Recovery</h2>
+            <p>
+               Be prepared fo the unknown. Ensure your business has the tools and solutions to handle aany situation.
+               Get your business back on track ASAP.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Cloud Migration & Management</h2>
+            <p>
+                Leverage cloud technologies for your business and reduce overhead. We can help you move existing systems and implement new solutions for greater productivity.
+
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Cyber Security</h2>
+            <p>
+               Don't leave your business vulnerable to data breaches and malicious attacks. Get the BEST in cyber security and thrie during times of uncertainty.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>IT Support</h2>
+            <p>
+              Get responsive, 24/7 support for your teams when you need it most. We'll handle the technology so you can stay focused on doing business.
+            </p>
+            </a>
+         </div>
+       
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Video Surveillance Systems</h2>
+            <p>
+              Protect your business with a security system you can trust. Gain instant clarity into aspects of your operations with crisp imaging and 24/7 monitoring.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Meet & Exceed Cyber Security Insurance Requirements</h2>
+            <p>
+            Our team of experts works with insurance providers and their clients to provide preventive cyber security & incident response services.
+            </p>
+            </a>
+         </div>
+        
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>IT Relocation Services</h2>
+            <p>
+                Moving locations? We can help you quickly relocate your infrastructure, data center, and other technology with minimal downtime.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Phone Systems</h2>
+            <p>
+              Connect your team with phone systems that support multiple device types and video conferencing solutions that align seamlessly with your workspace needs.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Remote Work Services</h2>
+            <p>
+                Need to turn your workforce remote? We have you covered. We offer remote work solutions to help businesses increase flexibility & stay efficient.
+            </p>
+            </a>
+         </div>
+        
+        
+        
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Business Inteligence & Data Warehousing</h2>
+            <p>
+              We make business data tangible, intuitive, and accessible. Get easy-to-read reporting that provides all the data 
+              you need to make smart business decisions.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>IT Services</h2>
+            <p>
+                We offer nationwide professional technology consulting & business IT solutions. Our experts can help you stay up-to-date with the technological landscape.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Software Support & Evaluation</h2>
+            <p>
+               Receive software mantainance, support, adaption, & development 
+               from our experts to improve performance and value for your business software.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Unified Communications & Collaboration</h2>
+            <p>
+               Improve commmunications amongst your team by adding greater context 
+               to their conversations. See how a UCC solution can help!
+            </p>
+            </a>
+         </div>
+        
+        
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Web Portals</h2>
+            <p>
+              Simplify processes and make data readily available with custom,
+              self-service portals. We can help with B2B, eCommerce, customer, vendor, or general solutions.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Wiring & Wireless Services</h2>
+            <p>
+               Help your business perform at its best with high-speed networks and ecpert installation. With secure and stable connections, you can focus on your work.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Service Management Software</h2>
+            <p>
+              Remain flexible and efficient when it comes to your customer management needs. We
+              can add functionality, connect your systems, or create a custom solution. 
+            </p>
+            </a>
+         </div>
+        
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Software Systems Analysis</h2>
+            <p>
+                Receive expert assessments of your current technology stance and trusted ways to improve.
+                Our systems analysis includes load testing, security scans, and more.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Saas Product Development</h2>
+            <p>
+                Develop a high-quality software product with stability and value top-of-mind.
+                We can help revamp an existing program or create a new system.
+            </p>
+            </a>
+         </div>
+         
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Business Software and ERP Integrations</h2>
+            <p>
+               Enable your systems to share data and work seamlessly together
+               using custom integrations and APIs. We help with ERPs, CRMs, EMRs, cloud software, and more.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Database Management</h2>
+            <p>
+              Organize and enhance your database to increase speed and reduce costs.
+              Our focus on performance and security help safeguard your company information.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Systemplicity Services</h2>
+            <p>
+                Boost efficiency and gain real-time insights by simplifying, automating, & integrating  your software; our experts can help increase the value 
+                of your systems.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Software Automation</h2>
+            <p>
+                Our team can enhance your current automated processes according to your 
+                specifications or create new custom automations that increase 
+                your business' efficiency.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Work with Existing Software</h2>
+            <p>
+               If you need better support and extended functionality for your 
+               software solution, we can keep your system running smoothly & streamline processes for your team.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Software Development</h2>
+            <p>
+                Build a custom system or improve the features of your existing software. We specilaize in business software solutions, software integrations, & ongoing support.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>System Takeover & Advancement</h2>
+            <p>
+               Lookig for a new development partner for your business software solution?
+               Work with our experts to support, advance, rebuild, or augment your current system.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Software Service Catalog</h2>
+            <p>
+                Bridge the gap between today and your company's future with best-in-class software. We focus on custom development, integrations and more.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Accounting Software Solutions</h2>
+            <p>
+                Extend the capabilities of your current accounting software and allow for data flows
+                between systems. Start accomplishing more with your software!
+            </p>
+            </a>
+         </div>
+         
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Website maintenance & Security</h2>
+            <p>
+                You run your business; we manage and mantain your website.
+                 Trust our experts to monitor your site and keep it secure.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Recruitment Marketing</h2>
+            <p>
+               
+               Attract, hire, and retain great talent with the help of our recruitment experts.
+                We can help you connect and engage with the best candidates.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Motion Graphics & Animation</h2>
+            <p>
+               Captivate your audience with impressive visuals. Our multimedia experts specialize
+               in creating animated brand assets that enhance your online presence.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Marketing Automation</h2>
+            <p>
+                Let marketing automation stramline the ways you interact with leads and customers. Our experts 
+                can help with chatbots, social media, advertising, and more.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>SEO Marketing Services</h2>
+            <p>
+               Refine your web presence to reach your audience, rank on search engines, and boost
+               website traffic. Our strategists stay up-to-date with the latest in SEO.
+
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Social Media Marketing</h2>
+            <p>
+                Our social media experts can ensure your message is heard. Interact with customers, build a loyal following,
+                 and invest in targeted ads to expand your reach.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>PPC Advertising Agency</h2>
+            <p>
+               Generate more quality leads with PPC so your business can continue growing. Drive more traffic, get more conversions, and optimize your cost-per-click (CPC)
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Video Production Services</h2>
+            <p>
+               Video content is the way of the future! Tell your story and build your brand through
+               testimonials, product demos, corporate videos, and more.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="software">
+            <a href="" class="card-a">
+            <h3>SOFTWARE</h3>
+            <h2>Extending & Integrating CRM software</h2>
+            <p>
+               We can provide your business with various software services to extend your CRM and 
+               integrate it with other systems. Learn more about our CRM Software services here.
+            </p>
+            </a>
+         </div>
+         
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>eCommerce Web Design</h2>
+            <p>
+              Increase sales and conversions with a custom eCommerce website. Whether you use Shopify,
+              WooCommerce, or Magento, we can help your products & brand stand out.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Branding & Identity</h2>
+            <p>
+               Make your branding impressive with professionally crafted design and messaging. Our brand awareness services are focused on getting your business noticed.
+            </p>
+            </a>
+         </div>
+        
+         <div class="card" data-id="it">
+            <a href="" class="card-a">
+            <h3>INFORMATION TECHNOLOGY</h3>
+            <h2>Cyber Security Incident Response</h2>
+            <p>
+                If your business is experiencing a cyber incident our experts can identify the source, remove the threat, and help you quickly return to normal operations.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Content Marketing</h2>
+            <p>
+               Share your story, deliver expertise, and engage your audience.
+               We can help build a content marketing strategy so you can achieve your goals.
+            </p>
+            </a>
+         </div>
+         <div class="card" data-id="marketing">
+            <a href="" class="card-a">
+            <h3>MARKETING</h3>
+            <h2>Marketing and Website Design</h2>
+            <p>
+                Stand out among your competition with one-of-a kind web design, messaging, & branding. Our full-service
+                marketting agency can help at any point in your journey,
+            </p>
+            </a>
+         </div>
+        
+    </div>
+    
+  
+  
+    <div class="footer">
+      <div class="emailcont reveal active">
+         <a href="mailto:utialojephtha@gmail.com">6771.2021@students.ku.ac.ke</a><br><br>
+          <a href="tel:+254114836831">(+254-114836831)</a>
+      </div>
+      <div class="title">
+              <h1>GRIDTOP</h1>
+      </div>
+      
+      <div class="socialpage reveal active">
+       <a href="https://wa.me/254114836831" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+       <a href="https://twitter.com/Jeph_coder" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+       <a href="https://www.instagram.com/gridtop_developers/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/jephtha-utialo-8662b7232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      </div> 
+    </div>
+<div class="footer-bottom">
+  <p>©2023 Utialo Jeph. All rights reserved. Google Developer & Founder of <a href="https://utialojeph.github.io/gd/" target="_blank">GRIDTOP.</a></p><br>
+  <h2 class="tos">
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="return-policy.html">Return Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </h2>
+<br>
+</div>
+
+<div class="logcart">
+  <a href="Loginpage.html">LOGIN</a>
+      <a href="cart.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+</div>  
+
+
+</body>
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/de7121b9b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Ewert&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>GridTopTechs</title>
+    
+</head>
+<body>
+ 
+       
+    <style>
+        
+ .bstyle{display: flex;}
+  .personal-info{
+    width: 90%;
+    height: auto;
+    justify-content:center;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .infos{
+   margin-top: 0;
+  }
+ 
+ .myimage img,
+.myimages img{
+width: 100%;
+height: 100%;
+margin-top: 50px;
+}
+.container{
+    width: 100%;
+    height:auto;
+}
+.buttons{  
+    margin: 10px;
+    float: left;
+    width: 40%;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.view{
+    margin: 10px;
+    float: left;
+    width: 50%;
+    border-left: .5px solid rgb(43, 41, 41);
+}
+.view h4{
+    font-size: 30px;
+    margin-top: 150px;
+    padding:20px;  
+    font-weight: lighter;  
+}
+
+#create,#develop,#deploy{
+    display:none;
+}
+.buttons a{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:25px;
+    padding:25px;
+    width: 90%;
+    background-color:transparent;
+    margin:20px;
+    border-radius: 5px;
+    border: .5px solid rgb(0, 116, 248);
+    }    
+  .brd{
+        width: 2.5px;
+        height: 25px;
+        background-color: rgb(116, 116, 122);
+    }
+    .card{
+      display: flex;
+       margin: 5px;
+      width: 22.5%;
+      height: 125px;
+      background-color: rgb(70, 68, 68);
+      border-radius: 5px;
+    }
+    #tp{
+      margin-top: 200px;
+    }
+    .icon-image{
+      justify-content: center;
+      display: flex;
+      float: left;
+      width: 30%;
+      align-items: center;
+    }
+    .icon-image img{
+      width: 80%;
+      margin:20%;
+    }
+    .texts{
+      justify-content: center;
+      display: flex;
+      float: left;
+      width: 70%;
+      align-items: center;
+    }
+    .sausage{
+      padding:0;
+      background-color:rgb(42, 43, 42);
+      height: auto;
+      width: 60%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .sausage h3{
+      background-color: rgb(42, 43, 42);;
+      padding:15px;
+      margin:0;
+      border-radius: 5px;
+      cursor:pointer;
+    }
+    #plus,#x{
+      background-color:rgb(42, 43, 42);
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    .icon{
+      cursor: pointer;
+    }
+    .sausage p{
+      cursor: pointer;
+      padding: 10px;
+    }
+   #comm,#google,#seoppc, #duration,#own, #update, #ssl{
+      display:none;
+    }
+    @media all and (max-width:650Px){  
+      .personal-info{
+        width: 80%;
+        margin-top: 100px;
+      }
+      .card{
+         width: 80%;      
+    }
+      .buttons{    
+       width: 90%;
+       margin: 0;
+   }
+   .view h4{
+    margin-top:0px;
+ }
+   .sausage{
+      width: 95%;      
+    }
+    .view{
+     width: 100%;
+    border-left:none;
+}
+.view h4{
+  font-size: 20px;
+}
+#tp{
+      margin-top:0;
+    }
+    .banner{
+      height: auto;
+    }
+    .buttons a{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:25px;
+    padding:15px;
+    width: 90%;
+    background-color:transparent;
+    margin:5px;
+    border-radius: 5px;
+    border: .5px solid rgb(0, 116, 248);
+    }    
+  .brd{
+        width: 2.5px;
+        height: 5px;
+        background-color: rgb(116, 116, 122);
+    }
+    }
+    </style>
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+        <i class="fa-solid fa-xmark" onclick="cutTopheader()"></i>
+    
+   </div>
+   </div>
+
+      
+     <div class="title-nav-cart">
+      
+     <div class="logoside">
+    
+        <h1 class="T">GRIDTOP</h1>
+      </div>
+      
+      <nav class="navbar">
+        <ul>
+          <li><a class="about" href="index.html">HOME</a></li>
+          <li><a class="about" href="gridtop-codeshop.html">PLUGINS</a></li>
+          <li class="dropdown"><a href="gridtop-courses.html"><span>COURSES</span> </a>
+            
+            <ul>
+              <li><a href="boost-geekmode.html">BUILDING A PERSONAL SITE</a></li>
+              <li><a href="">GRIDTOP (COMING SOON) </a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">SERVICES</a>
+            
+            <ul>
+              <li><a href="services.html">IT SUPPORT & SOFTWARES</a></li>
+              <li><a href="services.html">WEBSITES & MARKETING</a></li> 
+            </ul>
+          </li>
+         
+          
+          <li><a class="about" href="contact-jeph.html">CONTACT</a></li>
+          
+          <li class="dropdown"><a href="#"><span>MORE</span> </a>
+            
+            <ul>
+             
+              <li><a href="about-jeph.html">ABOUT ME</a></li>
+              <li><a href="gridtop-developer.html">GRIDTOP DEVS</a></li>
+              <li><a href="my-work.html">MY WORK</a></li>
+              <li><a href="#">HOBBIES & INTERESTS</a></li>
+              <li><a href="#">NEWS & OFFERS</a></li>
+            </ul>
+          </li>                   
+        </ul>      
+       </nav> 
+       
+    
+       
+    </div>
+    
+  
+     
+    <div class="smallnav">
+      <div class="nv">
+      <i class="fa-solid fa-bars" onclick="openMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+     <div class="mobilenav" id="mobilenav">
+      
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+    
+   </div>
+   </div>
+      
+
+   <div class="mbnav"> 
+
+    <div class="nav-each firstnav"><a href="index.html">HOME</a><br></div>
+    <div class="nav-each"><a href="gridtop-codeshop.html">PLUGINS</a><br></div>
+    <div class="nav-each"> <a href="boost-geekmode.html">PORTFOLIOS</a><br></div>
+    <div class="nav-each"> <a href="services.html">SERVICES</a><br></div>
+    <div class="nav-each"> <a href="services.html">SOFTWARES</a><br></div>
+    <div class="nav-each"> <a href="contact-jeph.html">CONTACT</a><br></div>
+    <div class="nav-each"> <a href="about-jeph.html">ABOUT ME</a><br></div>
+    <div class="nav-each"> <a href="gridtop-developer.html">GRIDTOP DEVS</a><br></div>
+    <div class="nav-each"> <a href="my-work.html">MY WORK</a><br></div>
+    <div class="nav-each"> <a href="">HOBBIES</a><br></div>
+    <div class="nav-each lastnav"><a href="Loginpage.html">LOGIN</a><br></div>
+  </div>
+        
+    <div class="smallnav">
+      <div class="nv">
+        <i class="fa-solid fa-xmark" onclick="cutMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+    
+     </div> 
+     
+    
+        
+        <div class="personal-info reveal active">
+                 <div class="infos reveal active">
+             <p>
+                WEBSITE DESIGN & DEVELOPMENT
+             </p>
+            <h2>
+                Impress your audience with a custom-designed website
+            </h2>
+            <p>
+                Establish your digital presence with a memorable website that sells your brand.
+                 We specialize in creating a mobile-friendly user experience optimized for Google search.
+            </p>
+                      
+            <div class="bstyle reveal active">
+                
+              <a href="contact-jeph.html"><span></span>Contact us</a>
+              <a href="contact-jeph.html"><span></span>View Portfolio</a>
+              
+            </div>
+       </div>
+            <div class="myimages">
+             <img src="https://ik.imagekit.io/midnightcoders/web-design-1.png?updatedAt=1690373901362">
+            </div>
+            
+            
+            
+    </div>
+  
+        <div class="banner font">
+        <h2 style="font-size: 40px;"><b>Our Website Process In 4 Simple Steps</b></h2><br>
+        <h2 style="font-weight: lighter;">
+            Team up with a dedicated strategist, designer, developer, and writer to create a cohesive digital representation of your brand.
+        </p>
+     </div>
+  <div class="container font">
+
+    <div class="buttons">
+        <a href="#" onmouseenter="dispHov()" id="collb">Collaborate</a>
+        <div class="brd"></div>
+        <a href="#" onmouseenter="dispHov1()"id="createb">Create</a>
+        <div class="brd"></div>
+        <a href="#" onmouseenter="dispHov2()" id="devb">Develop</a>
+        <div class="brd"></div>
+        <a href="#" onmouseenter="dispHov3()" id="depb">Deploy</a>
+    </div>
+    <div class="view" style="font-weight: lighter;line-height: 45px;">
+       
+        <h4 id="collaborate">
+            Hello! We always start with a friendly introduction. You get to know our team and we get to know your brand, goals, and vision for the future. Together we create an ideal plan for success.
+        </h4>
+    
+        <h4 id="create">
+            We design, animate, write, and edit whatever it takes to make your website come to life. All of our work is 100%, made just for your brand.
+        </h4>
+        <h4 id="develop">
+            Once we nail the look, it’s time to make it work. Our developers ensure the site’s design and functionality deliver the same beautiful experience across all devices.
+        </h4>
+        <h4 id="deploy">
+            After passing our tests and receiving your OK, your site will be launched and ready to view. If you need ongoing support, check out our Website Maintenance plans!
+        </h4>
+    </div>
+  </div>
+  <div class="banner font" style="width: 60%;height:100px;" id="tp">
+    <h2 style="font-size: 30px;"><b>Modernize your brand</b></h2><br>
+ 
+   </div>
+
+ <div class="personal-info reveal active" style="margin-top: 0;;">
+  <div class="myimages">
+    <img src="https://ik.imagekit.io/midnightcoders/gd.JPG?updatedAt=1690441741236">
+    </div>
+    
+  <div class="infos">
+
+<h2>
+  Step forward towards the future
+</h2>
+<p>
+  Take your brand from the past to the present with a modern layout, imagery, and style. Provide your audience with a streamlined user experience,
+   with easy navigation and interactive elements.
+</p>
+       
+<div class="bstyle reveal active">
+ 
+<a href="#"><span></span>Learn more</a>
+
+</div>
+</div>
+
+</div>
+<div class="banner font reveal" style="width: 60%; height:200px;" id="tp">
+  <h2 style="font-size: 30px; margin-bottom: 0;"><b>Ongoing support for your website</b></h2><br>
+  <h4>Already have a website? Ask about our support and maintenance plans.</h4>
+ </div>
+  <div class="container font reveal" style="width: 95%;">
+    <div class="card">
+      <div class="icon-image">
+      <img src="https://ik.imagekit.io/midnightcoders/book.png?updatedAt=1690447728951" alt="">
+    </div>
+    <div class="texts">
+      <h3>Content Updates</h3>
+    </div>
+    </div>
+    <div class="card">
+      <div class="icon-image">
+      <img src="https://ik.imagekit.io/midnightcoders/code-1.png?updatedAt=1690447728390" alt="">
+    </div>
+    <div class="texts">
+      <h3>New Page Creation</h3>
+    </div>
+    </div>
+    <div class="card">
+      <div class="icon-image">
+      <img src="https://ik.imagekit.io/midnightcoders/gears-1.png?updatedAt=1690447727947" alt="">
+    </div>
+    <div class="texts">
+      <h3>Plugin Management</h3>
+    </div>
+    </div>
+    <div class="card">
+      <div class="icon-image">
+      <img src="https://ik.imagekit.io/midnightcoders/chart-2-1.png?updatedAt=1690447729796" alt="">
+    </div>
+    <div class="texts">
+      <h3>Traffic Monitoring</h3>
+    </div>
+    </div>
+    <div class="card">
+      <div class="icon-image">
+      <img src="https://ik.imagekit.io/midnightcoders/database-1.png?updatedAt=1690447728323" alt="">
+    </div>
+    <div class="texts">
+      <h3>Recurring Backups</h3>
+    </div>
+    </div>
+    <div class="card">
+      <div class="icon-image">
+      <img src="https://ik.imagekit.io/midnightcoders/results-1.png?updatedAt=1690447728401" alt="">
+    </div>
+    <div class="texts">
+      <h3>SSL Management</h3>
+    </div>
+    </div>
+    <div class="card">
+      <div class="icon-image">
+      <img src="https://ik.imagekit.io/midnightcoders/padlock.png?updatedAt=1690447726223" alt="">
+    </div>
+    <div class="texts">
+      <h3>Security Optimization</h3>
+    </div>
+    </div>
+    <div class="card">
+      <div class="icon-image">
+      <img src="https://ik.imagekit.io/midnightcoders/thumbsup-1.png?updatedAt=1690447727248" alt="">
+    </div>
+    <div class="texts">
+      <h3>Functionality Testing</h3>
+    </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="container font reveal" style="width: 95%;">
+    <div class="faq" style="width: 100%; text-align: center;">
+    <h2>FAQ</h2>
+  </div>
+      <div class="sausage" onclick="dispDur(1)">
+        <div class="contents" style="width: 95%; float: left;">
+      <h3>
+        How long will it take to create my new website?
+      </h3>
+      <p id="duration">
+        As every website project is different, the timetable for your website project will depend on
+         a number of factors. These include the number of pages, content creation, and functionality.
+          On average, website projects last 2 to 3 months. Our sales and project management team will 
+          provide you with a time frame based on the unique requirements of your project.
+      </p>
+    </div>
+    <div class="icon" style="font-size: 30px; text-align: center;color: rgb(206, 56, 56);" id="plus">
+       +
+    </div>
+    <div class="icon" style="font-size: 20px; text-align: center;color: rgb(206, 56, 56);display: none;padding-top: 5px;" id="x">
+      x
+   </div>
+    </div>
+    
+      <div class="sausage" onclick="dispDur1(1)">
+        <div class="contents" style="width: 95%; float: left;">
+       
+      <h3>
+        Do I have to write my own content?
+      </h3>
+      
+      <p id="own">
+        Our marketing team includes experienced journalists and copywriters who can create your content with a focus on your brand messaging and SEO best practices. While you can provide content that our web design team will implement, it is not a requirement, as we are a full-service marketing agency.
+      </p>
+    </div>
+    <div class="icon" style="font-size: 30px; text-align: center;color: rgb(206, 56, 56);" id="plus1">
+       +
+    </div>
+    <div class="icon" style="font-size: 20px; text-align: center;color: rgb(206, 56, 56);display: none;padding-top: 5px;" id="x1">
+      x
+   </div>
+    </div>
+    
+      <div class="sausage" onclick="dispDur2(1)">
+        <div class="contents" style="width: 95%; float: left;">
+       
+      
+      <h3>
+        Can I update my own website?
+      </h3>
+      <p id="update">
+        Our marketing team includes experienced journalists and copywriters who can create your content with a focus on your brand messaging and SEO best practices. While you can provide content that our web design team will implement, it is not a requirement, as we are a full-service marketing agency.
+      </p>     
+    </div>
+    <div class="icon" style="font-size: 30px; text-align: center;color: rgb(206, 56, 56);" id="plus2">
+       +
+    </div>
+    <div class="icon" style="font-size: 20px; text-align: center;color: rgb(206, 56, 56);display: none;padding-top: 5px;" id="x2">
+      x
+   </div>
+    </div>
+    
+    <div class="sausage" onclick="dispDur3(1)"> 
+        <div class="contents" style="width: 95%; float: left;">
+       
+      
+       <h3>
+        What is an SSL and why is it so important?
+      </h3>
+      <p id="ssl">
+        SSL stands for secure socket layer. An SSL encrypts information sent to a web server from a website visitor, which prevents hackers from intercepting and using that information to steal that person’s identity. A website that contains an active SSL will feature a padlock and “https” preceding the domain name in the address bar of the browser, so anyone who visits your site will know if you have an active SSL. If you do not have an SSL or it has expired, we take action to ensure the website displays as secure.
+      </p>    
+    </div>
+    <div class="icon" style="font-size: 30px; text-align: center;color: rgb(206, 56, 56);" id="plus3">
+       +
+    </div>
+    <div class="icon" style="font-size: 20px; text-align: center;color: rgb(206, 56, 56);display: none;padding-top: 5px;" id="x3">
+      x
+   </div>
+
+    </div>
+    <div class="sausage" onclick="dispDur4(1)">
+      <div class="contents" style="width: 95%; float: left;">
+     
+    
+    <h3>
+      Will you communicate with my website host if my website goes down?
+    </h3>
+    <p id="comm">
+      Yes, in the event that your website goes down and we discover that the issue is with the website host, we will contact them immediately to make sure they are actively pursuing a solution
+       that will bring your website back up as quickly as possible. We will also keep you updated throughout this process.
+    </p>     
+  </div>
+  <div class="icon" style="font-size: 30px; text-align: center;color: rgb(206, 56, 56);" id="plus4">
+     +
+  </div>
+  <div class="icon" style="font-size: 20px; text-align: center;color: rgb(206, 56, 56);display: none;padding-top: 5px;" id="x4">
+    x
+ </div>
+  </div>
+  <div class="sausage" onclick="dispDur5(1)">
+    <div class="contents" style="width: 95%; float: left;">
+   
+  
+  <h3>
+    How can I rank well on Google?
+  </h3>
+  <p id="google">
+    As marketers, we spend a lot of time working on SEO optimization. The short answer is that you have to build your site for people as well as search engines. From having a responsive website to creating relevant, high-quality content, there are many factors involved with ranking well on Google. Fortunately, we provide a full suite of SEO, PPC, and other marketing services that can help your website perform well in search engines and generate leads.
+  </p>     
+</div>
+<div class="icon" style="font-size: 30px; text-align: center;color: rgb(206, 56, 56);" id="plus5">
+   +
+</div>
+<div class="icon" style="font-size: 20px; text-align: center;color: rgb(206, 56, 56);display: none;padding-top: 5px;" id="x5">
+  x
+</div>
+</div>
+<div class="sausage" onclick="dispDur6(1)">
+  <div class="contents" style="width: 95%; float: left;">
+ 
+
+<h3>
+  What should I do if I would like to add services, like SEO or PPC, to my plan?
+</h3>
+<p id="seoppc">
+  As you utilize our web maintenance services, your needs may eventually change. The benefit of working with a full-service marketing agency, like Miles IT, is that we offer a full suite of marketing, design, and video production services that empower our clients to tell their stories online. If, at any time, you wish to add services to your plan, you can contact your Marketing Strategist. We will then get to work tailoring a plan that directly aligns with your goals.
+</p>     
+</div>
+<div class="icon" style="font-size: 30px; text-align: center;color: rgb(206, 56, 56);" id="plus6">
+ +
+</div>
+<div class="icon" style="font-size: 20px; text-align: center;color: rgb(206, 56, 56);display: none;padding-top: 5px;" id="x6">
+x
+</div>
+</div>
+    
+  
+  </div>
+    <div class="footer">
+      <div class="emailcont reveal active">
+         <a href="mailto:utialojephtha@gmail.com">6771.2021@students.ku.ac.ke</a><br><br>
+          <a href="tel:+254114836831">(+254-114836831)</a>
+      </div>
+      <div class="title">
+              <h1>GRIDTOP</h1>
+      </div>
+      
+      <div class="socialpage reveal active">
+       <a href="https://wa.me/254114836831" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+       <a href="https://twitter.com/Jeph_coder" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+       <a href="https://www.instagram.com/gridtop_developers/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/jephtha-utialo-8662b7232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      </div> 
+    </div>
+<div class="footer-bottom">
+  <p>©2023 Utialo Jeph. All rights reserved. Google Developer & Founder of <a href="https://utialojeph.github.io/gd/" target="_blank">GRIDTOP.</a></p><br>
+  <h2 class="tos">
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="return-policy.html">Return Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </h2>
+<br>
+</div>
+
+<div class="logcart">
+  <a href="Loginpage.html">LOGIN</a>
+      <a href="cart.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+</div>  
+
+
+</body>
+</html>

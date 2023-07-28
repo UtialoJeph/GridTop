@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/de7121b9b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Ewert&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>GridTopTechs</title>
+    
+</head>
+<body>
+  <style>
+     .banner{
+    padding-top:10px;
+    height: auto;
+   
+      }
+    
+    .container-pic{
+   justify-content: center;
+  width: 90%;
+  display:flex;
+  margin:auto;
+     
+  }
+    .left1 h2{
+      font-size: 18px;
+      }
+    #centerX{
+        padding-top: 70px;
+    }
+    .personal-info{
+      padding-top: 100px;
+    }
+    .info p{
+      line-height: 25px;
+    }
+    .container{
+      background-image: url("https://ik.imagekit.io/midnightcoders/bg.jpg?updatedAt=1689245810000");
+      background-size: cover;
+      background-color: rgb(0, 0, 0);
+      height: 650px;
+      width: 100%;
+    }
+    .container i{
+      opacity: 999;
+      padding-top: 250px;
+      transform: translateX(50%);
+      transform: translateY(20%);
+      color: rgb(32, 31, 31);
+      font-size: 50px;
+    }
+    .container i:hover{
+      transition: .5s ease;
+      color: rgb(6, 140, 250);
+      font-size:55px;
+      }
+      .backstory{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        height:1100px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        line-height: 30px;
+      }
+      .back{
+        padding-top: 80px;
+        padding-left: 120px;
+        float: left;
+        width: 40%;
+        height: 30%;
+        background-color: rgb(0, 0, 0);
+      }
+      .story{
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: lighter;
+        font-size: 18px;
+        padding-top: 80px;
+        padding-right: 100px;
+        float: left;
+        width: 70%;
+        height:auto;
+        margin-bottom:10px ;
+      }
+      @media all and (max-width:1250Px){
+       .banner{
+        margin-bottom: 200px;
+       }
+      
+        .container{
+        display: none;
+       }
+       .backstory{
+        display: inline;
+        height:auto;
+        width: 100%;
+        
+      }
+      .back{
+        padding-top: 80px;
+        padding-left:80px;
+        float: left;
+        width: 58%;
+        height:auto;
+        background-color: rgb(0, 0, 0);
+      }
+      .story{
+        font-weight: lighter;
+        font-size: 18px;
+        padding-top: 80px;
+        padding-left:50px;
+        padding-right: 0;
+        float: left;
+        background-color: rgb(0, 0, 0);
+        width: 80%;
+        height:auto;
+      }
+      #centerX{
+        padding-top: 0;
+    }
+    }
+
+      
+      
+  </style>
+   <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+        <i class="fa-solid fa-xmark" onclick="cutTopheader()"></i>
+    
+   </div>
+   </div>
+
+  
+    
+     <div class="title-nav-cart">
+      
+     <div class="logoside">
+    
+        <h1 class="T">GRIDTOP</h1>
+      </div>
+      
+      <nav class="navbar">
+        <ul>
+          <li><a class="about" href="index.html">HOME</a></li>
+          <li><a class="about" href="gridtop-codeshop.html">PLUGINS</a></li>
+          <li class="dropdown"><a href="#"><span>COURSES</span> </a>
+            
+            <ul>
+              <li><a href="boost-geekmode.html">BUILDING A PERSONAL SITE</a></li>
+              <li><a href="gridtop-courses.html">GRIDTOP (COMING SOON) </a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">SERVICES</a>
+            
+            <ul>
+              <li><a href="services.html">IT SUPPORT & SOFTWARES</a></li>
+              <li><a href="services.html">WEBSITES & MARKETING</a></li>                    
+            </ul>
+          </li>
+         
+          
+          <li><a class="about" href="contact-jeph.html">CONTACT</a></li>
+          
+          <li class="dropdown"><a href="#"><span>MORE</span> </a>
+            
+            <ul>
+             
+              <li><a href="about-jeph.html">ABOUT ME</a></li>
+              <li><a href="gridtop-developer.html">GRIDTOP DEVS</a></li>
+              <li><a href="my-work.html">MY WORK</a></li>
+              <li><a href="#">HOBBIES & INTERESTS</a></li>
+              <li><a href="#">NEWS & OFFERS</a></li>
+            </ul>
+          </li>                   
+        </ul>      
+       </nav> 
+       
+    
+       
+    </div>
+    
+  
+    <div class="smallnav">
+      <div class="nv">
+      <i class="fa-solid fa-bars" onclick="openMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+     <div class="mobilenav" id="mobilenav">
+      
+  <div class="upperheader" id="upperheader">
+    
+    <p><span>I Just released my First Online Course about how to.</span> <a href="boost-geekmode.html">Boost Your Geek Modes</a></p>
+    <div class="account">
+       
+    
+   </div>
+   </div>
+      
+
+   <div class="mbnav"> 
+    <div class="nav-each firstnav"><a href="index.html">HOME</a><br></div>
+    <div class="nav-each"><a href="gridtop-codeshop.html">PLUGINS</a><br></div>
+    <div class="nav-each"> <a href="boost-geekmode.html">PORTFOLIOS</a><br></div>
+    <div class="nav-each"><a href="gridtop-courses.html">COURSES</a><br></div>
+    <div class="nav-each"> <a href="services.html">SERVICES</a><br></div>
+    <div class="nav-each"> <a href="services.html">SOFTWARES</a><br></div>
+    <div class="nav-each"> <a href="contact-jeph.html">CONTACT</a><br></div>
+    <div class="nav-each"> <a href="gridtop-developer.html">GRIDTOP DEVS</a><br></div>
+    <div class="nav-each"> <a href="my-work.html">MY WORK</a><br></div>
+    <div class="nav-each"> <a href="">HOBBIES</a><br></div>
+    <div class="nav-each lastnav"><a href="Loginpage.html">LOGIN</a><br></div>
+  </div>
+        
+    <div class="smallnav">
+      <div class="nv">
+        <i class="fa-solid fa-xmark" onclick="cutMobilenav()"></i>
+      </div>
+     <div class="gridnav">
+      <h2>GRIDTOP</h2>
+      </div>
+    
+     <div class="cartnav">
+     <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+     </div> 
+  
+     </div>
+    
+     </div> 
+     
+    <div class="banner">
+      
+        <h1>
+           Passions & Personality          
+        </h1>
+    </div>
+ 
+    <div class="personal-info reveal active">
+        <div class="myimage">
+         <img src="https://ik.imagekit.io/midnightcoders/image-asset.jpeg?updatedAt=1685969304529">
+        </div>
+        
+        <div class="info reveal active">
+         <h2>
+           A few fun facts
+         </h2>
+         <p>
+          I'm Utialo Jeph, a fullstack developer based in Nairobi, Kenya.
+          I have a huge passion for coding,
+           my favorite number is 20, obsessed with good unique stuffs. I knew what I wanted to do at the age of
+            12 and spend hours browsing/viewing page sources. My favorite food is saffron rice with charred fish. I wrote my first line of code in 2016 using a PC and saved 
+            a drowning kid in 2019.
+         </p>
+       
+         
+        </div>
+       
+        
+    </div>
+
+    <div class="blogp reveal active">
+      <h2>
+        THIS IS ME IN A NUT-SHELL
+      </h2>
+      <P>
+        I'm married, a coffee enthusiast, a traveller, gamer, and GridTop
+         developer.
+      </P>
+    </div>
+<div class="container">
+  <a href="">
+  <i class="fa-solid fa-circle-play"></i>
+</a>
+</div>
+<div class="backstory reveal active">
+  <div class="back">
+    <h1>
+       My Code Journey
+    </h1>
+  </div>
+   <div class="story reveal active">
+    <p>
+      Yes, as I stated in my fun facts and in the video above,
+       I knew what I wanted to do by the age of 12. 
+       The short version is that I loved playing video games growing up 
+       and always had an interest to know how they were made. So, a small
+        idea turned into me wanting to make my own video game. And after a 
+        few friends helped to fill up notebooks with thoughts, ideas, and drawings 
+        we quickly realized that we needed a website. Obviously, this was before the 
+        internet was filled with this type of knowledge readily available at your fingertips
+      . So, I was able to teach
+          myself the basics and build something. 
+    </p>
+  
+    <p>
+      Fast-forwarding, after my secondary education at Starehe Boys, I consulted from 
+      a tech friend of mine who lives in Netherlands and from it I decided that
+      I would pursue Bachelor of Information Technology (Basically coding). I had a dream of studying 
+      at Carnegie Mellon University which is still alive but for now I'm at Kenyatta University.
+       I have worked as a typist at a local print industry for a small publication.
+        This was the start of many core understandings and played a key role in my thought process 
+        when thinking about design as a whole, especially when it comes to typography.
+       
+    </p>
+
+   
+    <p>
+      This was the start of many core understandings and played a key role in my thought process 
+        when thinking about design as a whole, especially when it comes to typography.
+      In early 2022, I began my first few lines of code for GridTop site. From this I've merge a GridTop developer. 
+      So, here I am, a year later still doing the same damn thing, and still loving it.
+    </p>
+    <p>
+      Now (as of 2023) I’m finding myself venturing down new paths and pushing some new focus areas such as
+       helping people build personal brands. Ever since I created my own personal brand back in 2022,
+        I realized that I’ve learned a lot and am able to help teach people what I’ve learned
+         over the years about what worked and what didn’t for me. If you want to know more about 
+         why I started a personal brand, you can <a href="">read the full story.</a>
+    </p>
+   </div>
+</div>
+
+<div class="container-pic">
+  <div class="left1" id="left1">
+  <div class="img reveal active">
+    <img src="https://ik.imagekit.io/midnightcoders/safar-safarov-koOdUvfGr4c-unsplash__1_.jpg?updatedAt=1684829219890" alt="Avatar" class="image3" style="width:85%" height="435px">
+      </div>
+  <h2>The wife.</h2>
+  
+  </div>
+  <div class="left1" id="left1">
+    <div class="img reveal active" id="centerX">
+      <img src="https://ik.imagekit.io/midnightcoders/The_home.jpg?updatedAt=1686378134326" style="width:85%" height="300px">
+     </div>
+     <h2>The home</h2>
+    
+    
+  </div>
+  <div class="left1" id="left1">
+    <div class="img reveal active">
+      <img src="https://ik.imagekit.io/midnightcoders/coffee.JPG?updatedAt=1686380140575" alt="Avatar" class="image3" style="width:85%" height="435px">
+          </div>
+     <h2>The Obsession</h2>
+    
+    
+  </div>
+</div>
+
+
+    <div class="blogp reveal active">
+      <h2>
+        MORE TO EXPLORE
+      </h2>
+      <P>
+        Outside of GridTop, I have a huge passion for coffee and video production and if you want to learn more, check out <a href="">My Insights page.</a>
+      </P>
+     
+    </div>
+    
+    <div class="footer">
+      <div class="emailcont reveal active">
+         <a href="mailto:utialojephtha@gmail.com">6771.2021@students.ku.ac.ke</a><br><br>
+          <a href="tel:+254114836831">(+254-114836831)</a>
+      </div>
+      <div class="title">
+              <h1>GRIDTOP</h1>
+      </div>
+      
+      <div class="socialpage reveal active">
+       <a href="https://wa.me/254114836831" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+       <a href="https://twitter.com/Jeph_coder" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+       <a href="https://www.instagram.com/gridtop_developers/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/jephtha-utialo-8662b7232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      </div> 
+    </div>
+<div class="footer-bottom">
+  <p>©2023 Utialo Jeph. All rights reserved. Google Developer & Founder of <a href="https://utialojeph.github.io/gd/" target="_blank">GRIDTOP.</a></p><br>
+  <h2 class="tos">
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="return-policy.html">Return Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </h2>
+<br>
+</div>
+
+<div class="logcart">
+  <a href="Loginpage.html">LOGIN</a>
+      <a href="cart.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+</div> 
+
+
+</body>
+</html>
