@@ -20,7 +20,10 @@
        
     <style>
         
- .bstyle{display: flex;}
+ .bstyle{display:flex;flex-wrap:nowrap;}
+ .bstyle a{
+  margin-top: 5px;
+ }
   .personal-info{
     width: 90%;
     height: auto;
@@ -193,6 +196,13 @@ margin-top: 50px;
         height: 5px;
         background-color: rgb(116, 116, 122);
     }
+    
+    #plus,#x, #plus1,#x1, #plus2,#x2, #plus3,#x3, #plus4,#x4, #plus5,#x5, #plus6,#x6{
+      background-color:rgb(42, 43, 42);
+      width:0;
+      height: 100%;
+      border-radius: 5px;
+        }
     }
     </style>
   <div class="upperheader" id="upperheader">
@@ -351,13 +361,13 @@ margin-top: 50px;
   <div class="container font">
 
     <div class="buttons">
-        <a href="#" onmouseenter="dispHov()" id="collb">Collaborate</a>
+        <a href="#collaborate" onmouseenter="dispHov()" id="collb">Collaborate</a>
         <div class="brd"></div>
-        <a href="#" onmouseenter="dispHov1()"id="createb">Create</a>
+        <a href="#create" onmouseenter="dispHov1()"id="createb">Create</a>
         <div class="brd"></div>
-        <a href="#" onmouseenter="dispHov2()" id="devb">Develop</a>
+        <a href="#develop" onmouseenter="dispHov2()" id="devb">Develop</a>
         <div class="brd"></div>
-        <a href="#" onmouseenter="dispHov3()" id="depb">Deploy</a>
+        <a href="#deploy" onmouseenter="dispHov3()" id="depb">Deploy</a>
     </div>
     <div class="view" style="font-weight: lighter;line-height: 45px;">
        
